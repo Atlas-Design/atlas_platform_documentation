@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Atlas Platform Documentation',
+  title: 'Atlas Platform Documentation Msoatafa ',
   tagline: 'AI-generated 3D Assets for Game Development',
   favicon: 'img/favicon.ico',
 
