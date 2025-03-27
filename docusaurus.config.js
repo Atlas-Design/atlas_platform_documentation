@@ -37,7 +37,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: 'docs',
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
@@ -49,28 +49,11 @@ const config = {
 
   themeConfig: {
     navbar: {
-      title: 'Atlas Platform Documentation',
+      title: 'Atlas Platform User Guide',
       items: [
-        {
-          type: 'doc',
-          docId: 'overview',
-          position: 'left',
-          label: 'Overview',
-        },
-        {
-          type: 'doc',
-          docId: 'getting_started',
-          position: 'left',
-          label: 'Getting Started',
-        },
-        {
-          type: 'doc',
-          docId: 'using_prompts',
-          position: 'left',
-          label: 'Using Prompts',
-        },
       ],
     },
+    
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} Atlas Platform.`,
