@@ -3,7 +3,7 @@ id: writing_effective_prompts
 title: Writing Effective Prompts
 sidebar: false
 ---
-
+![header](..\static\img\headers\02.jpg)
 Prompts play a central role in the creative workflow within **Atlas Platform**. They guide the AI agent in generating both **2D concept images** and outputs through **Art Core** that align with your game's style, theme, and overall vision.
 
 Whether you're building an environment, a set of props, or a full character lineup, writing clear and intentional prompts helps you produce consistent and high-quality asset concepts that work together as part of a cohesive game world.

@@ -3,7 +3,7 @@ id: export_integration
 title: Export and Integration
 sidebar: false
 ---
-
+![header](..\static\img\headers\03.jpg)
 ## 🚀 Export and Integration
 
 Once you're happy with the generated assets in **Atlas Platform**, you can easily export them for use in your game engine or DCC tools.

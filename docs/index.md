@@ -3,7 +3,7 @@ id: index
 title: Overview
 sidebar_label: Overview
 ---
-
+![header](..\static\img\headers\01.jpg)
 This documentation is for the [**Atlas Platform**](https://frontend.beta.atlas.design/editor) — an advanced AI-powered tool designed to help **game developers**, **technical artists**, and **3D hobbyists** generate high-quality 3D assets with ease.
 
 Atlas Platform streamlines the asset creation process by offering a **smooth end-to-end workflow** that transforms **2D image inputs into fully textured 3D models**. Whether you're rapidly prototyping ideas or building production-ready content, Atlas enhances your creative workflow with the power of AI.
