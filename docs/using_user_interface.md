@@ -19,7 +19,7 @@ At the top-left corner, you’ll find the **Session Menu**, which allows you to:
 - **Load Another Session**: Switch to a previously saved session to resume work.
 
 This helps you keep your work organized across different projects or creative directions.
-
+test
 ---
 
 ### 🖼️ 02: Asset Thumbnails Area
