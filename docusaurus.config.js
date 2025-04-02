@@ -13,7 +13,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Atlas Platform Documentation',
   tagline: 'Alpha Version',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/general/atlas_logo.png',
 
   url: 'http://localhost:3000',
   baseUrl: '/',
