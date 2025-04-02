@@ -15,10 +15,10 @@ const config = {
   tagline: 'Alpha Version',
   favicon: '/img/general/atlas_logo.png',
 
-  //url: 'http://localhost:3000',
-  //baseUrl: '/',
-  url: 'https://Atlas-Design.github.io',
-  baseUrl: '/atlas_platform_documentation/',
+  url: 'http://localhost:3000',
+  baseUrl: '/',
+  //url: 'https://Atlas-Design.github.io',
+  //baseUrl: '/atlas_platform_documentation/',
 
   organizationName: 'Atlas-Design',
   projectName: 'atlas_platform_documentation',
