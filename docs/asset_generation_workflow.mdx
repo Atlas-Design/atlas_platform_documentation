@@ -86,8 +86,48 @@ If you're satisfied with the mesh:
     <p align="left" style={{ fontSize: '0.85rem'}}>
       *Medieval Assets With Cyberpunk Style Applied*
     </p>
+- These parameters configure how **ART core** system refines and/or restyles a 3D asset.Also, These parameters work together to control both the dimensional details (geometry, if displacement is used) and the texturing or style. By tuning them, you can achieve anything from subtle texture refinements to complete restyles of your 3D asset.
 
-- Once you're happy with the textures from ART core you can **Use the** `"low-poly and PBR"` **keyword** to get an optimized low-poly game asset with baked PBR textures
+    - **input_mesh_filename** (string, required) 
+      - Specifies which 3D file (.glb or .blend) the ART Core tool should process.
+      - The system reads the geometry and existing textures (if any) in that file as the “base” for the enhancement or restyling.
+
+    - **style_images_filenames** (list of strings, optional)
+      - List of image file names (e.g., .png, .jpg) that will act as style references.
+      - If provided, each image influences the final texturing or look of the 3D model, guided by the weights in style_images_weights.
+      - Defaults to empty (no style image used) if not specified.
+
+    - **style_images_weights** (list of floats, optional)
+      - Specifies how strongly each style image in style_images_filenames influences the final texture.
+      - Each value should be in the range [0, 1]. Typically 0.5 is a moderate influence; higher values inject a stronger style presence; lower values apply a subtler touch.
+
+    - **generate_displacement_and_high_poly** (boolean, default: false)
+      - If true, ART Core also generates and applies a displacement map, increasing the geometry complexity to produce a high-poly version of the mesh.
+      - The result is both a refined texture and a more detailed geometry (with more vertices/triangles).
+      - If false, ART Core only refines the textures, leaving the geometry unchanged.
+
+    - **positive_prompt** (string, default: "")
+      - A short descriptive prompt or keywords that guide the tool in shaping the final texture or style.
+      - Max recommended length is ~15 words. E.g., “wooden, steampunk, worn” or “ancient stone, runes, cracked.”
+
+    - **negative_prompt** (string, default: "")
+      - A short descriptive prompt or keywords the tool tries to avoid.
+      - E.g., “cartoon, glossy, neon” (if you do not want an overly bright and glossy look).
+
+    - **resolution** (string, default: "2k")
+      - The resolution of the refined textures. Possible values are "2k", "4k", or "8k."
+      - Higher resolutions produce sharper detail but require more processing time and hardware resources.
+
+    - **existing_texture_preservation** (float, default: 0)
+      - A value in the range [0, 1] controlling how much the system preserves the original mesh’s texture.
+      - 0 means “generate from scratch” (disregard the original), while 1 means “preserve almost all details of the original texture” and minimally alter them.
+      - Values close to 0.5 can blend old and new textures if you want partial style or color changes while still referencing the original.
+
+    - **unshade_strength** (float, default: 0.5)
+      - A value [0,1] determining how aggressively to remove baked-in shadows, highlights, or ambient occlusion from the original texture.
+      - 0 means “don’t remove any shading,” 1 means “try to remove all shading, leaving mostly diffuse color.”
+
+- Once you're happy with the textures you can run **APS (Asset Presentation Stage)** which runs after ART core to deliver an optimized low-poly game asset with baked textures. you can **Use the** `"low-poly and PBR"` **keyword**. Once a job is run you can see it at the job tracker **APS Jobs**
     > Example: *"Generate low-poly with PBR materials for the assets in the referal assets tray"*
 
 ### 📦 5. Export Your Assets
@@ -109,3 +149,12 @@ Once your asset is finalized:
 
 - Assets include textures and are ready for integration into your game project
 
+## 📂 Project Files & Examples  
+
+To understand the workflow and structure of **Atlas Platform** generated assets, we provide **sample project files** demonstrating key stages of asset generation, texturing, and export.  
+
+### 🔹 Available Example Files  
+
+- <a href="/example_files/PrinceOfPersia.json" download>📁 Stylized Asset Example</a>  
+
+These examples will help you get **familiar with the platform** and optimize your own asset generation workflow. 🚀  
