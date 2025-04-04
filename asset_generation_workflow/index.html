@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Asset Generation Workflow | Atlas Platform Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://Atlas-Design.github.io/atlas_platform_documentation/asset_generation_workflow"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Asset Generation Workflow | Atlas Platform Documentation"><meta data-rh="true" name="description" content="3D Assets Generated Using Atlas Platform’s High-Fidelity Pipeline"><meta data-rh="true" property="og:description" content="3D Assets Generated Using Atlas Platform’s High-Fidelity Pipeline"><link data-rh="true" rel="icon" href="/atlas_platform_documentation/img/general/atlas_logo.png"><link data-rh="true" rel="canonical" href="https://Atlas-Design.github.io/atlas_platform_documentation/asset_generation_workflow"><link data-rh="true" rel="alternate" href="https://Atlas-Design.github.io/atlas_platform_documentation/asset_generation_workflow" hreflang="en"><link data-rh="true" rel="alternate" href="https://Atlas-Design.github.io/atlas_platform_documentation/asset_generation_workflow" hreflang="x-default"><link rel="stylesheet" href="/atlas_platform_documentation/assets/css/styles.5ab67845.css">
-<script src="/atlas_platform_documentation/assets/js/runtime~main.16ae6a7d.js" defer="defer"></script>
+<script src="/atlas_platform_documentation/assets/js/runtime~main.91ae5cbe.js" defer="defer"></script>
 <script src="/atlas_platform_documentation/assets/js/main.1e8771c2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -82,7 +82,78 @@
 <p align="left" style="font-size:0.85rem"></p><p><em>Medieval Assets With Cyberpunk Style Applied</em></p><p></p>
 </li>
 <li>
-<p>Once you&#x27;re happy with the textures from ART core you can <strong>Use the</strong> <code>&quot;low-poly and PBR&quot;</code> <strong>keyword</strong> to get an optimized low-poly game asset with baked PBR textures</p>
+<p>These parameters configure how <strong>ART core</strong> system refines and/or restyles a 3D asset.Also, These parameters work together to control both the dimensional details (geometry, if displacement is used) and the texturing or style. By tuning them, you can achieve anything from subtle texture refinements to complete restyles of your 3D asset.</p>
+<ul>
+<li>
+<p><strong>input_mesh_filename</strong> (string, required)</p>
+<ul>
+<li>Specifies which 3D file (.glb or .blend) the ART Core tool should process.</li>
+<li>The system reads the geometry and existing textures (if any) in that file as the “base” for the enhancement or restyling.</li>
+</ul>
+</li>
+<li>
+<p><strong>style_images_filenames</strong> (list of strings, optional)</p>
+<ul>
+<li>List of image file names (e.g., .png, .jpg) that will act as style references.</li>
+<li>If provided, each image influences the final texturing or look of the 3D model, guided by the weights in style_images_weights.</li>
+<li>Defaults to empty (no style image used) if not specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>style_images_weights</strong> (list of floats, optional)</p>
+<ul>
+<li>Specifies how strongly each style image in style_images_filenames influences the final texture.</li>
+<li>Each value should be in the range [0, 1]. Typically 0.5 is a moderate influence; higher values inject a stronger style presence; lower values apply a subtler touch.</li>
+</ul>
+</li>
+<li>
+<p><strong>generate_displacement_and_high_poly</strong> (boolean, default: false)</p>
+<ul>
+<li>If true, ART Core also generates and applies a displacement map, increasing the geometry complexity to produce a high-poly version of the mesh.</li>
+<li>The result is both a refined texture and a more detailed geometry (with more vertices/triangles).</li>
+<li>If false, ART Core only refines the textures, leaving the geometry unchanged.</li>
+</ul>
+</li>
+<li>
+<p><strong>positive_prompt</strong> (string, default: &quot;&quot;)</p>
+<ul>
+<li>A short descriptive prompt or keywords that guide the tool in shaping the final texture or style.</li>
+<li>Max recommended length is ~15 words. E.g., “wooden, steampunk, worn” or “ancient stone, runes, cracked.”</li>
+</ul>
+</li>
+<li>
+<p><strong>negative_prompt</strong> (string, default: &quot;&quot;)</p>
+<ul>
+<li>A short descriptive prompt or keywords the tool tries to avoid.</li>
+<li>E.g., “cartoon, glossy, neon” (if you do not want an overly bright and glossy look).</li>
+</ul>
+</li>
+<li>
+<p><strong>resolution</strong> (string, default: &quot;2k&quot;)</p>
+<ul>
+<li>The resolution of the refined textures. Possible values are &quot;2k&quot;, &quot;4k&quot;, or &quot;8k.&quot;</li>
+<li>Higher resolutions produce sharper detail but require more processing time and hardware resources.</li>
+</ul>
+</li>
+<li>
+<p><strong>existing_texture_preservation</strong> (float, default: 0)</p>
+<ul>
+<li>A value in the range [0, 1] controlling how much the system preserves the original mesh’s texture.</li>
+<li>0 means “generate from scratch” (disregard the original), while 1 means “preserve almost all details of the original texture” and minimally alter them.</li>
+<li>Values close to 0.5 can blend old and new textures if you want partial style or color changes while still referencing the original.</li>
+</ul>
+</li>
+<li>
+<p><strong>unshade_strength</strong> (float, default: 0.5)</p>
+<ul>
+<li>A value [0,1] determining how aggressively to remove baked-in shadows, highlights, or ambient occlusion from the original texture.</li>
+<li>0 means “don’t remove any shading,” 1 means “try to remove all shading, leaving mostly diffuse color.”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Once you&#x27;re happy with the textures you can run <strong>APS (Asset Presentation Stage)</strong> which runs after ART core to deliver an optimized low-poly game asset with baked textures. you can <strong>Use the</strong> <code>&quot;low-poly and PBR&quot;</code> <strong>keyword</strong>. Once a job is run you can see it at the job tracker <strong>APS Jobs</strong></p>
 <blockquote>
 <p>Example: <em>&quot;Generate low-poly with PBR materials for the assets in the referal assets tray&quot;</em></p>
 </blockquote>
@@ -104,6 +175,15 @@
 <li>
 <p>Assets include textures and are ready for integration into your game project</p>
 </li>
-</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/atlas_platform_documentation/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/atlas_platform_documentation/writing_effective_prompts"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Writing Effective Prompts</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#️-1-create-a-new-session" class="table-of-contents__link toc-highlight">🗂️ 1. Create a New Session</a></li><li><a href="#-2-generate-concept-images-with-the-ai-agent" class="table-of-contents__link toc-highlight">💬 2. Generate Concept Images with the AI Agent</a></li><li><a href="#-3-generate-3d-models-from-selected-images" class="table-of-contents__link toc-highlight">🧱 3. Generate 3D Models from Selected Images</a></li><li><a href="#-4-run-art-core-for-high-quality-texturing" class="table-of-contents__link toc-highlight">✨ 4. Run ART Core for High-Quality Texturing</a></li><li><a href="#-5-export-your-assets" class="table-of-contents__link toc-highlight">📦 5. Export Your Assets</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Atlas Platform.</div></div></div></footer></div>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-project-files--examples">📂 Project Files &amp; Examples<a href="#-project-files--examples" class="hash-link" aria-label="Direct link to 📂 Project Files &amp; Examples" title="Direct link to 📂 Project Files &amp; Examples">​</a></h2>
+<p>To understand the workflow and structure of <strong>Atlas Platform</strong> generated assets, we provide <strong>sample project files</strong> demonstrating key stages of asset generation, texturing, and export.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-available-example-files">🔹 Available Example Files<a href="#-available-example-files" class="hash-link" aria-label="Direct link to 🔹 Available Example Files" title="Direct link to 🔹 Available Example Files">​</a></h3>
+<p>These examples will help you get <strong>familiar with the platform</strong> and optimize your own asset generation workflow. 🚀</p>
+<ul>
+<li>
+<a href="/example_files/PrinceOfPersia.json" download="">📁 Stylized Asset Example</a>
+</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/atlas_platform_documentation/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/atlas_platform_documentation/writing_effective_prompts"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Writing Effective Prompts</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#️-1-create-a-new-session" class="table-of-contents__link toc-highlight">🗂️ 1. Create a New Session</a></li><li><a href="#-2-generate-concept-images-with-the-ai-agent" class="table-of-contents__link toc-highlight">💬 2. Generate Concept Images with the AI Agent</a></li><li><a href="#-3-generate-3d-models-from-selected-images" class="table-of-contents__link toc-highlight">🧱 3. Generate 3D Models from Selected Images</a></li><li><a href="#-4-run-art-core-for-high-quality-texturing" class="table-of-contents__link toc-highlight">✨ 4. Run ART Core for High-Quality Texturing</a></li><li><a href="#-5-export-your-assets" class="table-of-contents__link toc-highlight">📦 5. Export Your Assets</a></li><li><a href="#-project-files--examples" class="table-of-contents__link toc-highlight">📂 Project Files &amp; Examples</a><ul><li><a href="#-available-example-files" class="table-of-contents__link toc-highlight">🔹 Available Example Files</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Atlas Platform.</div></div></div></footer></div>
 </body>
 </html>
