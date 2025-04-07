@@ -84,6 +84,11 @@ export default {
       id: 'known_issues_limitations',
       label: 'Known Issues and Limitations',
     },
+    {
+      type: 'doc',
+      id: 'examples',
+      label: 'Examples',
+    },
   ],
 };
 
