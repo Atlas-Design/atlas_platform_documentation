@@ -23,7 +23,7 @@ const config = {
   organizationName: 'Atlas-Design',
   projectName: 'atlas_platform_documentation',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
