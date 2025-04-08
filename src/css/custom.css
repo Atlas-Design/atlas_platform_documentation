@@ -51,3 +51,92 @@
   font-family: 'Fira Code', monospace;
   font-size: 0.95em;
 }
+
+
+/* Examples Section  */
+
+.example-callout {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.example-callout summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.session-card-summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.session-download-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+details.example-callout {
+  border: 1px solid var(--ifm-toc-border-color); /* or any grey of your choice */
+}
+
+.example-callout:hover {
+  border-color: rgba(225, 225, 225, 0.4); /* light grey in dark mode */
+}
+
+.session-header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.75rem;
+}
+
+.session-description {
+  flex: 1 1 60%;
+  margin: 0;
+}
+
+.session-download-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.session-image-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.session-preview-img {
+  max-height: 200px;
+  border-radius: 6px;
+}
+
+.session-tags {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
