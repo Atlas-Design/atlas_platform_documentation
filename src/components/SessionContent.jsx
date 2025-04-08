@@ -1,11 +1,12 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
-import { VALID_TAGS } from '@site/src/data/tagList';
+//import { VALID_TAGS } from '@site/src/data/tagList';
 
 export default function SessionContent({
   description,
   folder,
+  jsonPath,
   tags = [],
 }) {
   // Validate tags
@@ -20,15 +21,16 @@ export default function SessionContent({
   const resolvedImages = defaultImages.map((name) =>
     useBaseUrl(`${folder}/${name}`)
   );
-  const folderName = folder.split('/').filter(Boolean).pop();
-  const jsonPath = useBaseUrl(`${folder}/${folderName}.json`);
+  const resolvedJsonPath = useBaseUrl(jsonPath);
+
+
   return (
     <>
       <div className="session-header">
         <p className="session-description">
           <strong>Description:</strong> {description}
         </p>
-        <Link to={jsonPath} download className="session-download-link">
+        <Link to={resolvedJsonPath} download className="session-download-link">
           📁 <strong>Download Session</strong>
         </Link>
       </div>
