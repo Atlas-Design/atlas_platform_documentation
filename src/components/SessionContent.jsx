@@ -1,7 +1,7 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
-import { VALID_TAGS } from '@site/src/data/tagList';
+//import { VALID_TAGS } from '@site/src/data/tagList';
 
 export default function SessionContent({
   description,
