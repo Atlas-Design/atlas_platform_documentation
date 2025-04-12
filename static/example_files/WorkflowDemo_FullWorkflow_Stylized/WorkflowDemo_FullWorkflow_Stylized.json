@@ -1,7 +1,7 @@
 {
     "version": "0.3.1",
     "uuid": "f618c9c0-3b2f-4e9e-a3dd-413400575752",
-    "session_name": "AssetsDemo_Stylized",
+    "session_name": "WorkflowDemo_FullWorkflow_Stylized",
     "files": {
         "fantasy_sword_wow_style.png": {
             "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/cabbafbb-26ce-4af9-b316-90a686249216/fantasy_sword_wow_style.png",
