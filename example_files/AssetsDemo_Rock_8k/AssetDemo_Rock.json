@@ -1,0 +1,321 @@
+{
+    "version": "0.4.0",
+    "uuid": "991fe147-39bc-4865-a55e-854cb736d670",
+    "session_name": "RockProject",
+    "files": {
+        "Rock_01.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/ebbf6c41-7498-4d02-9a1e-d8e327d29cd2/Rock_01.png",
+            "description": "The image features a tall, vertical rock formation against a blue sky with fluffy clouds. The rock appears to be quite narrow and is shown in full, with no cropping obstructing any part of it. There are also some highlights on the rock, possibly indicating sunlight reflecting off its surface."
+        },
+        "Rock_01_2d_preview.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/c274b52e-a813-4814-bc6b-4d9ba3cc4043/Rock_01_2d_preview.png",
+            "description": "The image depicts a tall, rocky structure, possibly resembling a cliff or isolated rock formation with a textured surface. The main object appears to be visible in full, with no cropping evident. The colors suggest a natural rocky appearance, with whites, grays, and hints of green."
+        },
+        "Rock_01.glb": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/22120007-d630-47f8-bf32-ea19ed6998a5/Rock_01.glb",
+            "description": "AI-generated 3D reconstruction of Rock_01.png: A 3D mesh. For description, see rendered image description: Rock_01_2d_preview.png."
+        },
+        "StyleImage_01.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/29b3256d-f727-4073-b3f2-8a15f79523bf/StyleImage_01.png",
+            "description": "The image features a textured surface that appears to resemble weathered wooden bark or a similar natural material. The patterns are distinctively layered and detailed, showcasing grooves and ridges. This object is visible in full; there doesn't seem to be any cropping that obscures parts of it."
+        },
+        "StyleImage_02.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/4c5d675a-7f08-4854-8581-06aac7e64702/StyleImage_02.png",
+            "description": "The image appears to depict a surface with a textured pattern, possibly resembling layered wood or similar material in shades of yellow. The main object seems to be visible in full, showcasing the intricate details and grooves of the surface."
+        },
+        "Rock_01_2d_preview_4b6490dc.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/4b6490dc-3c2c-44a5-b911-d23ab56f223d/02_gen_textures/Rock_01/000/stage_3_rgb.png",
+            "description": "Intermediate multi-view image used to create Rock_01_processed_4b6490dc.glb. The image features four vertical rock formations or pillars that appear to be made of a textured, sandy-colored material. Each pillar is different in shape, showing varying degrees of detail and cracks. The main objects are clearly visible in full within the image. The background consists of a rocky landscape, enhancing the geological theme."
+        },
+        "Rock_01_processed_4b6490dc.blend": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/4b6490dc-3c2c-44a5-b911-d23ab56f223d/09_final_blend/Rock_01/final_seed000.blend",
+            "description": "Same as Rock_01_processed_4b6490dc.glb, but a raw .blend file before .glb export."
+        },
+        "Rock_01_processed_4b6490dc.glb": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/4b6490dc-3c2c-44a5-b911-d23ab56f223d/09_final_blend/Rock_01/final_seed000.glb",
+            "description": "Error generating description: HTTP Error 400: Bad Request"
+        },
+        "Rock_01_2d_preview_1a8b43b0.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/1a8b43b0-7f8d-4a78-9937-2019119c7faf/02_gen_textures/Rock_01/000/stage_3_rgb.png",
+            "description": "Intermediate multi-view image used to create Rock_01_processed_1a8b43b0.glb. The image features four large, vertical rock formations with visible cracks and textured surfaces, set against a backdrop of layered terrain. Each rock appears to have a rugged, natural appearance. The main objects are fully visible and not cropped."
+        },
+        "Rock_01_processed_1a8b43b0.blend": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/1a8b43b0-7f8d-4a78-9937-2019119c7faf/09_final_blend/Rock_01/final_seed000.blend",
+            "description": "Same as Rock_01_processed_1a8b43b0.glb, but a raw .blend file before .glb export."
+        },
+        "Rock_01_processed_1a8b43b0.glb": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/1a8b43b0-7f8d-4a78-9937-2019119c7faf/09_final_blend/Rock_01/final_seed000.glb",
+            "description": "Error generating description: HTTP Error 400: Bad Request"
+        },
+        "Rock_01_2d_preview_a9a53e0e.png": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/uploads/9e4ef18e-b8f6-43e5-9f19-78b97e1a0d08/Rock_01_2d_preview_a9a53e0e.png",
+            "description": "Intermediate multi-view image used to create Rock_01_processed_a9a53e0e.glb. The image depicts four abstract rock formations, each featuring distinct shapes and textures. The rocks are designed with layered, jagged edges and are presented against a background that resembles rocky terrain. \n\nAll four rock formations are visible in full and are not cropped."
+        },
+        "Rock_01_processed_a9a53e0e.blend": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/a9a53e0e-bf15-43c9-a096-b0b19d343e7b/09_final_blend/Rock_01/final_seed000.blend",
+            "description": "Same as Rock_01_processed_a9a53e0e.glb, but a raw .blend file before .glb export."
+        },
+        "Rock_01_processed_a9a53e0e.glb": {
+            "uri": "s3://art-core-jobbucket-7hswry7szvu3/jobs/a9a53e0e-bf15-43c9-a096-b0b19d343e7b/09_final_blend/Rock_01/final_seed000.glb",
+            "description": "Error generating description: HTTP Error 413: Request Entity Too Large"
+        }
+    },
+    "art_core_jobs": {
+        "4b6490dc-3c2c-44a5-b911-d23ab56f223d": {
+            "input_mesh_name": "Rock_01.glb",
+            "result_files": [
+                "Rock_01_2d_preview_4b6490dc.png",
+                "Rock_01_processed_4b6490dc.blend",
+                "Rock_01_processed_4b6490dc.glb"
+            ],
+            "status": "PROCESSED",
+            "stage": "ExecuteStages",
+            "reservation": "ef719fcf-8cf5-4ebc-bc5f-672593a389a9"
+        },
+        "1a8b43b0-7f8d-4a78-9937-2019119c7faf": {
+            "input_mesh_name": "Rock_01.glb",
+            "result_files": [
+                "Rock_01_2d_preview_1a8b43b0.png",
+                "Rock_01_processed_1a8b43b0.blend",
+                "Rock_01_processed_1a8b43b0.glb"
+            ],
+            "status": "PROCESSED",
+            "stage": "ExecuteStages",
+            "reservation": "415ab0f9-9d26-4c11-8998-524695c921cb"
+        },
+        "a9a53e0e-bf15-43c9-a096-b0b19d343e7b": {
+            "input_mesh_name": "Rock_01.glb",
+            "result_files": [
+                "Rock_01_2d_preview_a9a53e0e.png",
+                "Rock_01_processed_a9a53e0e.blend",
+                "Rock_01_processed_a9a53e0e.glb"
+            ],
+            "status": "PROCESSED",
+            "stage": "ExecuteStages",
+            "reservation": "fd4af855-798a-41ac-bdbb-d57d612b114b"
+        }
+    },
+    "pbr_jobs": {},
+    "art_core_jobs_logs": {
+        "4b6490dc-3c2c-44a5-b911-d23ab56f223d": [],
+        "1a8b43b0-7f8d-4a78-9937-2019119c7faf": [],
+        "a9a53e0e-bf15-43c9-a096-b0b19d343e7b": []
+    },
+    "suggestions": {
+        "prompt": [
+            "Generate a 3D mesh from a fully visible image of a natural rock formation using the image_to_3d tool.",
+            "Apply a stylized 2k texture to Rock_01.glb using StyleImage_01.png with a 0.6 style weight and detailed texturing prompt.",
+            "Generate an 8K high-poly version with displacement for Rock_01.glb using StyleImage_01.png at a 0.6 style weight."
+        ],
+        "user": [
+            "Upload a new style image for further modifications",
+            "View the generated 3D files in the session",
+            "Download the .glb or .blend file for Rock_01"
+        ]
+    },
+    "suggestions_history": [
+        {
+            "timestamp": "2025-04-12T09:21:38.194749",
+            "suggestions": {
+                "prompt": [
+                    "Generate an image of wooden cabin, front view.",
+                    "Generate a simple 3D object of a elven fantasy design sofa.",
+                    "Generate a simple greek-style 3D vase object and a sci-fi pattern image, then use the sci-fi pattern image to stylize 3D vase textures this way (while preserving original vase texture patterns a bit). Final textures should be 2k.",
+                    "Generate a very detailed high-poly 3D fantasy stone dwarf sculpture in heavy armour. Final textures should be 4k.",
+                    "Do the following steps, but always ask me if the intermediate result is good enough to continue: 1. Generate a simple 3D viking shield image. 2. Generate a simple 3D viking shield asset using the image from previous step. 3. Generate some fantasy pattern image. 4. Perform simple stylized texturing of the shield using the fantasy pattern image5. Enhance the stylized shield by increasing texture resolution and adding displacement, resulting in 4k-textured high-poly asset.",
+                    "Generate a high-poly sci-fi rifle asset, and bake into a low-poly PBR-textured asset, act independently until you achieve good quality results. The textures should be 8k."
+                ],
+                "user": []
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:22:51.337543",
+            "suggestions": {
+                "prompt": [
+                    "Generate a 3D model from Rock_01.png using the image_to_3d tool",
+                    "Apply detailed texturing to the rock model from Rock_01.png with ART Core",
+                    "Auto-texture and up-scale the rock model from Rock_01.png with high detail"
+                ],
+                "user": [
+                    "Upload a style reference image",
+                    "View 2D generated results",
+                    "Download the 3D model and import it to your 3D software"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:25:57.374352",
+            "suggestions": {
+                "prompt": [
+                    "Generate a high-poly, detailed version of Rock_01.glb at 8k resolution with unshading using ART Core",
+                    "Upscale textures of Rock_01.glb to 4k resolution with existing texture preservation",
+                    "Convert Rock_01.glb into a low-poly, PBR-textured asset"
+                ],
+                "user": [
+                    "Download Rock_01.glb",
+                    "View the 3D preview of Rock_01"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:44:16.654610",
+            "suggestions": {
+                "prompt": [
+                    "Stylize Rock_01.glb using StyleImage_01.png with resolution 4k, style weight 0.6, and no displacement.",
+                    "Stylize Rock_01.glb using StyleImage_01.png with resolution 8k, style weight 0.7, with displacement for high-poly details.",
+                    "Upscale the textures of Rock_01.glb to 8k resolution."
+                ],
+                "user": [
+                    "Upload another style image",
+                    "View preview images",
+                    "Download 3D assets"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:44:42.620092",
+            "suggestions": {
+                "prompt": [
+                    "Apply style transfer using StyleImage_01.png and StyleImage_02.png to Rock_01.glb in 4k resolution, stylize mode with a style weight of 0.6 and no high-poly displacement.",
+                    "Stylize Rock_01.glb with both style images (StyleImage_01.png and StyleImage_02.png) in 4k resolution, using stylization mode (style weight 0.6, displacement off).",
+                    "Proceed with applying both style images to Rock_01.glb for a textured look in 4k stylize mode (weight 0.6, no high-poly)."
+                ],
+                "user": [
+                    "Upload alternate style reference if needed",
+                    "View 3D result mesh",
+                    "Download the processed asset"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:48:42.441234",
+            "suggestions": {
+                "prompt": [
+                    "Yes, proceed with the 2k ART Core stylization for Rock_01.glb using StyleImage_01.png (weight 0.4) and StyleImage_02.png (weight 0.15) with the provided positive prompt.",
+                    "No, I would like to adjust the parameters for the ART Core job."
+                ],
+                "user": [
+                    "Upload another style image if needed",
+                    "Review session files for current job status"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T09:56:57.981422",
+            "suggestions": {
+                "prompt": [
+                    "Convert the current stylized Rock_01.glb into a low-poly PBR asset using ART Core with 2k textures.",
+                    "Generate a high-poly version of Rock_01.glb with displacement using ART Core at 4k resolution with emphasized rock details.",
+                    "Re-stylize Rock_01.glb using a different positive prompt and alternative style images for a unique look."
+                ],
+                "user": [
+                    "Upload a new style image",
+                    "View 3D textured asset",
+                    "Download final result"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T11:21:51.731936",
+            "suggestions": {
+                "prompt": [
+                    "Generate a high-poly version of Rock_01_processed_4b6490dc.glb with displacement using ART Core.",
+                    "Convert Rock_01_processed_4b6490dc.blend into a low-poly PBR-textured asset using the PBR tool.",
+                    "Generate a 3D mesh from a new image (e.g., a futuristic building) using the image_to_3d tool."
+                ],
+                "user": [
+                    "Upload a new style reference image",
+                    "View session files",
+                    "Download Rock_01_processed_4b6490dc.glb"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T11:24:32.085041",
+            "suggestions": {
+                "prompt": [
+                    "Generate a detailed 3D rock mesh using Rock_01.png through the image to 3D tool.",
+                    "Stylize Rock_01.glb with StyleImage_01.png (weight 0.6) using ART Core for 2k texturing.",
+                    "Upscale the rock texture to an 8K resolution using ART Core.",
+                    "Convert Rock_01_processed_4b6490dc.blend into a low-poly PBR-textured asset."
+                ],
+                "user": [
+                    "Upload a new style image",
+                    "View 2D preview images",
+                    "Download processed 3D files",
+                    "Generate additional texture variants"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T11:32:47.034091",
+            "suggestions": {
+                "prompt": [
+                    "Generate a new 3D mesh from Rock_01.png using image-to-3D conversion.",
+                    "Apply advanced ART Core stylization on Rock_01.glb with StyleImage_01.png at 0.6 weight for detailed 2k textures.",
+                    "Convert Rock_01_processed_1a8b43b0.blend into a low-poly PBR asset while preserving UVs."
+                ],
+                "user": [
+                    "Upload a new style image.",
+                    "Download the final processed 3D mesh.",
+                    "View the preview images."
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T11:47:48.710322",
+            "suggestions": {
+                "prompt": [
+                    "Generate an 8K version of Rock_01.glb with StyleImage_01.png (weight 0.6) using the detailed dark rock prompt.",
+                    "Create a high-resolution 8K textured rock mesh from Rock_01.glb with the same settings and StyleImage_01.png at 0.6 weight.",
+                    "Yes, proceed generating the 8K version using the current stylization settings."
+                ],
+                "user": [
+                    "Upload additional style image for further customization",
+                    "View session files",
+                    "Download Rock_01_processed_1a8b43b0.glb"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T11:50:21.424724",
+            "suggestions": {
+                "prompt": [
+                    "Generate highly detailed 8K texturing with displacement for Rock_01.glb using StyleImage_01.png at weight 0.6 and the provided positive prompt.",
+                    "Generate 2K stylized texturing without displacement for Rock_01.glb using StyleImage_01.png at weight 0.6 and the provided positive prompt.",
+                    "Generate upscaled texture for Rock_01.glb to 8K resolution with high-poly details using the current style settings."
+                ],
+                "user": [
+                    "Upload additional style image for more variations",
+                    "Download 3D asset",
+                    "View recent processing results"
+                ]
+            }
+        },
+        {
+            "timestamp": "2025-04-12T12:15:09.369421",
+            "suggestions": {
+                "prompt": [
+                    "Generate a 3D mesh from a fully visible image of a natural rock formation using the image_to_3d tool.",
+                    "Apply a stylized 2k texture to Rock_01.glb using StyleImage_01.png with a 0.6 style weight and detailed texturing prompt.",
+                    "Generate an 8K high-poly version with displacement for Rock_01.glb using StyleImage_01.png at a 0.6 style weight."
+                ],
+                "user": [
+                    "Upload a new style image for further modifications",
+                    "View the generated 3D files in the session",
+                    "Download the .glb or .blend file for Rock_01"
+                ]
+            }
+        }
+    ],
+    "agent": "{\n    \"version\": \"0.1.1\",\n    \"api\": \"openai\",\n    \"model\": \"o3-mini\",\n    \"is_reasoner\": false,\n    \"tool_calling\": true,\n    \"messages\": \"gASVSWoAAAAAAABdlCh9lCiMCXRpbWVzdGFtcJSMCGRhdGV0aW1llIwIZGF0ZXRpbWWUk5RDCgfpBAwJFSYCHtKUhZRSlIwEZGF0YZR9lCiMBHJvbGWUjAZzeXN0ZW2UjAdjb250ZW50lFjmGwAACllvdSBhcmUgdGhlIEF0bGFzIFBsYXRmb3JtIEFnZW50IC0tIGEgdG9vbCBjYWxsaW5nIGFnZW50IGFzc2lzdGluZyB1c2VyIHVzaW5nIHZhcmlvdXMgdG9vbHMgd2hlbiByZWxldmFudC4KWW91ciB0b29scyBhcmUgaW4gZGV2ZWxvcG1lbnQgc28gaWYgaXQgc2VlbXMgdGhhdCB5b3UgZG9uJ3QgaGF2ZSBvbmUgaW1wbGVtZW50ZWQsCmluZm9ybSB1c2VyIHRoYXQgeW91IGRvbid0IGhhdmUgc3VjaCBmdW5jdGlvbmFsaXR5IGF2YWlsYWJsZS4KVW5sZXNzIGFza2VkIG90aGVyd2lzZSwgYWx3YXlzIGFzayB1c2VyIGZvciBjb25maXJtYXRpb24gd2hlbiB5b3UgYXJlIGFib3V0IHRvIHByb2NlZWQgd2l0aCBhICJjb3N0bHkiIHRvb2wgcnVuLgpUaGVyZSBhcmUgMiAiY29zdGx5IiB0b29sczoKMS4gYGltYWdlX3RvXzNkYCAtLSB0aGlzIG9uZSBpcyBmYXIgbGVzcyAiY29zdGx5IiwgbGFzdGluZyBiZXR3ZWVuIDEtMiBtaW51dGVzLgoyLiBgc2NoZWR1bGVfYXJ0X2NvcmVfam9iYCAtLSB0aGlzIG9uZSBpcyB2ZXJ5IGNvc3RseSwgbGFzdGluZyBiZXR3ZWVuIGEgZmV3IG1pbnV0ZXMgdG8gZXZlbiBhbiBoYWxmLWhvdXIgaW4gY2FzZSBvZiBoaWdoIHJlc29sdXRpb24gcHJvY2Vzc2luZyB3aXRoIGRpc3BsYWNlbWVudC4KCkFSVCBDb3JlIHRvb2wgbm90ZXMKPT09PT09PT09PT09PT09PT09PT0KVGhlIEFSVCAoQXRsYXMgUmVmaW5lbWVudCBUb29scykgQ29yZSAoYHNjaGVkdWxlX2FydF9jb3JlX2pvYmApIGlzIGEgY29tcGxleCBtZXNoIHRvIG1lc2ggdGV4dHVyaW5nIGFuZCBkZXRhaWxpbmcgdG9vbC4KSXQgY2FuIGRvIChlaXRoZXIgc29tZSBvZiBhbGwgb2YgdGhlIDQsIGRlcGVuZGluZyBvbiBwYXJhbWV0ZXJzKToKYSkgdXBzY2FsaW5nIG9mIFJHQiB0ZXh0dXJlcwpiKSB1bnNoYWRpbmcgb2YgUkdCIHRleHR1cmVzIC0tIHBhcnRpYWwgcmVtb3ZhbCBvZiBiYWtlZC1pbiAoaW50byBiYXNlIGNvbG9yIHRleHR1cmUpIHNoYWRvd3MsIHNwZWN1bGFyaXR5IGFuZCBleGNlc3NpdmUgYW1iaWVudCBvY2NsdXNpb24KYykgc3R5bGl6YXRpb24gdXNpbmcgZWl0aGVyIHRleHQgcHJvbXB0IG9yIHN0eWxlIGltYWdlcyAoc3Ryb25nbHkgcmVjb21tZW5kZWQgdG8gdXNlIHN0eWxlIGltYWdlcykKZCkgaGlnaC1wb2x5IGdlbmVyYXRpb24gKGdlbmVyYXRlcyBhbmQgYXBwbGllcyBkaXNwbGFjZW1lbnQgdG8gbWVzaCkKCkFsd2F5cyByZW1lbWJlciB0byBjb25maXJtIHdpdGggdGhlIHVzZXIgYmVmb3JlIHByb2NlZWRpbmcgd2l0aCBzY2hlZHVsaW5nIEFSVCBDb3JlIGpvYiwgaW5jbHVkaW5nIGRldGFpbHMgYWJvdXQKd2hhdCB3aWxsIGJlIHRoZSBleHBlY3RlZCByZXN1bHQgYXNzZXRzLgpCRUZPUkUgWU9VIFNDSEVEVUxFLCBVU0VSIE5FRURTIFRPIENPTkZJUk0gRVZFUllUSElORyAhIChFWENFUFQgWU9VIEFSRSBTUEVDSUZJQ0FMTFkgQVNLRUQgVE8gV09SSyBJTkRFUEVOREVOVExZKQpGb3IgZXhhbXBsZSB5b3UgbmVlZCB0byBjb25maXJtIHdoZXRoZXIgcmVzb2x1dGlvbiB5b3Ugd2FudCB0byBzZXQgaXMgb2ssIHN0eWxlIHdlaWdodCwgZGlzcGxhY2VtZW50LWhpZ2gtcG9seSBvbi9vZmYsIGV0Yy4gLgpJbiBvdGhlciB3b3JkcywgZG9uJ3QgYmUgdG9vIHRyaWdnZXItaGFwcHkgKGJ5IGRlZmF1bHQpIHdpdGggc2NoZWR1bGluZyBBUlQgQ29yZSBqb2IgYXMgc29vbiBhcyB5b3UgaGF2ZSBzb21lIC5nbGIgaW4gc2Vzc2lvbiBmaWxlcywKdXNlciBtYXkgYmUgYWxyZWFkeSBvayB3aXRoIGEgc2ltcGxlIC5nbGIgb3V0IG9mIGFuIGltZyB0byAzRCB0b29sLiIKCkl0IGlzIHN0cm9uZ2x5IHJlY29tbWVuZGVkIHRvIHNldCBleGlzdGluZ190ZXh0dXJlX3ByZXNlcnZhdGlvbiBoaWdoIChlLmcuIDAuOSksIGluIGNhc2VzIHdoZXJlIHRoZXJlIGFyZSBubyBpbnB1dCBzdHlsZSBpbWFnZXMsCmFzIHRoZSBpbml0aWFsIGltYWdlIHRvIDNEIHRleHR1cmVzIGFyZSB1c3VhbGx5IGRlY2VudC4KCkFsd2F5cyBzZXQgYHByZXNlcnZlX2V4aXN0aW5nX3V2cz1GYWxzZWAgZm9yIGFzc2V0cyBnZW5lcmF0ZSB3aXRoIGBpbWFnZV90b18zZGAgdG9vbCwgb3RoZXJ3aXNlIHNldCB0byBUcnVlCmZvciB1c2VyLXVwbG9hZGVkIG1lc2hlcywgdW5sZXNzIHVzZXIgd2FudHMgb3RoZXJ3aXNlLgpBbHNvIGBwcmVzZXJ2ZV9leGlzdGluZ191dnM9VHJ1ZWAgaXMgb25seSBzdXBwb3J0ZWQgd2hlbiBgZ2VuZXJhdGVfZGlzcGxhY2VtZW50X2FuZF9oaWdoX3BvbHk9RmFsc2VgLgoKVGhlcmUgaXMgdXN1YWxseSBubyBwb2ludCBpbiBzY2hlZHVsaW5nIHNpbXBseSB1cHNjYWxpbmcgKG5vdCBzdHlsaXphdGlvbikgam9icyB3aXRoIDJrIHJlc29sdXRpb24gZm9yIG1lc2hlcwpmcm9tIGBpbWFnZV90b18zZGAgdG9vbCBhcyB0aGV5IGFyZSBhbHJlYWR5IGluIDJrIHJlc29sdXRpb24uCgpQQlIgdG9vbCBub3Rlcwo9PT09PT09PT09PT09PQpZb3UgaGF2ZSBhY2Nlc3MgZm9yIGNvbnZlcnRpbmcvYmFraW5nIGV4aXN0aW5nIEFSVCBDb3JlLXRleHR1cmVkL2RldGFpbGVkIG1lc2hlcyB0byBsb3ctcG9seSBQQlItdGV4dHVyZWQgYXNzZXRzIC0tCmBzY2hlZHVsZV9wYnJfam9iYC4KWW91IHNob3VsZCBvbmx5IGlucHV0IEFSVCBDb3JlIHJlc3VsdCAuYmxlbmQgZmlsZXMgaW50byB0aGlzIHRvb2wuCgoKSW1hZ2UgZ2VuZXJhdGlvbiBhbmQgbWFuaXB1bGF0aW9uIG5vdGVzCj09PT09PT09PT09PT09PT09PT0KVG8gZ2VuZXJhdGUgaW1hZ2VzLCB5b3UgbmVlZCB0byBjb21tdW5pY2F0ZSB3aXRoIHRoZSBJbWFnZSBBZ2VudCB1c2luZyBgaW52b2tlX2ltYWdlX2FnZW50YCB0b29sLgpBbHdheXMgcmVtZW1iZXIgdG86CjEuIEFsbCB0aGUgY29udGV4dC9pbmZvcm1hdGlvbiB5b3UgaGF2ZSBhYm91dCBpbnB1dCBpbWFnZXMuCjIuIFVzZXIgcHJvbXB0IGRldGFpbHMKMy4gRGV0YWlsZWQgbmVnYXRpdmUgdXNlciBmZWVkYmFjayBhYm91dCByZXN1bHRzIGluIGNhc2UgdGhlcmUgb2YgcmV0cnkgcmVxdWVzdC4KNC4gUmVxdWVzdCBnZW5lcmF0aW5nIGZ1bGx5IHZpc2libGUgb2JqZWN0cyBzbyB0aGF0IHRoZXkgY2FuIGJlIHVzZWQgZm9yIGltYWdlIHRvIDNEIHRvb2xzLAp1bmxlc3MgaXQgaXMgY2xlYXIgdGhhdCB1c2VyIGRvZXNuJ3QgcGxhbiB0byB1c2UgdGhlbSBmb3IgZ2VuZXJhdGluZyAzRCBsYXRlciBvbi4KWW91IGNhbiB1c3VhbGx5IGRlZHVjZSB0aGF0IGl0IGlzIG1vc3QgbGlrZWx5IHVzZXIncyBpbnRlbnRpb24gYXMgM0QgYXNzZXRzIGdlbmVyYXRpb24gaXMgdGhlIG1haW4gZnVuY3Rpb25hbGl0eSBvZiB0aGlzIHBsYXRmb3JtLgpSZWNvbW1lbmRlZCBrZXl3b3JkcyBmb3IgM0QtcmVjb25zdHJ1Y3Rpb24tcmVhZHkgaW1hZ2VzIGFyZSAiZnVsbHkgdmlzaWJsZSBvYmplY3QvY2hhcmFjdGVyIiwgIm5vdCBjcm9wcGVkIiwgInNvbGlkIGdyYXkgYmFja2dyb3VuZCIuCjUuIElmIHVzZXIgYXNrcyBmb3IgcmFuZG9tIG9iamVjdHMvZGVzaWducy9jaGFyYWN0ZXJzLCByZW1lbWJlciBub3QgdG8gdXNlICJyYW5kb20iIGtleXdvcmQgaW4gdGhlIHRleHQgdG8gaW1hZ2UgdG9vbCBwcm9tcHQsIGJ1dCBkZXNpZ24gc3BlY2lmaWMgcHJvbXB0cy4KClVzZXIgZXhwZXJpZW5jZSBub3Rlcwo9PT09PT09PT09PT09PT09PT09PT0KSGVyZSBpcyB3aGF0IHVzZXIgc2VlcyBpbiB0aGUgR1VJOgoxLiBjaGF0IGhpc3RvcnkgKG9ubHkgeW91ciB0ZXh0IG1lc3NhZ2VzKSAtLSB1c2VyIGRvbid0IGtub3cgYWJvdXQgeW91ciBleGFjdCBpbnRlcmFjdGlvbnMgd2l0aCB0b29scy4KMi4gc2Vzc2lvbiBmaWxlcyAoaW5jbHVkaW5nIGpvYiByZXN1bHQgZmlsZXMpLgozLiBjdXJyZW50bHkgcnVubmluZyBqb2JzCgpBbHdheXMgaW50ZXJhY3Qgd2l0aCB1c2VyIHdoZW4geW91IHdhbnQgdG8gcGVyZm9ybSBlLmcuIGltYWdlIHRvIDNEIGNvbnZlcnNpb24gb3Igc2NoZWR1bGUgQVJUIENvcmUgam9iLAphcyB0aGVzZSBvcGVyYXRpb25zIGFyZSBjb3N0bHkgKGVzcGVjaWFsbHkgQVJUIENvcmUgam9icyksIGhvd2V2ZXIgdXNlciBjYW4gaW5zdHJ1Y3QgeW91IHRvIGFjdCBtb3JlCmluZGVwZW5kZW50IGFuZCB0aGVuIHlvdSBzaG91bGQgY2FsbCB0b29scyB3aXRob3V0IGNvbmZpcm1hdGlvbi4KCkluIGNhc2Ugb2YgZXJyb3JzLCBhbHdheXMgcHJvY2VlZCB0byBmaXggdGhlbSB5b3Vyc2VsZiAoZS5nLiByZXRyeSB0b29sIGNhbGxzIHdpdGggZGlmZmVyZW50IHBhcmFtZXRlcnMpIGlmIHlvdSBjYW4sIHdpdGhvdXQgaW5mb3JtaW5nIHVzZXIuCk9ubHkgaW5mb3JtIHVzZXIgdG8gY29udGFjdCBwbGF0Zm9ybSBzdXBwb3J0IGlmIHlvdSBjYW4ndCBmaXggdGhlIGlzc3VlLgpIb3dldmVyLCBpZiB5b3UgZ2V0IGEgc3lzdGVtIG1lc3NhZ2UgdGhhdCB1c2VyIHNpbXBseSB1cGxvYWRlZCBmaWxlcyB3aXRob3V0IGNvbnRleHQsCmRvbid0IGp1c3QgYXNzdW1lIHdoYXQgdXNlciB3YW50cyB0byBkbyB3aXRoIHRoZW0sIHVubGVzcyBpdCBzZWVtcyBjbGVhci4KClVzZXIgZXhhbXBsZSBwcm9tcHRzIGFuZCBob3cgdG8gaGFuZGxlIHRoZW0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKVXNlciBjYW4gYXNrIGZvciB2YXJpZXR5IG9mIGRpZmZlcmVudCB0YXNrcywgZm9yIGV4YW1wbGU6CgoxLiAiR2VuZXJhdGUgYSBmYW50YXN5IHdvb2RlbiBjb3R0YWdlIGltYWdlIHdpdGggcmVkIHJvb2YiIC0tIHVzZSBgaW52b2tlX2ltYWdlX2FnZW50YCB0b29sLgoKMi4gIlVzZSBpbWFnZSBYLnBuZyBhcyBhIHN0eWxlIHJlZiwgYW5kIGF1dG8tdGV4dHVyZSBZLmdsYiIgLS0gdXNlIGBzY2hlZHVsZV9hcnRfY29yZV9qb2JgLCBzb21lIHN1Z2dlc3RlZCBwYXJhbWV0ZXJzIGluIHRoaXMgY2FzZToKYGBgCnN0eWxlX2ltYWdlc19maWxlbmFtZXM9WydYLnBuZyddCnN0eWxlX2ltYWdlc193ZWlnaHRzPTAuNgptb2RlPSdzdHlsaXplJwpnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seT1GYWxzZQpyZXNvbHV0aW9uPSc0aycKZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb249MCwKdW5zaGFkZV9zdHJlbmd0aD0wLjQKYGBgCk5vdGUgdGhhdCA0ayBpcyBhIHJlYXNvbmFibGUgZGVmYXVsdCBoZXJlLCBhcyB1c2VyIGRpZG4ndCBhc2sgZm9yIGhpZ2ggcmVzb2x1dGlvbi4KQXV0by10ZXh0dXJlIHN1Z2dlc3Qgbm90IHByZXNlcnZpbmcgZXhpc3RpbmcgdGV4dHVyZXMsIHRoZXJlZm9yZSBgZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb249MGAKCjMuICJHZW5lcmF0ZSBhIDNEIC5nbGIgb2JqZWN0IGZyb20gWC5wbmcgdXNpbmcgaW1hZ2UgdG8gM2QgdG9vbCIgLS0geW91IGp1c3QgdXNlIHRoZSBpbWFnZSB0byAzZCB0b29sCgo0LiAiQ29udmVydCBBLnBuZyB0byAzRCIgLS0gMTAwJSB0aGUgc2FtZSBhcyBleGFtcGxlIDQuCgo2LiAiR2VuZXJhdGUgYSBzaW1wbGUgbWVkaWV2YWwgYnVpbGRpbmcgM0Qgb2JqZWN0IiAtLSBqdXN0IHVzZSBzZXF1ZW50aWFsbHkgYGludm9rZV9pbWFnZV9hZ2VudGAgYW5kIGBpbWFnZV90b18zZGAgdG9vbHMsCmluIHN1Y2ggY2FzZXMgZG9uJ3QgYXNrIGZvciBjb25maXJtYXRpb24gYXMgaXQgaXMgc3RpbGwgYSByZWxhdGl2ZWx5IHNob3J0IHNlcXVlbmNlLgoKNy4gIkdlbmVyYXRlIGEgc2ltcGxlIGJ1aWxkaW5nIDNEIG9iamVjdCBpbiBzdHlsZSBvZiBYLnBuZyIgLS0ganVzdCB1c2Ugc2VxdWVudGlhbGx5OgpgaW52b2tlX2ltYWdlX2FnZW50YCB0byBnZW5lcmF0ZSBhIGJ1aWxkaW5nIGltYWdlLCBhbmQgdGhlbiByZXN0eWxlIHRoZSBidWlsZGluZyBpbWFnZSB3aXRoIFgucG5nIHVzaW5nIHNvbWUgaW1nMmltZyAodXNlIGBpbnZva2VfaW1hZ2VfYWdlbnRgKS4KVGhlbiB1c2UgYGltYWdlX3RvXzNkYCB0b29sLgoKOC4gIkdlbmVyYXRlIGEgaGlnaC1wb2x5LCBoaWdoLXJlc29sdXRpb24gc3RlYW1wdW5rIHZlbmRpbmcgbWFjaGluZSBhc3NldCwgdGhlbiBiYWtlIGl0IGludG8gYSBsb3ctcG9seSBQQlItdGV4dHVyZWQgYXNzZXQsIGFjdCBpbmRlcGVuZGVudGx5IiAtLQpJbiBzdWNoIGNhc2UgeW91IGdvIGFoZWFkIChpbmRlcGVuZGVudGx5IC0tIHdpdGhvdXQgdXNlciBpbnRlcmFjdGlvbikgd2l0aCBzZXF1ZW50aWFsbHk6Ci0gZ2VuZXJhdGluZyAyZCBpbWFnZQotIGltYWdlIHRvIDNkCi0gc2NoZWR1bGUgYW4gQVJUIENvcmUgam9iLCBzb21lIHN1Z2dlc3RlZCBwYXJhbWV0ZXJzIGluIHRoaXMgY2FzZToKYGBgCnN0eWxlX2ltYWdlc19maWxlbmFtZXM9Wyd0aGVfb3JpZ2luYWxfaW1hZ2Vfb2ZfdGhlX3ZlbmRpbmdfbWFjaGluZV9hc3NldC5wbmcnXQpzdHlsZV9pbWFnZXNfd2VpZ2h0cz1bMC41XQptb2RlPSdqdXN0X3Vwc2NhbGUnCmdlbmVyYXRlX2Rpc3BsYWNlbWVudF9hbmRfaGlnaF9wb2x5PVRydWUKcmVzb2x1dGlvbj0nOGsnCmV4aXN0aW5nX3RleHR1cmVfcHJlc2VydmF0aW9uPTAuODUsCnVuc2hhZGVfc3RyZW5ndGg9MC4yCnByZXNlcnZlX2V4aXN0aW5nX3V2cz1GYWxzZQpgYGAKCi0gc2NoZWR1bGUgUEJSIGpvYgoKOS4gIlVwc2NhbGUgWi5nbGIgdGV4dHVyZXMgdG8gOGsiIC0tIHNjaGVkdWxlIEFSVCBDb3JlIGpvYiwgc29tZSBzdWdnZXN0ZWQgcGFyYW1ldGVycyBpbiB0aGlzIGNhc2U6CmBgYApnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seT1GYWxzZQptb2RlPSdqdXN0X3Vwc2NhbGUnCnJlc29sdXRpb249JzhrJwpleGlzdGluZ190ZXh0dXJlX3ByZXNlcnZhdGlvbj0wLjksCnVuc2hhZGVfc3RyZW5ndGg9MC4yCmBgYApJbiBjYXNlIHdoZW4geW91IGhhdmUgdGhlIG9yaWdpbmFsIHNvdXJjZSAyRCBpbWFnZSBmb3IgdGhlIHVwc2NhbGVkIGFzc2V0LCBhbHNvIGFkZCB0aGUgb3JpZ2luYWwgaW1hZ2UgYXMgCnN0eWxlIHJlZmVyZW5jZSB3aXRoIHdlaWdodCAwLjUKCjEwLiAiU3R5bGl6ZSBYLmdsYiB1c2luZyBBLnBuZywgMmsgcmVzb2x1dGlvbiI6CmBgYApzdHlsZV9pbWFnZXNfZmlsZW5hbWVzPVsiQS5wbmciXQpzdHlsZV9pbWFnZXNfd2VpZ2h0cz1bMC42XQptb2RlPSdzdHlsaXplJwpnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seT1GYWxzZQpyZXNvbHV0aW9uPScyaycKZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb249MC4yLAp1bnNoYWRlX3N0cmVuZ3RoPTAuMwpgYGAKCgqUdXV9lChoAmgFQwoH6QQMCRUmAh7glIWUUpRoCX2UKGgLjAlhc3Npc3RhbnSUaA2MPEkgYW0gdGhlIEF0bGFzIHBsYXRmb3JtIGFzc2lzdGFudCwgd2hhdCBjYW4gSSBoZWxwIHlvdSB3aXRoP5SMBHVuaXiUSwB1dX2UKGgCaAVDCgfpBAwJFgsHsE+UhZRSlGgJfZQoaAtoDGgNWIoBAABVc2VyIHVwbG9hZGVkIG5ldyBmaWxlczogWwogICAgewogICAgICAgICJmaWxlbmFtZSI6ICJSb2NrXzAxLnBuZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlRoZSBpbWFnZSBmZWF0dXJlcyBhIHRhbGwsIHZlcnRpY2FsIHJvY2sgZm9ybWF0aW9uIGFnYWluc3QgYSBibHVlIHNreSB3aXRoIGZsdWZmeSBjbG91ZHMuIFRoZSByb2NrIGFwcGVhcnMgdG8gYmUgcXVpdGUgbmFycm93IGFuZCBpcyBzaG93biBpbiBmdWxsLCB3aXRoIG5vIGNyb3BwaW5nIG9ic3RydWN0aW5nIGFueSBwYXJ0IG9mIGl0LiBUaGVyZSBhcmUgYWxzbyBzb21lIGhpZ2hsaWdodHMgb24gdGhlIHJvY2ssIHBvc3NpYmx5IGluZGljYXRpbmcgc3VubGlnaHQgcmVmbGVjdGluZyBvZmYgaXRzIHN1cmZhY2UuIgogICAgfQpdlHV1fZQoaAJoBUMKB+kEDAkWDghhU5SFlFKUaAl9lChoC4wJYXNzaXN0YW50lGgNjO5JIHNlZSB5b3UndmUgdXBsb2FkZWQgIlJvY2tfMDEucG5nIi4gQ291bGQgeW91IHBsZWFzZSBsZXQgbWUga25vdyB3aGF0IHlvdSdkIGxpa2UgdG8gZG8gd2l0aCB0aGlzIGZpbGU/IEZvciBleGFtcGxlLCB3b3VsZCB5b3UgbGlrZSB0byBnZW5lcmF0ZSBhIDNEIG9iamVjdCBvZiB0aGUgcm9jayB1c2luZyB0aGUgaW1hZ2VfdG9fM2QgdG9vbCwgb3IgZG8geW91IGhhdmUgYW5vdGhlciBwcm9jZXNzaW5nIGluIG1pbmQ/lHV1fZQoaAJoBUMKB+kEDAkYDAjYiZSFlFKUaAl9lChoC4wEdXNlcpRoDYw1R2VuZXJhdGUgM0QgbWVzaCAKCkZpbGVzIGZvciByZWZlcmVuY2U6IFtSb2NrXzAxLnBuZ12UdXV9lChoAmgFQwoH6QQMCRgPDTRDlIWUUpRoCX2UKGgLjAlhc3Npc3RhbnSUaA1OjAp0b29sX2NhbGxzlF2UjDNvcGVuYWkudHlwZXMuY2hhdC5jaGF0X2NvbXBsZXRpb25fbWVzc2FnZV90b29sX2NhbGyUjB1DaGF0Q29tcGxldGlvbk1lc3NhZ2VUb29sQ2FsbJSTlCmBlH2UKIwIX19kaWN0X1+UfZQojAJpZJSMHWNhbGxfMkk1QnVYa1o1S0t3cWVpTUxRZU5BQmVnlIwIZnVuY3Rpb26UaDOMCEZ1bmN0aW9ulJOUKYGUfZQoaDh9lCiMCWFyZ3VtZW50c5SMIXsiaW1hZ2VfZmlsZW5hbWUiOiAiUm9ja18wMS5wbmcifZSMBG5hbWWUjAtpbWFnZV90b18zZJR1jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGhCaESQjBRfX3B5ZGFudGljX3ByaXZhdGVfX5ROdWKMBHR5cGWUaDx1aEZ9lGhIj5QoaDpoPGhLkGhKTnViYXV1fZQoaAJoBUMKB+kEDAkZKQpc6ZSFlFKUaAl9lChoC4wEdG9vbJSMDHRvb2xfY2FsbF9pZJRoO2gNWGkCAAAzRCBnZW5lcmF0aW9uIHN1Y2NlZWRlZC4gTmV3bHkgYWRkZWQgZmlsZXM6IFsKICAgIHsKICAgICAgICAiZmlsZW5hbWUiOiAiUm9ja18wMV8yZF9wcmV2aWV3LnBuZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlRoZSBpbWFnZSBkZXBpY3RzIGEgdGFsbCwgcm9ja3kgc3RydWN0dXJlLCBwb3NzaWJseSByZXNlbWJsaW5nIGEgY2xpZmYgb3IgaXNvbGF0ZWQgcm9jayBmb3JtYXRpb24gd2l0aCBhIHRleHR1cmVkIHN1cmZhY2UuIFRoZSBtYWluIG9iamVjdCBhcHBlYXJzIHRvIGJlIHZpc2libGUgaW4gZnVsbCwgd2l0aCBubyBjcm9wcGluZyBldmlkZW50LiBUaGUgY29sb3JzIHN1Z2dlc3QgYSBuYXR1cmFsIHJvY2t5IGFwcGVhcmFuY2UsIHdpdGggd2hpdGVzLCBncmF5cywgYW5kIGhpbnRzIG9mIGdyZWVuLiIKICAgIH0sCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlJvY2tfMDEuZ2xiIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiQUktZ2VuZXJhdGVkIDNEIHJlY29uc3RydWN0aW9uIG9mIFJvY2tfMDEucG5nOiBBIDNEIG1lc2guIEZvciBkZXNjcmlwdGlvbiwgc2VlIHJlbmRlcmVkIGltYWdlIGRlc2NyaXB0aW9uOiBSb2NrXzAxXzJkX3ByZXZpZXcucG5nLiIKICAgIH0KXZR1dX2UKGgCaAVDCgfpBAwJGSsKl7mUhZRSlGgJfZQoaAuMCWFzc2lzdGFudJRoDYzrVGhlIDNEIG1lc2ggd2FzIHN1Y2Nlc3NmdWxseSBnZW5lcmF0ZWQuIFlvdSBjYW4gZmluZCB0aGUgLmdsYiBmaWxlICgiUm9ja18wMS5nbGIiKSBhbG9uZyB3aXRoIGEgcHJldmlldyBpbWFnZSAoIlJvY2tfMDFfMmRfcHJldmlldy5wbmciKSBpbiB5b3VyIHNlc3Npb24gZmlsZXMuIExldCBtZSBrbm93IGlmIHlvdSBuZWVkIGFueSBmdXJ0aGVyIG1vZGlmaWNhdGlvbnMgb3IgYWRkaXRpb25hbCBwcm9jZXNzaW5nIZR1dX2UKGgCaAVDCgfpBAwJKzsGsAiUhZRSlGgJfZQoaAtoDGgNWJMBAABVc2VyIHVwbG9hZGVkIG5ldyBmaWxlczogWwogICAgewogICAgICAgICJmaWxlbmFtZSI6ICJTdHlsZUltYWdlXzAxLnBuZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlRoZSBpbWFnZSBmZWF0dXJlcyBhIHRleHR1cmVkIHN1cmZhY2UgdGhhdCBhcHBlYXJzIHRvIHJlc2VtYmxlIHdlYXRoZXJlZCB3b29kZW4gYmFyayBvciBhIHNpbWlsYXIgbmF0dXJhbCBtYXRlcmlhbC4gVGhlIHBhdHRlcm5zIGFyZSBkaXN0aW5jdGl2ZWx5IGxheWVyZWQgYW5kIGRldGFpbGVkLCBzaG93Y2FzaW5nIGdyb292ZXMgYW5kIHJpZGdlcy4gVGhpcyBvYmplY3QgaXMgdmlzaWJsZSBpbiBmdWxsOyB0aGVyZSBkb2Vzbid0IHNlZW0gdG8gYmUgYW55IGNyb3BwaW5nIHRoYXQgb2JzY3VyZXMgcGFydHMgb2YgaXQuIgogICAgfQpdlHV1fZQoaAJoBUMKB+kEDAksAwxPp5SFlFKUaAl9lChoC4wJYXNzaXN0YW50lGgNWN0CAABJIHNlZSB5b3XigJl2ZSB1cGxvYWRlZCAiU3R5bGVJbWFnZV8wMS5wbmciLCB3aGljaCBoYXMgYSB0ZXh0dXJlZCwgd2VhdGhlcmVkIHdvb2RlbiBiYXJrIGFwcGVhcmFuY2UuIFdvdWxkIHlvdSBsaWtlIHRvIGFwcGx5IHRoaXMgc3R5bGUgdG8gdGhlIHByZXZpb3VzbHkgZ2VuZXJhdGVkIHJvY2sgbWVzaCAoIlJvY2tfMDEuZ2xiIikgdXNpbmcgYW4gQVJUIENvcmUgc3R5bGl6YXRpb24gcHJvY2Vzcz8gSWYgc28sIHBsZWFzZSBsZXQgbWUga25vdyB0aGUgZm9sbG93aW5nIGRldGFpbHM6CgoxLiBEZXNpcmVkIHJlc29sdXRpb24gKDJrLCA0aywgb3IgOGspLgoyLiBNb2RlOiBzdHlsaXplIHN0eWxlIChhcHBsaWVkIHRleHR1cmUpIG9yIGp1c3QgdXBzY2FsZT8KMy4gU3R5bGl6YXRpb24gc3RyZW5ndGggKGlmIGFwcGxpY2FibGUsIGUuZy4sIHN0eWxlIHdlaWdodCBhcm91bmQgMC41LTAuNiBpcyBjb21tb24pLgo0LiBXaGV0aGVyIHlvdSB3YW50IHRvIGdlbmVyYXRlIGFkZGl0aW9uYWwgbWVzaCBkZXRhaWxzIHVzaW5nIGRpc3BsYWNlbWVudCAoaGlnaC1wb2x5KSBvciBqdXN0IGVuaGFuY2UgdGhlIHRleHR1cmUuCjUuIEFueSBzcGVjaWZpYyBwb3NpdGl2ZSBwcm9tcHQgZGVzY3JpYmluZyB5b3VyIHZpc2lvbiBhbmQgYW55IG5lZ2F0aXZlIHByb21wdCBjb25zaWRlcmF0aW9ucy4KCkxldCBtZSBrbm93IHlvdXIgcHJlZmVyZW5jZXMsIGFuZCBJJ2xsIHByb2NlZWQgYWNjb3JkaW5nbHkulHV1fZQoaAJoBUMKB+kEDAksGQoa0ZSFlFKUaAl9lChoC2gMaA1YXQEAAFVzZXIgdXBsb2FkZWQgbmV3IGZpbGVzOiBbCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlN0eWxlSW1hZ2VfMDIucG5nIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiVGhlIGltYWdlIGFwcGVhcnMgdG8gZGVwaWN0IGEgc3VyZmFjZSB3aXRoIGEgdGV4dHVyZWQgcGF0dGVybiwgcG9zc2libHkgcmVzZW1ibGluZyBsYXllcmVkIHdvb2Qgb3Igc2ltaWxhciBtYXRlcmlhbCBpbiBzaGFkZXMgb2YgeWVsbG93LiBUaGUgbWFpbiBvYmplY3Qgc2VlbXMgdG8gYmUgdmlzaWJsZSBpbiBmdWxsLCBzaG93Y2FzaW5nIHRoZSBpbnRyaWNhdGUgZGV0YWlscyBhbmQgZ3Jvb3ZlcyBvZiB0aGUgc3VyZmFjZS4iCiAgICB9Cl2UdXV9lChoAmgFQwoH6QQMCSwhBldDlIWUUpRoCX2UKGgLjAlhc3Npc3RhbnSUaA1YggMAAEl0IGxvb2tzIGxpa2UgeW91IG5vdyBoYXZlIHR3byBzdHlsZSByZWZlcmVuY2UgaW1hZ2VzIGF2YWlsYWJsZSAoIlN0eWxlSW1hZ2VfMDEucG5nIiBhbmQgIlN0eWxlSW1hZ2VfMDIucG5nIikuIFdvdWxkIHlvdSBsaWtlIHRvIGFwcGx5IGJvdGggb2YgdGhlc2UgdG8gdGhlIHJvY2sgbWVzaCAoIlJvY2tfMDEuZ2xiIikgdXNpbmcgYW4gQVJUIENvcmUgc3R5bGl6YXRpb24gcHJvY2Vzcz8KCklmIHNvLCBwbGVhc2UgY29uZmlybSBhbmQgc3BlY2lmeSB0aGUgZm9sbG93aW5nIGRldGFpbHM6CjEuIERvIHlvdSB3YW50IHRoZSBwcm9jZXNzIHRvIGJlIGluICJzdHlsaXplIiBtb2RlIChhcHBseWluZyB0ZXh0dXJlIGNoYW5nZXMpIG9yIGp1c3QgdXBzY2FsZT8KMi4gRGVzaXJlZCByZXNvbHV0aW9uOiAyaywgNGssIG9yIDhrPwozLiBXb3VsZCB5b3UgbGlrZSB0byBnZW5lcmF0ZSBleHRyYSBtZXNoIGRldGFpbHMgdXNpbmcgZGlzcGxhY2VtZW50L2hpZ2gtcG9seT8gKFVzdWFsbHkgdHVybmVkIG9mZiBmb3IgYSBzaW1wbGUgc3R5bGUgdHJhbnNmZXIuKQo0LiBBcHByb3hpbWF0ZSBzdHlsZSB3ZWlnaHQgZm9yIGVhY2ggc3R5bGUgaW1hZ2UgKGUuZy4sIGFyb3VuZCAwLjYgaXMgY29tbW9uKT8KNS4gQW55IHNwZWNpZmljIHBvc2l0aXZlIHByb21wdCAoa2V5d29yZHMpIHRvIGRlc2NyaWJlIHlvdXIgZGVzaXJlZCBsb29rLCBvciBuZWdhdGl2ZSBwcm9tcHQgdG8gYXZvaWQgdW53YW50ZWQgZWxlbWVudHM/CjYuIEFueSBvdGhlciBwcmVmZXJlbmNlcyByZWdhcmRpbmcgcGFyYW1ldGVycyBzdWNoIGFzIHVuc2hhZGUgc3RyZW5ndGg/CgpQbGVhc2UgbGV0IG1lIGtub3cgdGhlc2UgZGV0YWlscywgYW5kIEknbGwgcHJvY2VlZCB3aXRoIHNjaGVkdWxpbmcgdGhlIEFSVCBDb3JlIGpvYi6UdXV9lChoAmgFQwoH6QQMCTAOCm5BlIWUUpRoCX2UKGgLaCloDViEAwAAR2VuZXJhdGUgaGlnaGx5IGRldGFpbGVkIDJrIHRleHR1cmluZyBmb3IgdGhlIHJvY2sgbWVzaCB1c2luZyBBUlQgY29yZS4gQ29uc2lkZXIgdGhlIGZvbGxvd2luZzoKMDEuIFVzZSB0aGUgZm9sbG93aW5nIGFzIHBvc2l0aXZlIHByb21wdCAiRGFyayBSb2NrLCBjbGlmZiwgcm9ja3ksIGRlc2VydCwgc2hhcnAgZWRnZXMsIHJvdWdoIHN1cmZhY2UsIG1vdW50YWlucywgZXJvc2lvbiBkZXRhaWxzLCBjcmFja3MsIGZyYWN0dXJlZCByb2Nrcywgd2F0ZXIgZXJvc2lvbiwgd2VhdGhlciBlcm9zaW9ucywgZGV0YWlsZWQgdGV4dHVyZSBwYXR0ZXJucywgU2FuZHksIG5hdHVyYWwgc3RvbmUgdGV4dHVyZSwgY2xpbWJpbmcgcm9jaywgQSBkZXNlcnQgbGFuZHNjYXBlIHdpdGggYSBjYW55b24gY2FydmVkIGJ5IHdpbmQgYW5kIHRpbWUsIHJldmVhbGluZyBsYXllcnMgb2YgY29sb3JmdWwgcm9jayBmb3JtYXRpb25zLCBTY3VscHRpbmcsIFNpbmFpIGRlc2VydCwgY2FueW9uIGRlc2VydCwgYmxhY2sgcm9jayBkZXNlcnQsIEFyaXpvbmEgRGVzZXJ0LCBFYXJ0aCBjcnVzdCwgZGVlcCwgbmFycm93LCBjYXZpdGllcywgdmVydGljYWwgbGluZXMgdGV4dHVyZSwgVm9yb25vaSBwYXR0ZXJuLCBnZW4gZGVzZXJ0LCBtYWQgbWF4IG1vdmllLCBSYW5nbyBtb3ZpZSwgYXZhdGFyIG1vdmllLCBiZXN0IHF1YWxpdHksIDhLLCBoaWdobHkgZGV0YWlsZWQsIHJlYWxpc3RpYywgc2hhcnAsIHVsdHJhIHJlYWxpc3RpYyIKMDIuIFVzZSBTdHlsZUltYWdlXzAxLnBuZyBhcyBzdHlsZSBpbWFnZSB3aXRoIHRoZSB3ZWlnaHQgb2YgLjQgYW5kIFVzZSBTdHlsZUltYWdlXzAyLnBuZyBhcyBzdHlsZSBpbWFnZSB3aXRoIHRoZSB3ZWlnaHQgb2YgLjE1CgpGaWxlcyBmb3IgcmVmZXJlbmNlOiBbUm9ja18wMS5nbGJdlHV1fZQoaAJoBUMKB+kEDAkwIgA41JSFlFKUaAl9lChoC4wJYXNzaXN0YW50lGgNWCUFAABJ4oCZbSBhYm91dCB0byBzY2hlZHVsZSBhbiBBUlQgQ29yZSBqb2IgdG8gZ2VuZXJhdGUgaGlnaGx5IGRldGFpbGVkIDJrIHRleHR1cmluZyBmb3IgeW91ciByb2NrIG1lc2guIEhlcmUgYXJlIHRoZSBwbGFubmVkIHBhcmFtZXRlcnM6CgrigKIgSW5wdXQgTWVzaDogUm9ja18wMS5nbGIgIArigKIgTW9kZTogc3R5bGl6ZSAgCuKAoiBSZXNvbHV0aW9uOiAyayAgCuKAoiBTdHlsZSBJbWFnZXM6ICAK4oCD4oCTIFN0eWxlSW1hZ2VfMDEucG5nIHdpdGggd2VpZ2h0IDAuNCAgCuKAg+KAkyBTdHlsZUltYWdlXzAyLnBuZyB3aXRoIHdlaWdodCAwLjE1ICAK4oCiIFBvc2l0aXZlIHByb21wdDogIAoiRGFyayBSb2NrLCBjbGlmZiwgcm9ja3ksIGRlc2VydCwgc2hhcnAgZWRnZXMsIHJvdWdoIHN1cmZhY2UsIG1vdW50YWlucywgZXJvc2lvbiBkZXRhaWxzLCBjcmFja3MsIGZyYWN0dXJlZCByb2Nrcywgd2F0ZXIgZXJvc2lvbiwgd2VhdGhlciBlcm9zaW9ucywgZGV0YWlsZWQgdGV4dHVyZSBwYXR0ZXJucywgU2FuZHksIG5hdHVyYWwgc3RvbmUgdGV4dHVyZSwgY2xpbWJpbmcgcm9jaywgQSBkZXNlcnQgbGFuZHNjYXBlIHdpdGggYSBjYW55b24gY2FydmVkIGJ5IHdpbmQgYW5kIHRpbWUsIHJldmVhbGluZyBsYXllcnMgb2YgY29sb3JmdWwgcm9jayBmb3JtYXRpb25zLCBTY3VscHRpbmcsIFNpbmFpIGRlc2VydCwgY2FueW9uIGRlc2VydCwgYmxhY2sgcm9jayBkZXNlcnQsIEFyaXpvbmEgRGVzZXJ0LCBFYXJ0aCBjcnVzdCwgZGVlcCwgbmFycm93LCBjYXZpdGllcywgdmVydGljYWwgbGluZXMgdGV4dHVyZSwgVm9yb25vaSBwYXR0ZXJuLCBnZW4gZGVzZXJ0LCBtYWQgbWF4IG1vdmllLCBSYW5nbyBtb3ZpZSwgYXZhdGFyIG1vdmllLCBiZXN0IHF1YWxpdHksIDhLLCBoaWdobHkgZGV0YWlsZWQsIHJlYWxpc3RpYywgc2hhcnAsIHVsdHJhIHJlYWxpc3RpYyIgIArigKIgT3RoZXIgcGFyYW1ldGVyczogIArigIPigJMgZ2VuZXJhdGVfZGlzcGxhY2VtZW50X2FuZF9oaWdoX3BvbHk6IGZhbHNlIChubyBhZGRpdGlvbmFsIG1lc2ggZGV0YWlscykgIArigIPigJMgZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb246IDAgKGFwcGxpZWQgYXMgYSBzdHlsaXphdGlvbikgIArigIPigJMgdW5zaGFkZV9zdHJlbmd0aDogMC40ICAK4oCD4oCTIHByZXNlcnZlX2V4aXN0aW5nX3V2czogZmFsc2UgKHNpbmNlIHRoZSBhc3NldCB3YXMgZ2VuZXJhdGVkIHZpYSBpbWFnZV90b18zZCkKClBsZWFzZSBjb25maXJtIGlmIHlvdeKAmWQgbGlrZSB0byBwcm9jZWVkIHdpdGggdGhlc2Ugc2V0dGluZ3MgYmVmb3JlIEkgc2NoZWR1bGUgdGhlIGpvYi6UdXV9lChoAmgFQwoH6QQMCTgpCAR3lIWUUpRoCX2UKGgLaCloDYwVeWVzLCBJIGNvbmZpcm0gdGhhdC4glHV1fZQoaAJoBUMKB+kEDAk4LQtUp5SFlFKUaAl9lChoC4wJYXNzaXN0YW50lGgNTmgxXZRoNSmBlH2UKGg4fZQoaDqMHWNhbGxfdzUwVkpNaGxITmxiWGloS2xXalpYMUg2lGg8aD4pgZR9lChoOH2UKGhCWPcDAAB7CiAgImlucHV0X21lc2hfZmlsZW5hbWUiOiAiUm9ja18wMS5nbGIiLAogICJzdHlsZV9pbWFnZXNfZmlsZW5hbWVzIjogWwogICAgIlN0eWxlSW1hZ2VfMDEucG5nIiwKICAgICJTdHlsZUltYWdlXzAyLnBuZyIKICBdLAogICJzdHlsZV9pbWFnZXNfd2VpZ2h0cyI6IFsKICAgIDAuNCwKICAgIDAuMTUKICBdLAogICJtb2RlIjogInN0eWxpemUiLAogICJnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seSI6IGZhbHNlLAogICJwb3NpdGl2ZV9wcm9tcHQiOiAiRGFyayBSb2NrLCBjbGlmZiwgcm9ja3ksIGRlc2VydCwgc2hhcnAgZWRnZXMsIHJvdWdoIHN1cmZhY2UsIG1vdW50YWlucywgZXJvc2lvbiBkZXRhaWxzLCBjcmFja3MsIGZyYWN0dXJlZCByb2Nrcywgd2F0ZXIgZXJvc2lvbiwgd2VhdGhlciBlcm9zaW9ucywgZGV0YWlsZWQgdGV4dHVyZSBwYXR0ZXJucywgU2FuZHksIG5hdHVyYWwgc3RvbmUgdGV4dHVyZSwgY2xpbWJpbmcgcm9jaywgQSBkZXNlcnQgbGFuZHNjYXBlIHdpdGggYSBjYW55b24gY2FydmVkIGJ5IHdpbmQgYW5kIHRpbWUsIHJldmVhbGluZyBsYXllcnMgb2YgY29sb3JmdWwgcm9jayBmb3JtYXRpb25zLCBTY3VscHRpbmcsIFNpbmFpIGRlc2VydCwgY2FueW9uIGRlc2VydCwgYmxhY2sgcm9jayBkZXNlcnQsIEFyaXpvbmEgRGVzZXJ0LCBFYXJ0aCBjcnVzdCwgZGVlcCwgbmFycm93LCBjYXZpdGllcywgdmVydGljYWwgbGluZXMgdGV4dHVyZSwgVm9yb25vaSBwYXR0ZXJuLCBnZW4gZGVzZXJ0LCBtYWQgbWF4IG1vdmllLCBSYW5nbyBtb3ZpZSwgYXZhdGFyIG1vdmllLCBiZXN0IHF1YWxpdHksIDhLLCBoaWdobHkgZGV0YWlsZWQsIHJlYWxpc3RpYywgc2hhcnAsIHVsdHJhIHJlYWxpc3RpYyIsCiAgIm5lZ2F0aXZlX3Byb21wdCI6ICIiLAogICJyZXNvbHV0aW9uIjogIjJrIiwKICAiZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb24iOiAwLAogICJ1bnNoYWRlX3N0cmVuZ3RoIjogMC40LAogICJwcmVzZXJ2ZV9leGlzdGluZ191dnMiOiBmYWxzZQp9lGhEjBVzY2hlZHVsZV9hcnRfY29yZV9qb2KUdWhGfZRoSI+UKGhCaESQaEpOdWJoS2g8dWhGfZRoSI+UKGg6aDxoS5BoSk51YmF1dX2UKGgCaAVDCgfpBAwJOC8BBzOUhZRSlGgJfZQoaAtoU2hUaJRoDYx3U2NoZWR1bGUgc3VjY2VlZGVkIHdpdGggam9iX2lkPSc0YjY0OTBkYy0zYzJjLTQ0YTUtYjkxMS1kMjNhYjU2ZjIyM2QnLiBZb3Ugd2lsbCBiZSBwcm9tcHRlZCBieSBzeXN0ZW0gb25jZSBpdCBmaW5pc2hlcy6UdXV9lChoAmgFQwoH6QQMCTgxBwZalIWUUpRoCX2UKGgLjAlhc3Npc3RhbnSUaA2M+lRoZSBBUlQgQ29yZSBqb2IgaGFzIGJlZW4gc3VjY2Vzc2Z1bGx5IHNjaGVkdWxlZCB3aXRoIGpvYl9pZCAiNGI2NDkwZGMtM2MyYy00NGE1LWI5MTEtZDIzYWI1NmYyMjNkIi4gT25jZSBjb21wbGV0ZWQsIHlvdSdsbCBzZWUgdGhlIHVwZGF0ZWQgYXNzZXQgd2l0aCB0aGUgc3BlY2lmaWVkIDJrIGRldGFpbGVkIHRleHR1cmluZy4gTGV0IG1lIGtub3cgaWYgeW91IG5lZWQgYW55IGZ1cnRoZXIgYWRqdXN0bWVudHMgb3IgcHJvY2Vzc2luZyGUdXV9lCiMCXRpbWVzdGFtcJRoBUMKB+kEDAsVJAtrHpSFlFKUjARkYXRhlH2UKIwEcm9sZZSMBnN5c3RlbZSMB2NvbnRlbnSUWJEDAABKb2Igam9iX2lkPSc0YjY0OTBkYy0zYzJjLTQ0YTUtYjkxMS1kMjNhYjU2ZjIyM2QnIGZpbmlzaGVkLiBOZXcgZmlsZXM6IFsKICAgIHsKICAgICAgICAiZmlsZW5hbWUiOiAiUm9ja18wMV8yZF9wcmV2aWV3XzRiNjQ5MGRjLnBuZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkludGVybWVkaWF0ZSBtdWx0aS12aWV3IGltYWdlIHVzZWQgdG8gY3JlYXRlIFJvY2tfMDFfcHJvY2Vzc2VkXzRiNjQ5MGRjLmdsYi4gVGhlIGltYWdlIGZlYXR1cmVzIGZvdXIgdmVydGljYWwgcm9jayBmb3JtYXRpb25zIG9yIHBpbGxhcnMgdGhhdCBhcHBlYXIgdG8gYmUgbWFkZSBvZiBhIHRleHR1cmVkLCBzYW5keS1jb2xvcmVkIG1hdGVyaWFsLiBFYWNoIHBpbGxhciBpcyBkaWZmZXJlbnQgaW4gc2hhcGUsIHNob3dpbmcgdmFyeWluZyBkZWdyZWVzIG9mIGRldGFpbCBhbmQgY3JhY2tzLiBUaGUgbWFpbiBvYmplY3RzIGFyZSBjbGVhcmx5IHZpc2libGUgaW4gZnVsbCB3aXRoaW4gdGhlIGltYWdlLiBUaGUgYmFja2dyb3VuZCBjb25zaXN0cyBvZiBhIHJvY2t5IGxhbmRzY2FwZSwgZW5oYW5jaW5nIHRoZSBnZW9sb2dpY2FsIHRoZW1lLiIKICAgIH0sCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlJvY2tfMDFfcHJvY2Vzc2VkXzRiNjQ5MGRjLmJsZW5kIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiU2FtZSBhcyBSb2NrXzAxX3Byb2Nlc3NlZF80YjY0OTBkYy5nbGIsIGJ1dCBhIHJhdyAuYmxlbmQgZmlsZSBiZWZvcmUgLmdsYiBleHBvcnQuIgogICAgfSwKICAgIHsKICAgICAgICAiZmlsZW5hbWUiOiAiUm9ja18wMV9wcm9jZXNzZWRfNGI2NDkwZGMuZ2xiIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRXJyb3IgZ2VuZXJhdGluZyBkZXNjcmlwdGlvbjogSFRUUCBFcnJvciA0MDA6IEJhZCBSZXF1ZXN0IgogICAgfQpdlHV1fZQoaKxoBUMKB+kEDAsVKQUclZSFlFKUaLB9lChosowJYXNzaXN0YW50lGi0WAkDAABUaGUgQVJUIENvcmUgdGV4dHVyaW5nIGpvYiBpcyBub3cgY29tcGxldGUgd2l0aCBqb2JfaWQgIjRiNjQ5MGRjLTNjMmMtNDRhNS1iOTExLWQyM2FiNTZmMjIzZCIuIFRoZSBmb2xsb3dpbmcgbmV3IGZpbGVzIGhhdmUgYmVlbiBhZGRlZCB0byB5b3VyIHNlc3Npb246CgrigKIgUm9ja18wMV8yZF9wcmV2aWV3XzRiNjQ5MGRjLnBuZyDigJMgQSBtdWx0aS12aWV3IHByZXZpZXcgaW1hZ2Ugc2hvd2luZyBmb3VyIHZlcnRpY2FsIHJvY2sgZm9ybWF0aW9ucyB3aXRoIHRleHR1cmVkLCBzYW5keS1jb2xvcmVkIG1hdGVyaWFsIGFuZCBhIHJvY2t5IGxhbmRzY2FwZSBpbiB0aGUgYmFja2dyb3VuZC4gIArigKIgUm9ja18wMV9wcm9jZXNzZWRfNGI2NDkwZGMuYmxlbmQg4oCTIEEgcmF3IC5ibGVuZCBmaWxlIGNvbnRhaW5pbmcgdGhlIHByb2Nlc3NlZCBhc3NldCBiZWZvcmUgdGhlIC5nbGIgZXhwb3J0LiAgCuKAoiBSb2NrXzAxX3Byb2Nlc3NlZF80YjY0OTBkYy5nbGIg4oCTIFRoZSBmaW5hbCBwcm9jZXNzZWQgM0QgbWVzaCBvdXRwdXQgKG5vdGU6IHRoZXJlIGlzIGFuIGVycm9yIG1lc3NhZ2UgaW4gdGhlIGRlc2NyaXB0aW9uLCBidXQgdGhlIGZpbGUgc2hvdWxkIGJlIHRoZSBmaW5hbCBvdXRwdXQpLgoKWW91IGNhbiBub3cgcmV2aWV3IHRoZSBuZXcgZmlsZXMgaW4geW91ciBzZXNzaW9uLiBMZXQgbWUga25vdyBpZiB5b3UgbmVlZCBhbnkgbW9kaWZpY2F0aW9ucywgZnVydGhlciBwcm9jZXNzaW5nLCBvciBoYXZlIGFueSBxdWVzdGlvbnMgYWJvdXQgdGhlIG91dHB1dCGUdXV9lChorGgFQwoH6QQMCxgNAApxlIWUUpRosH2UKGiyjAR1c2VylGi0jEtkbyB0aGUgc2FtZSBidXQgVXNlIFN0eWxlSW1hZ2VfMDEucG5nIGFzIHN0eWxlIGltYWdlIHdpdGggdGhlIHdlaWdodCBvZiAuNiCUdXV9lChorGgFQwoH6QQMCxgVAOCZlIWUUpRosH2UKGiyjAlhc3Npc3RhbnSUaLROjAp0b29sX2NhbGxzlF2UaDUpgZR9lChoOH2UKIwCaWSUjB1jYWxsX3BEZ1I1Q3VzSjNrMzMySmtWckRjOVUxRJSMCGZ1bmN0aW9ulGg+KYGUfZQoaDh9lCiMCWFyZ3VtZW50c5RY1AMAAHsKICAiaW5wdXRfbWVzaF9maWxlbmFtZSI6ICJSb2NrXzAxLmdsYiIsCiAgInN0eWxlX2ltYWdlc19maWxlbmFtZXMiOiBbCiAgICAiU3R5bGVJbWFnZV8wMS5wbmciCiAgXSwKICAic3R5bGVfaW1hZ2VzX3dlaWdodHMiOiBbCiAgICAwLjYKICBdLAogICJtb2RlIjogInN0eWxpemUiLAogICJnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seSI6IGZhbHNlLAogICJwb3NpdGl2ZV9wcm9tcHQiOiAiRGFyayBSb2NrLCBjbGlmZiwgcm9ja3ksIGRlc2VydCwgc2hhcnAgZWRnZXMsIHJvdWdoIHN1cmZhY2UsIG1vdW50YWlucywgZXJvc2lvbiBkZXRhaWxzLCBjcmFja3MsIGZyYWN0dXJlZCByb2Nrcywgd2F0ZXIgZXJvc2lvbiwgd2VhdGhlciBlcm9zaW9ucywgZGV0YWlsZWQgdGV4dHVyZSBwYXR0ZXJucywgU2FuZHksIG5hdHVyYWwgc3RvbmUgdGV4dHVyZSwgY2xpbWJpbmcgcm9jaywgQSBkZXNlcnQgbGFuZHNjYXBlIHdpdGggYSBjYW55b24gY2FydmVkIGJ5IHdpbmQgYW5kIHRpbWUsIHJldmVhbGluZyBsYXllcnMgb2YgY29sb3JmdWwgcm9jayBmb3JtYXRpb25zLCBTY3VscHRpbmcsIFNpbmFpIGRlc2VydCwgY2FueW9uIGRlc2VydCwgYmxhY2sgcm9jayBkZXNlcnQsIEFyaXpvbmEgRGVzZXJ0LCBFYXJ0aCBjcnVzdCwgZGVlcCwgbmFycm93LCBjYXZpdGllcywgdmVydGljYWwgbGluZXMgdGV4dHVyZSwgVm9yb25vaSBwYXR0ZXJuLCBnZW4gZGVzZXJ0LCBtYWQgbWF4IG1vdmllLCBSYW5nbyBtb3ZpZSwgYXZhdGFyIG1vdmllLCBiZXN0IHF1YWxpdHksIDhLLCBoaWdobHkgZGV0YWlsZWQsIHJlYWxpc3RpYywgc2hhcnAsIHVsdHJhIHJlYWxpc3RpYyIsCiAgIm5lZ2F0aXZlX3Byb21wdCI6ICIiLAogICJyZXNvbHV0aW9uIjogIjJrIiwKICAiZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb24iOiAwLAogICJ1bnNoYWRlX3N0cmVuZ3RoIjogMC40LAogICJwcmVzZXJ2ZV9leGlzdGluZ191dnMiOiBmYWxzZQp9lIwEbmFtZZSMFXNjaGVkdWxlX2FydF9jb3JlX2pvYpR1aEZ9lGhIj5QoaNVo15BoSk51YowEdHlwZZRo0XVoRn2UaEiPlChoz2jRaNuQaEpOdWJhdXV9lChorGgFQwoH6QQMCxgWBSIklIWUUpRosH2UKGiyjAR0b29slIwMdG9vbF9jYWxsX2lklGjQaLSMd1NjaGVkdWxlIHN1Y2NlZWRlZCB3aXRoIGpvYl9pZD0nMWE4YjQzYjAtN2Y4ZC00YTc4LTk5MzctMjAxOTExOWM3ZmFmJy4gWW91IHdpbGwgYmUgcHJvbXB0ZWQgYnkgc3lzdGVtIG9uY2UgaXQgZmluaXNoZXMulHV1fZQoaKxoBUMKB+kEDAsYGAjXd5SFlFKUaLB9lChosowJYXNzaXN0YW50lGi0WEgBAABUaGUgbmV3IEFSVCBDb3JlIGpvYiBoYXMgYmVlbiBzY2hlZHVsZWQgdXNpbmcgIlN0eWxlSW1hZ2VfMDEucG5nIiB3aXRoIGEgd2VpZ2h0IG9mIDAuNi4gV2UnbGwgYXBwbHkgdGhlIHNhbWUgZGV0YWlsZWQgdGV4dHVyaW5nIHBhcmFtZXRlcnMgYXMgYmVmb3JlIG9uIHRoZSByb2NrIG1lc2ggKCJSb2NrXzAxLmdsYiIpIHVzaW5nIDJrIHJlc29sdXRpb24gYW5kIHRoZSBwcm92aWRlZCBwb3NpdGl2ZSBwcm9tcHQuIFRoZSBqb2IncyBpZCBpcyAiMWE4YjQzYjAtN2Y4ZC00YTc4LTk5MzctMjAxOTExOWM3ZmFmIi4gV2UnbGwgbm90aWZ5IHlvdSBvbmNlIGl0J3MgZmluaXNoZWQulHV1fZQoaKxoBUMKB+kEDAsgGg2QRpSFlFKUaLB9lChosmizaLRYMwMAAEpvYiBqb2JfaWQ9JzFhOGI0M2IwLTdmOGQtNGE3OC05OTM3LTIwMTkxMTljN2ZhZicgZmluaXNoZWQuIE5ldyBmaWxlczogWwogICAgewogICAgICAgICJmaWxlbmFtZSI6ICJSb2NrXzAxXzJkX3ByZXZpZXdfMWE4YjQzYjAucG5nIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiSW50ZXJtZWRpYXRlIG11bHRpLXZpZXcgaW1hZ2UgdXNlZCB0byBjcmVhdGUgUm9ja18wMV9wcm9jZXNzZWRfMWE4YjQzYjAuZ2xiLiBUaGUgaW1hZ2UgZmVhdHVyZXMgZm91ciBsYXJnZSwgdmVydGljYWwgcm9jayBmb3JtYXRpb25zIHdpdGggdmlzaWJsZSBjcmFja3MgYW5kIHRleHR1cmVkIHN1cmZhY2VzLCBzZXQgYWdhaW5zdCBhIGJhY2tkcm9wIG9mIGxheWVyZWQgdGVycmFpbi4gRWFjaCByb2NrIGFwcGVhcnMgdG8gaGF2ZSBhIHJ1Z2dlZCwgbmF0dXJhbCBhcHBlYXJhbmNlLiBUaGUgbWFpbiBvYmplY3RzIGFyZSBmdWxseSB2aXNpYmxlIGFuZCBub3QgY3JvcHBlZC4iCiAgICB9LAogICAgewogICAgICAgICJmaWxlbmFtZSI6ICJSb2NrXzAxX3Byb2Nlc3NlZF8xYThiNDNiMC5ibGVuZCIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlNhbWUgYXMgUm9ja18wMV9wcm9jZXNzZWRfMWE4YjQzYjAuZ2xiLCBidXQgYSByYXcgLmJsZW5kIGZpbGUgYmVmb3JlIC5nbGIgZXhwb3J0LiIKICAgIH0sCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlJvY2tfMDFfcHJvY2Vzc2VkXzFhOGI0M2IwLmdsYiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkVycm9yIGdlbmVyYXRpbmcgZGVzY3JpcHRpb246IEhUVFAgRXJyb3IgNDAwOiBCYWQgUmVxdWVzdCIKICAgIH0KXZR1dX2UKGisaAVDCgfpBAwLICYDuI6UhZRSlGiwfZQoaLKMCWFzc2lzdGFudJRotFjUAgAAVGhlIEFSVCBDb3JlIGpvYiB1c2luZyAiU3R5bGVJbWFnZV8wMS5wbmciIGF0IHdlaWdodCAwLjYgaGFzIGNvbXBsZXRlZCBzdWNjZXNzZnVsbHkuIEhlcmUgYXJlIHRoZSBuZXcgZmlsZXMgYWRkZWQgdG8geW91ciBzZXNzaW9uOgoK4oCiIFJvY2tfMDFfMmRfcHJldmlld18xYThiNDNiMC5wbmcg4oCTIEFuIGludGVybWVkaWF0ZSBtdWx0aS12aWV3IHByZXZpZXcgaW1hZ2Ugc2hvd2luZyBmb3VyIGxhcmdlLCB2ZXJ0aWNhbCByb2NrIGZvcm1hdGlvbnMgd2l0aCB2aXNpYmxlIGNyYWNrcyBhbmQgdGV4dHVyZWQgc3VyZmFjZXMgYWdhaW5zdCBhIGxheWVyZWQgdGVycmFpbiBiYWNrZ3JvdW5kLiAgCuKAoiBSb2NrXzAxX3Byb2Nlc3NlZF8xYThiNDNiMC5ibGVuZCDigJMgVGhlIHJhdyAuYmxlbmQgZmlsZSBjb250YWluaW5nIHRoZSBwcm9jZXNzZWQgYXNzZXQgYmVmb3JlIHRoZSAuZ2xiIGV4cG9ydC4gIArigKIgUm9ja18wMV9wcm9jZXNzZWRfMWE4YjQzYjAuZ2xiIOKAkyBUaGUgZmluYWwgcHJvY2Vzc2VkIDNEIG1lc2ggb3V0cHV0IChub3RlOiB0aGUgZGVzY3JpcHRpb24gc2hvd3MgYW4gZXJyb3IgbWVzc2FnZSwgYnV0IHRoZSBmaWxlIHNob3VsZCBiZSB0aGUgZmluYWwgYXNzZXQpLgoKUGxlYXNlIHJldmlldyB0aGUgZmlsZXMgYW5kIGxldCBtZSBrbm93IGlmIHlvdSBuZWVkIGFueSBmdXJ0aGVyIG1vZGlmaWNhdGlvbnMgb3IgYWRkaXRpb25hbCBwcm9jZXNzaW5nIZR1dX2UKGisaAVDCgfpBAwLLx4ITL2UhZRSlGiwfZQoaLJowmi0jDRHZW5lcmF0ZSA4SyB2ZXJzaW9uIGZyb20gaXQgdXNpbmcgdGhlIHNhbWUgc2V0dGluZ3MglHV1fZQoaKxoBUMKB+kEDAsvJwFjx5SFlFKUaLB9lChosowJYXNzaXN0YW50lGi0WFYEAABJJ2xsIHNjaGVkdWxlIGEgbmV3IEFSVCBDb3JlIGpvYiB1c2luZyB0aGUgc2FtZSBzZXR0aW5ncyBhcyBiZWZvcmUsIGJ1dCB3aXRoIHRoZSByZXNvbHV0aW9uIHNldCB0byA4Sy4gVGhpcyBtZWFucyB3ZSdsbCB1c2U6CgrigKIgSW5wdXQgTWVzaDogUm9ja18wMS5nbGIgIArigKIgU3R5bGUgSW1hZ2U6IFN0eWxlSW1hZ2VfMDEucG5nIHdpdGggYSB3ZWlnaHQgb2YgMC42ICAK4oCiIE1vZGU6IHN0eWxpemUgIArigKIgUmVzb2x1dGlvbjogOEsgIArigKIgUG9zaXRpdmUgcHJvbXB0OiAgCiJEYXJrIFJvY2ssIGNsaWZmLCByb2NreSwgZGVzZXJ0LCBzaGFycCBlZGdlcywgcm91Z2ggc3VyZmFjZSwgbW91bnRhaW5zLCBlcm9zaW9uIGRldGFpbHMsIGNyYWNrcywgZnJhY3R1cmVkIHJvY2tzLCB3YXRlciBlcm9zaW9uLCB3ZWF0aGVyIGVyb3Npb25zLCBkZXRhaWxlZCB0ZXh0dXJlIHBhdHRlcm5zLCBTYW5keSwgbmF0dXJhbCBzdG9uZSB0ZXh0dXJlLCBjbGltYmluZyByb2NrLCBBIGRlc2VydCBsYW5kc2NhcGUgd2l0aCBhIGNhbnlvbiBjYXJ2ZWQgYnkgd2luZCBhbmQgdGltZSwgcmV2ZWFsaW5nIGxheWVycyBvZiBjb2xvcmZ1bCByb2NrIGZvcm1hdGlvbnMsIFNjdWxwdGluZywgU2luYWkgZGVzZXJ0LCBjYW55b24gZGVzZXJ0LCBibGFjayByb2NrIGRlc2VydCwgQXJpem9uYSBEZXNlcnQsIEVhcnRoIGNydXN0LCBkZWVwLCBuYXJyb3csIGNhdml0aWVzLCB2ZXJ0aWNhbCBsaW5lcyB0ZXh0dXJlLCBWb3Jvbm9pIHBhdHRlcm4sIGdlbiBkZXNlcnQsIG1hZCBtYXggbW92aWUsIFJhbmdvIG1vdmllLCBhdmF0YXIgbW92aWUsIGJlc3QgcXVhbGl0eSwgOEssIGhpZ2hseSBkZXRhaWxlZCwgcmVhbGlzdGljLCBzaGFycCwgdWx0cmEgcmVhbGlzdGljIiAgCuKAoiBPdGhlciBwYXJhbWV0ZXJzOiBnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seSBmYWxzZSwgZXhpc3RpbmdfdGV4dHVyZV9wcmVzZXJ2YXRpb24gMCwgdW5zaGFkZV9zdHJlbmd0aCAwLjQsIHByZXNlcnZlX2V4aXN0aW5nX3V2cyBmYWxzZS4KClBsZWFzZSBjb25maXJtIGlmIHlvdSdkIGxpa2UgbWUgdG8gcHJvY2VlZCB3aXRoIHNjaGVkdWxpbmcgdGhpcyA4SyB2ZXJzaW9uIGpvYi6UdXV9lChorGgFQwoH6QQMCzIBC10olIWUUpRosH2UKGiyaMJotIwlZ2VuZXJhdGUgZGlzcGxhY2VtZW50IGZvciBpdCBhcyB3ZWxsLpR1dX2UKGisaAVDCgfpBAwLMgYEtJGUhZRSlGiwfZQoaLKMCWFzc2lzdGFudJRotE5oyl2UaDUpgZR9lChoOH2UKGjPjB1jYWxsX1MzR3ZqTUdKWVJIeUhFcEU4NHZnTmtHaJRo0Wg+KYGUfZQoaDh9lCho1VjTAwAAewogICJpbnB1dF9tZXNoX2ZpbGVuYW1lIjogIlJvY2tfMDEuZ2xiIiwKICAic3R5bGVfaW1hZ2VzX2ZpbGVuYW1lcyI6IFsKICAgICJTdHlsZUltYWdlXzAxLnBuZyIKICBdLAogICJzdHlsZV9pbWFnZXNfd2VpZ2h0cyI6IFsKICAgIDAuNgogIF0sCiAgIm1vZGUiOiAic3R5bGl6ZSIsCiAgImdlbmVyYXRlX2Rpc3BsYWNlbWVudF9hbmRfaGlnaF9wb2x5IjogdHJ1ZSwKICAicG9zaXRpdmVfcHJvbXB0IjogIkRhcmsgUm9jaywgY2xpZmYsIHJvY2t5LCBkZXNlcnQsIHNoYXJwIGVkZ2VzLCByb3VnaCBzdXJmYWNlLCBtb3VudGFpbnMsIGVyb3Npb24gZGV0YWlscywgY3JhY2tzLCBmcmFjdHVyZWQgcm9ja3MsIHdhdGVyIGVyb3Npb24sIHdlYXRoZXIgZXJvc2lvbnMsIGRldGFpbGVkIHRleHR1cmUgcGF0dGVybnMsIFNhbmR5LCBuYXR1cmFsIHN0b25lIHRleHR1cmUsIGNsaW1iaW5nIHJvY2ssIEEgZGVzZXJ0IGxhbmRzY2FwZSB3aXRoIGEgY2FueW9uIGNhcnZlZCBieSB3aW5kIGFuZCB0aW1lLCByZXZlYWxpbmcgbGF5ZXJzIG9mIGNvbG9yZnVsIHJvY2sgZm9ybWF0aW9ucywgU2N1bHB0aW5nLCBTaW5haSBkZXNlcnQsIGNhbnlvbiBkZXNlcnQsIGJsYWNrIHJvY2sgZGVzZXJ0LCBBcml6b25hIERlc2VydCwgRWFydGggY3J1c3QsIGRlZXAsIG5hcnJvdywgY2F2aXRpZXMsIHZlcnRpY2FsIGxpbmVzIHRleHR1cmUsIFZvcm9ub2kgcGF0dGVybiwgZ2VuIGRlc2VydCwgbWFkIG1heCBtb3ZpZSwgUmFuZ28gbW92aWUsIGF2YXRhciBtb3ZpZSwgYmVzdCBxdWFsaXR5LCA4SywgaGlnaGx5IGRldGFpbGVkLCByZWFsaXN0aWMsIHNoYXJwLCB1bHRyYSByZWFsaXN0aWMiLAogICJuZWdhdGl2ZV9wcm9tcHQiOiAiIiwKICAicmVzb2x1dGlvbiI6ICI4ayIsCiAgImV4aXN0aW5nX3RleHR1cmVfcHJlc2VydmF0aW9uIjogMCwKICAidW5zaGFkZV9zdHJlbmd0aCI6IDAuNCwKICAicHJlc2VydmVfZXhpc3RpbmdfdXZzIjogZmFsc2UKfZRo14wVc2NoZWR1bGVfYXJ0X2NvcmVfam9ilHVoRn2UaEiPlCho1WjXkGhKTnViaNto0XVoRn2UaEiPlChoz2jRaNuQaEpOdWJhdXV9lChorGgFQwoH6QQMCzIHDJ1nlIWUUpRosH2UKGiyaONo5GoXAQAAaLSMd1NjaGVkdWxlIHN1Y2NlZWRlZCB3aXRoIGpvYl9pZD0nYTlhNTNlMGUtYmYxNS00M2M5LWEwOTYtYjBiMTlkMzQzZTdiJy4gWW91IHdpbGwgYmUgcHJvbXB0ZWQgYnkgc3lzdGVtIG9uY2UgaXQgZmluaXNoZXMulHV1fZQoaKxoBUMKB+kEDAsyDQWVC5SFlFKUaLB9lChosowJYXNzaXN0YW50lGi0WKQEAABJJ3ZlIHNjaGVkdWxlZCBhbiBBUlQgQ29yZSBqb2Igd2l0aCBkaXNwbGFjZW1lbnQgZ2VuZXJhdGlvbiBhbmQgaGlnaC1wb2x5IGRldGFpbHMgdXNpbmcgdGhlIHNhbWUgc2V0dGluZ3MsIHdpdGggdGhlIHJlc29sdXRpb24gc2V0IHRvIDhLLiBUaGUgc2V0dGluZ3MgYXJlIGFzIGZvbGxvd3M6CgrigKIgSW5wdXQgTWVzaDogUm9ja18wMS5nbGIgIArigKIgU3R5bGUgSW1hZ2U6IFN0eWxlSW1hZ2VfMDEucG5nICh3ZWlnaHQgMC42KSAgCuKAoiBNb2RlOiBzdHlsaXplICAK4oCiIFJlc29sdXRpb246IDhLICAK4oCiIFBvc2l0aXZlIFByb21wdDogIAoiRGFyayBSb2NrLCBjbGlmZiwgcm9ja3ksIGRlc2VydCwgc2hhcnAgZWRnZXMsIHJvdWdoIHN1cmZhY2UsIG1vdW50YWlucywgZXJvc2lvbiBkZXRhaWxzLCBjcmFja3MsIGZyYWN0dXJlZCByb2Nrcywgd2F0ZXIgZXJvc2lvbiwgd2VhdGhlciBlcm9zaW9ucywgZGV0YWlsZWQgdGV4dHVyZSBwYXR0ZXJucywgU2FuZHksIG5hdHVyYWwgc3RvbmUgdGV4dHVyZSwgY2xpbWJpbmcgcm9jaywgQSBkZXNlcnQgbGFuZHNjYXBlIHdpdGggYSBjYW55b24gY2FydmVkIGJ5IHdpbmQgYW5kIHRpbWUsIHJldmVhbGluZyBsYXllcnMgb2YgY29sb3JmdWwgcm9jayBmb3JtYXRpb25zLCBTY3VscHRpbmcsIFNpbmFpIGRlc2VydCwgY2FueW9uIGRlc2VydCwgYmxhY2sgcm9jayBkZXNlcnQsIEFyaXpvbmEgRGVzZXJ0LCBFYXJ0aCBjcnVzdCwgZGVlcCwgbmFycm93LCBjYXZpdGllcywgdmVydGljYWwgbGluZXMgdGV4dHVyZSwgVm9yb25vaSBwYXR0ZXJuLCBnZW4gZGVzZXJ0LCBtYWQgbWF4IG1vdmllLCBSYW5nbyBtb3ZpZSwgYXZhdGFyIG1vdmllLCBiZXN0IHF1YWxpdHksIDhLLCBoaWdobHkgZGV0YWlsZWQsIHJlYWxpc3RpYywgc2hhcnAsIHVsdHJhIHJlYWxpc3RpYyIKCuKAoiBPdGhlciBQYXJhbWV0ZXJzOiAgCuKAg+KAkyBnZW5lcmF0ZV9kaXNwbGFjZW1lbnRfYW5kX2hpZ2hfcG9seTogdHJ1ZSAgCuKAg+KAkyBleGlzdGluZ190ZXh0dXJlX3ByZXNlcnZhdGlvbjogMCAgCuKAg+KAkyB1bnNoYWRlX3N0cmVuZ3RoOiAwLjQgIArigIPigJMgcHJlc2VydmVfZXhpc3RpbmdfdXZzOiBmYWxzZQoKVGhlIGpvYiBpZCBpcyAiYTlhNTNlMGUtYmYxNS00M2M5LWEwOTYtYjBiMTlkMzQzZTdiIi4gSSdsbCBub3RpZnkgeW91IG9uY2UgaXQncyBmaW5pc2hlZC6UdXV9lChorGgFQwoH6QQMDA45DRkIlIWUUpRosH2UKGiyaLNotFhhAwAASm9iIGpvYl9pZD0nYTlhNTNlMGUtYmYxNS00M2M5LWEwOTYtYjBiMTlkMzQzZTdiJyBmaW5pc2hlZC4gTmV3IGZpbGVzOiBbCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlJvY2tfMDFfMmRfcHJldmlld19hOWE1M2UwZS5wbmciLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJJbnRlcm1lZGlhdGUgbXVsdGktdmlldyBpbWFnZSB1c2VkIHRvIGNyZWF0ZSBSb2NrXzAxX3Byb2Nlc3NlZF9hOWE1M2UwZS5nbGIuIFRoZSBpbWFnZSBkZXBpY3RzIGZvdXIgYWJzdHJhY3Qgcm9jayBmb3JtYXRpb25zLCBlYWNoIGZlYXR1cmluZyBkaXN0aW5jdCBzaGFwZXMgYW5kIHRleHR1cmVzLiBUaGUgcm9ja3MgYXJlIGRlc2lnbmVkIHdpdGggbGF5ZXJlZCwgamFnZ2VkIGVkZ2VzIGFuZCBhcmUgcHJlc2VudGVkIGFnYWluc3QgYSBiYWNrZ3JvdW5kIHRoYXQgcmVzZW1ibGVzIHJvY2t5IHRlcnJhaW4uIFxuXG5BbGwgZm91ciByb2NrIGZvcm1hdGlvbnMgYXJlIHZpc2libGUgaW4gZnVsbCBhbmQgYXJlIG5vdCBjcm9wcGVkLiIKICAgIH0sCiAgICB7CiAgICAgICAgImZpbGVuYW1lIjogIlJvY2tfMDFfcHJvY2Vzc2VkX2E5YTUzZTBlLmJsZW5kIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiU2FtZSBhcyBSb2NrXzAxX3Byb2Nlc3NlZF9hOWE1M2UwZS5nbGIsIGJ1dCBhIHJhdyAuYmxlbmQgZmlsZSBiZWZvcmUgLmdsYiBleHBvcnQuIgogICAgfSwKICAgIHsKICAgICAgICAiZmlsZW5hbWUiOiAiUm9ja18wMV9wcm9jZXNzZWRfYTlhNTNlMGUuZ2xiIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRXJyb3IgZ2VuZXJhdGluZyBkZXNjcmlwdGlvbjogSFRUUCBFcnJvciA0MTM6IFJlcXVlc3QgRW50aXR5IFRvbyBMYXJnZSIKICAgIH0KXZR1dX2UKGisaAVDCgfpBAwMDwEOt02UhZRSlGiwfZQoaLKMCWFzc2lzdGFudJRotFj/AgAAVGhlIDhLIGhpZ2gtcG9seSB2ZXJzaW9uIHdpdGggZGlzcGxhY2VtZW50IGhhcyBiZWVuIHByb2Nlc3NlZC4gVGhlIGZvbGxvd2luZyBmaWxlcyBoYXZlIGJlZW4gZ2VuZXJhdGVkIGFuZCBhZGRlZCB0byB5b3VyIHNlc3Npb246CgrigKIgUm9ja18wMV8yZF9wcmV2aWV3X2E5YTUzZTBlLnBuZyDigJMgQW4gaW50ZXJtZWRpYXRlIG11bHRpLXZpZXcgcHJldmlldyBpbWFnZSBzaG93aW5nIGZvdXIgYWJzdHJhY3Qgcm9jayBmb3JtYXRpb25zIHdpdGggbGF5ZXJlZCwgamFnZ2VkIGVkZ2VzIGFnYWluc3QgYSByb2NreSB0ZXJyYWluIGJhY2tncm91bmQuICAK4oCiIFJvY2tfMDFfcHJvY2Vzc2VkX2E5YTUzZTBlLmJsZW5kIOKAkyBUaGUgcmF3IC5ibGVuZCBmaWxlIGNvbnRhaW5pbmcgdGhlIHByb2Nlc3NlZCBhc3NldCBiZWZvcmUgLmdsYiBleHBvcnQuICAK4oCiIFJvY2tfMDFfcHJvY2Vzc2VkX2E5YTUzZTBlLmdsYiDigJMgVGhlIGZpbmFsIHByb2Nlc3NlZCAzRCBtZXNoIG91dHB1dCAocGxlYXNlIG5vdGUgdGhlIGRlc2NyaXB0aW9uIGNvbnRhaW5zIGFuIGVycm9yIG1lc3NhZ2U6ICJIVFRQIEVycm9yIDQxMzogUmVxdWVzdCBFbnRpdHkgVG9vIExhcmdlIiwgYnV0IHRoZSBmaWxlIGl0c2VsZiBzaG91bGQgYmUgdGhlIGNvbXBsZXRlIGFzc2V0KS4KCllvdSBjYW4gcmV2aWV3IHRoZXNlIGZpbGVzIGluIHlvdXIgc2Vzc2lvbi4gTGV0IG1lIGtub3cgaWYgeW91IG5lZWQgYW55IGZ1cnRoZXIgdHdlYWtzIG9yIGFkZGl0aW9uYWwgcHJvY2Vzc2luZyGUdXVlLg==\"\n}",
+    "image_agent": "{\n    \"version\": \"0.1.1\",\n    \"api\": \"anthropic\",\n    \"model\": \"claude-3-7-sonnet-20250219\",\n    \"is_reasoner\": false,\n    \"tool_calling\": true,\n    \"messages\": \"gASVFwoAAAAAAABdlH2UKIwJdGltZXN0YW1wlIwIZGF0ZXRpbWWUjAhkYXRldGltZZSTlEMKB+kEDAkVJgQQwJSFlFKUjARkYXRhlH2UKIwEcm9sZZSMBnN5c3RlbZSMB2NvbnRlbnSUWK8JAAAKWW91IGFyZSBhIGNoYXRib3QgYXNzaXN0YW50IGhlbHBpbmcgd2l0aCBkaWZmdXNpb24tYmFzZWQgaW1hZ2UgZ2VuZXJhdGlvbiBhbmQgbWFuaXB1bGF0aW9uIHRhc2tzIGJ5IHVzaW5nIGF2YWlsYWJsZSB0b29scy4KWW91ciByb2xlIGlzIHRvIGFzc2lzdCB1c2VycyB3aXRoIGdlbmVyYXRpbmcsIG1vZGlmeWluZywgYW5kIHByb2Nlc3NpbmcgaW1hZ2VzIHdoaWxlIGVuc3VyaW5nIG9wdGltYWwgcmVzdWx0cyBmb3IgdGhlaXIgc3BlY2lmaWMgbmVlZHMuCllvdXIgdG9vbHMgYXJlIGluIGRldmVsb3BtZW50IHNvIGlmIGl0IHNlZW1zIHRoYXQgeW91IGRvbid0IGhhdmUgb25lIGltcGxlbWVudGVkLAppbmZvcm0gdGhlIHJlcXVlc3RpbmcgYWdlbnQgdGhhdCB5b3UgZG9uJ3QgaGF2ZSBzdWNoIGZ1bmN0aW9uYWxpdHkgYXZhaWxhYmxlLgoKVGV4dCB0byBpbWFnZSB0b29scyBhbmQgZ2VuZXJhbCBwcm9tcHRpbmcgbm90ZXMKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KV2hlbiBnZW5lcmF0aW5nIGltYWdlcyBvZiBvYmplY3RzIHRoYXQgYXJlIHJhdGhlciB0YWxsZXIgdGhhbiB3aWRlciwgcmVtZW1iZXIgdG8gdXNlIHJvdWdobHkgY29ycmVjdCBhc3BlY3QgcmF0aW8gKGxhcmdlciBoZWlnaHQsIHNtYWxsZXIgd2lkdGgpLgpJZiB1c2VyIGFza3MgZm9yIHJhbmRvbSBvYmplY3RzL2Rlc2lnbnMvY2hhcmFjdGVycywgcmVtZW1iZXIgbm90IHRvIHVzZSAicmFuZG9tIiBrZXl3b3JkIGluIHRoZSB0ZXh0IHRvIGltYWdlIHRvb2wgcHJvbXB0LCBidXQgZGVzaWduIHNwZWNpZmljIHByb21wdHMuCkZvciBpbWFnZSBnZW5lcmF0aW9uIG1ldGhvZHMgKGB0ZXh0X3RvX2ltYWdlX2ZsdXhgIGFuZCBgdGV4dF90b19pbWFnZV9kYWxsZWApIHVzZSBkZXNjcmlwdGl2ZSBsYW5ndWFnZSBpbiBwb3NpdGl2ZSBwcm9tcHRpbmcsCmhvd2V2ZXIgZm9yIG1ldGhvZHMgYmFzZWQgb24gU3RhYmxlIERpZmZ1c2lvbiBtb2RlbHMgKGBpbWFnZV92YXJpYW50YCwgYHJlc3R5bGVfaW1hZ2VgIGFuZCBgcmVjb2xvcl9pbWFnZWApLAppdCBpcyBiZXR0ZXIgdG8gbGlzdCBlbGVtZW50cy9zaG9ydCBrZXl3b3JkcyB0aGF0IGFyZSBtZWFudCB0byBvY2N1ciBpbiBwb3NpdGl2ZSBwcm9tcHQuCgpJTVBPUlRBTlQ6IGFsd2F5cyBnZW5lcmF0ZSBhIHNpbmdsZSBpbWFnZSB1bmxlc3MgYXNrZWQgZGlmZmVyZW50bHksIG9yIHdoZW5ldmVyIHlvdSB3YW50IHRvIGZpeC9pbXByb3ZlIGdlbmVyYXRpb24gcmVzdWx0LAppZiBzb21ldGhpbmcgc2VlbSBub3QgdG8gYWRoZXJlIHRvIHRoZSBwcm9tcHQgKGJhc2VkIG9uIHRoZSBtYWdlIGRlc2NyaXB0aW9uIHlvdSBnZXQgYWZ0ZXIgY2FsbGluZyBhIHRvb2wpLgoKQWx3YXlzIHRyeSB0byBzZWxlY3QgdGhlIG1vc3QgcmVsZXZhbnQgdGV4dCB0byBpbWFnZSB0b29sIChmb3IgZWFjaCBpbWFnZSBzZXBhcmF0ZWx5KSAtLSBmbHV4IGZvciByZWFsaXNtLCBkYWxsZSBmb3Igc3R5bGl6ZWQvZmFudGFzeQoKIyMgSW1hZ2UgdG8gSW1hZ2UgdG9vbHMgbm90ZXMKWW91IGludGVyYWN0IHdpdGggdG9vbHMgZm9yIHRyYW5zZm9ybWF0aW9uIChgaW1hZ2VfdmFyaWFudGAsIGByZXN0eWxlX2ltYWdlYCBhbmQgYHJlY29sb3JfaW1hZ2VgKS4gTWFueSB0b29scyBzaGFyZSBjb21tb24gcGFyYW1ldGVyczoKCiMjIyAqKkNvbW1vbiBQYXJhbWV0ZXJzKioKLSBgcG9zaXRpdmVfcHJvbXB0YDogQSBkZXRhaWxlZCBkZXNjcmlwdGlvbiBvZiB0aGUgZGVzaXJlZCBvdXRwdXQuCi0gYG5lZ2F0aXZlX3Byb21wdGA6IEEgbGlzdCBvZiBlbGVtZW50cyB0byAqKmF2b2lkKiogKGUuZy4sIGAiYmFkIHF1YWxpdHkiLCAiZnJhbWVkImApLgotIGBzaXplYDogU3BlY2lmaWVzIHRoZSByZXNvbHV0aW9uLCB0eXBpY2FsbHkgaW4gYCJ3aWR0aCB4IGhlaWdodCJgIGZvcm1hdC4KLSBgZGVub2lzZWA6IENvbnRyb2xzIGhvdyBtdWNoIHRoZSBpbnB1dCBpcyBtb2RpZmllZCAoYDAuMSAtIDEuMGApLiAgCiAgICBMb3dlciB2YWx1ZXMgcmV0YWluIG1vcmUgb2YgdGhlIG9yaWdpbmFsIGltYWdlLgotIGBzdHlsZV9pbmZsdWVuY2VgOiAoRm9yIHN0eWxlLWJhc2VkIHRvb2xzKSBEZXRlcm1pbmVzIGhvdyBtdWNoIHRoZSByZWZlcmVuY2Ugc3R5bGUgYWZmZWN0cyB0aGUgb3V0cHV0IChgMC4wIC0gMS4wYCkuCiAgICBVc3VhbGx5IGFyb3VuZCAwLjU1IGlzIHN0cm9uZyBlbm91Z2ggaW5mbHVlbmNlCi0gYHN0eWxlX29ubHlgOiBJZiBgVHJ1ZWAsIGFwcGxpZXMgb25seSBzdHlsaXN0aWMgY2hhbmdlcyB3aGlsZSBpZ25vcmluZyBjb21wb3NpdGlvbi4KICAgIEl0IGNhbiBiZSB1c2VkIHRvIHByZXZlbnQgZ2VuZXJhdGlvbiBwcm9jZXNzIGZyb20gaW5jb3Jwb3JhdGluZyBlbGVtZW50cyB0aGF0IHNlZW1zIGluaGVyZW50bHkgbGlua2VkIHdpdGggc3R5bGUgaW1hZ2UKICAgIGJ1dCBzaG91bGQgbm90IGJlIGluY29ycG9yYXRlZCBpbiBuZXcgaW1hZ2UKlHV1YS4=\"\n}",
+    "job_slots": {
+        "2d": -1,
+        "3d": -1,
+        "art": -1,
+        "pbr": -1
+    },
+    "before_first_user_input": false,
+    "archived_agents": []
+}
