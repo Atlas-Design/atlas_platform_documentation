@@ -20,8 +20,11 @@ The **Atlas Platform** user interface is designed to keep your creative flow int
 
 This helps you keep your work organized across different projects or creative directions.
 
-- **01. Save project file**: Preserve your current setup, prompts, and generated assets.
+- **01. Save project file**: Save your current setup, prompts, and generated assets.
 - **02. Select other project**: Switch to a previously saved session to resume work.
+- **03. Wipe agents history**: Clears only the **chat history with the AI agent** while keeping all generated assets and session data intact. This can help reset the conversation flow without losing your work.
+- **04. Delete Project**:  Permanently removes the entire session, including all associated assets, prompts, and history. This action cannot be undone, so use it with caution when you no longer need the project.
+.
 
 ---
 
@@ -56,21 +59,35 @@ The Chat & Prompt Tools allow you to communicate with the AI agent to generate c
 - **02. Upload Asset Button**:  
   Upload your own 2D or 3D assets to integrate them into the current session.
 
+- **03. Leave Feedback**  
+  Opens a feedback window where you can share your experience, report bugs, or suggest improvements. Your input helps improve the platform during the Alpha phase.
+
+- **04. Prompt Suggestion Button**  
+   These prompts are **AI-generated suggestions** designed to inspire or assist your asset creation process. When you click on a suggestion, it will automatically populate the chat input field — ready to be executed or edited before sending.
+
+
 ---
 
-### 📊 Art Core Job Tracker
+### 📊 Job Tracker
 ![Job Tracker](/img/ui/job_tracker.jpg)
 <p align="left" style={{ fontSize: '0.85rem'}}>
   *Job Tracker*
 </p>
 
-The ART Core Job Tracker provides real-time updates on the progress of texture generation using ART core.
+The job tracker provides real-time visibility into all active processing tasks within your current session. Each category reflects a different stage of the asset generation pipeline:
 
-- **01. ART jobs**:  
-  Total number of currently running jobs in ART core
+- **01. 2D Jobs**  
+  Displays the total number of currently running jobs for **2D image generation**. These are initiated when the AI agent generates concept art based on user prompts.
 
-- **02. APS Jobs**:  
-  Total number of currently running jobs in Asset Presentation Stage. This is the stage that will be run after ART core to generate an optimized gamed asset with PBR textures. 
+- **02. 3D Jobs**  
+  Shows the total number of currently running jobs that convert **2D concept images into 3D models**. This stage involves the AI interpreting the selected image and generating a base mesh.
+
+- **03. ART Jobs**  
+  Represents the total number of currently running jobs within **ART Core (Atlas Refinement Tools)**. This stage is responsible for generating high-resolution textures and surface details.
+
+- **04. PBR Jobs**  
+  Indicates the total number of currently running jobs in **Atlas Asset Postprocessing**. This final step runs after ART Core and outputs an **optimized, game-ready asset** with low-poly geometry and baked PBR textures.
+
 ---
 
 ### 🖱️ General Controls
