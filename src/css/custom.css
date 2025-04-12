@@ -85,11 +85,11 @@
 }
 
 details.example-callout {
-  border: 1px solid var(--ifm-toc-border-color); /* or any grey of your choice */
+  border: 1px solid var(--ifm-toc-border-color);
 }
 
 .example-callout:hover {
-  border-color: rgba(225, 225, 225, 0.4); /* light grey in dark mode */
+  border-color: rgba(225, 225, 225, 0.4);
 }
 
 .session-header {
@@ -132,7 +132,7 @@ details.example-callout {
 }
 
 .session-preview-img {
-  max-height: 200px;
+  max-height: 160px;
   border-radius: 6px;
 }
 
@@ -140,3 +140,8 @@ details.example-callout {
   font-size: 0.85rem;
   opacity: 0.75;
 }
+
+
+
+
+
