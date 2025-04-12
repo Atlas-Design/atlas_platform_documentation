@@ -74,19 +74,41 @@ The Chat & Prompt Tools allow you to communicate with the AI agent to generate c
   *Job Tracker*
 </p>
 
-The job tracker provides real-time visibility into all active processing tasks within your current session. Each category reflects a different stage of the asset generation pipeline:
+### 🔁 01. Job Type (Pipeline Step)
+The Job Tracker provides **real-time visibility** into all active processing tasks within your current session. Each category reflects a different stage of the asset generation pipeline and helps you monitor workload limits, job progress, and system availability.
 
-- **01. 2D Jobs**  
-  Displays the total number of currently running jobs for **2D image generation**. These are initiated when the AI agent generates concept art based on user prompts.
+- **2D**  
+  **2D image generation** jobs. These are triggered when the AI agent generates concept art based on your prompts.
 
-- **02. 3D Jobs**  
-  Shows the total number of currently running jobs that convert **2D concept images into 3D models**. This stage involves the AI interpreting the selected image and generating a base mesh.
+- **3D**  
+  **2D images into 3D models** jobs . This stage uses AI to interpret the concept and build a base mesh.
 
-- **03. ART Jobs**  
-  Represents the total number of currently running jobs within **ART Core (Atlas Refinement Tools)**. This stage is responsible for generating high-resolution textures and surface details.
+- **ART Jobs**  
+  **ART Core (Atlas Refinement Tools)** jobs . This stage applies high-resolution texturing and surface detail refinement.
 
-- **04. PBR Jobs**  
-  Indicates the total number of currently running jobs in **Atlas Asset Postprocessing**. This final step runs after ART Core and outputs an **optimized, game-ready asset** with low-poly geometry and baked PBR textures.
+- **PBR Jobs**  
+  **Atlas Asset Postprocessing** jobs, the final pipeline step that delivers a **low-poly, game-ready asset** with baked PBR textures. This step begins after ART Core completes.
+
+
+### 🔢 02. Number of Jobs
+
+Each job type may have a **limit on the number of parallel jobs** a user can run.
+
+- When a job is started, the available job slot count is **decreased**.
+- Once a job finishes, that slot becomes available again and the count **increases**.
+- If the number reaches **zero**, you must wait for a current job to complete before submitting a new one of that type.
+
+This mechanism ensures fair usage and efficient processing during the Alpha phase.
+
+
+### 📈 03. Progress Bar
+
+Each running job is represented by a **progress bar**, showing its estimated completion time.
+
+- The bar gives a rough expectation of how long the task will take.
+- Actual processing time may vary depending on the job’s complexity and system load.
+
+> ⚠️ Note: ART Core and PBR jobs may take longer, especially when generating high-resolution textures (4K or 8K).
 
 ---
 
