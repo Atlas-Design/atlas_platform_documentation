@@ -48,6 +48,12 @@ const config = {
   ],
 
   themeConfig: {
+  docs: {
+    sidebar: {
+      autoCollapseCategories: false, // close others when one opens
+      hideable: false,               // optional: user can collapse the whole sidebar
+    },
+  },
     navbar: {
       title: 'Atlas Platform User Guide',
       items: [

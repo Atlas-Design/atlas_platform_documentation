@@ -1,0 +1,85 @@
+---
+id: index
+title: Overview
+sidebar_label: Overview
+---
+
+# Platform Overview
+
+The **Atlas Platform** is a visual AI workspace for creating, managing, and deploying generative workflows.
+It combines a **Projects dashboard** for organization with a **Graph Editor** where users build node-based workflows that can be exported as APIs and used in external tools such as Unreal Engine.
+
+Atlas is designed for both **artists** and **developers**:
+- 🎨 **Artists & Technical Artists** can visually connect nodes, test outputs, and build reusable workflows.
+- 🧩 **Developers & Integrators** can export workflows as APIs and integrate them into pipelines or custom tools.
+
+---
+
+## 🧭 Main Areas of the Platform
+
+### **1. Projects**
+The entry point of the platform.
+From the **Projects** page, users can:
+- View all existing projects with visual thumbnails.
+- Create new workflows using the **New Project** button.
+- Open existing projects to continue editing in the **Graph Editor**.
+- Manage assets and access administrative tools (Users, Custom Pages, Platform Settings).
+
+➡️ Learn more: [Projects Overview](./projects_overview.md)
+
+---
+
+### **2. Graph Editor**
+The core creative workspace.
+Here, you build and connect nodes to form complex AI generation pipelines.
+
+Each node represents a process — for example, “Text to Image,” “Image to 3D,” or “Post-Process.”
+Nodes have embedded dropdowns for selecting compatible **backends**, defining how data is processed.
+
+➡️ Learn more: [Graph Editor](../concepts/graph_editor.md)
+
+---
+
+### **3. Nodes and Backends**
+Nodes are modular units that define what happens in your workflow.
+Each node:
+- Has a specific role (image generation, mesh processing, API I/O, etc.).
+- Can use different backends (e.g., `Atlas-GenMesh`, `Stable-Diffusion-XL`) via a dropdown selector.
+- Stores backend version and parameters for deterministic, reproducible results.
+
+➡️ Learn more: [Nodes & Connections](../concepts/nodes_connections.md)
+
+---
+
+### **4. API Export**
+Once a workflow is ready, it can be **exported as an API**.
+Each export includes:
+- A unique **API ID**
+- A set of **example payloads**
+- Versioned backend information for consistent results
+
+APIs can be consumed directly from supported tools (like Unreal Engine) or through HTTP requests.
+
+➡️ Learn more: [Creating and Using APIs](../guides/create_api.md)
+
+---
+
+## 🚀 Typical Workflow
+
+1. **Start in Projects** → click **New Project** to create a workflow.
+2. **Open the Graph Editor** → add and connect nodes.
+3. **Select backends** per node to define output quality or performance.
+4. **Test your workflow** inside the platform.
+5. **Export it as an API** for integration with external tools.
+
+---
+
+## 🧠 Key Advantages
+- **Visual-first**: No code required — everything is built through a node graph.
+- **Cross-domain**: Works with text, images, meshes, and multimodal data.
+- **Deterministic results**: Versioned backends ensure reproducibility.
+- **Integration-ready**: Export APIs usable from Unreal, Python, or CLI.
+
+---
+
+Next: [Projects Overview →](./projects_overview.md)

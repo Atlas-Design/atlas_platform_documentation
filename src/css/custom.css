@@ -141,7 +141,76 @@ details.example-callout {
   opacity: 0.75;
 }
 
+/* ---- SIDEBAR ---- */
+/* ---- SIDEBAR ---- */
+/* ---- SIDEBAR ---- */
 
+.sidebar-main {
+  font-weight: 400;               /* not bold */
+  font-family: 'Inter', sans-serif; /* clean modern font */
+  font-size: 0.8rem;
+  letter-spacing: 0.8px;
+  text-transform: none;
+  color: var(--ifm-menu-color);   /* keeps theme consistency */
+}
+.sidebar-main:hover {
+}
+.sidebar-title {
+  font-weight: 400;               /* not bold */
+  font-family: 'Inter', sans-serif; /* clean modern font */
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: var(--ifm-menu-color);   /* keeps theme consistency */
+}
+.sidebar-title:hover {
+  color: var(--ifm-color-primary);
+  transition: color 0.2s ease;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* ---- Sidebar arrow adjustments ---- */
+/* ---- Sidebar arrow adjustments ---- */
+/* ---- Sidebar arrow adjustments ---- */
+.menu__caret {
+  transform: scale(0.7);           /* smaller arrow */
+  margin-left: 6px;                /* bring it closer to text */
+  opacity: 0.8;                    /* slightly toned down */
+}
+
+/* Optional: better vertical alignment with text */
+.menu__link--sublist {
+  display: flex;
+  align-items: center;
+  gap: 4px;                        /* ensures arrow sits right next to label */
+}
+
+/* Optional hover tweak */
+.menu__caret:hover {
+  opacity: 1;
+  transform: scale(0.75);
+  transition: all 0.15s ease;
+}
+
+
+
+
+/* Make docs sidebar a sticky, independently scrollable column */
+/*.theme-doc-sidebar-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}*/
+
+/* Ensure the inner menu also scrolls if needed */
+/*.theme-doc-sidebar-menu, .menu.thin-scrollbar {
+  max-height: 100%;
+  overflow-y: auto;
+}*/
 
 
 

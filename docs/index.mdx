@@ -4,31 +4,73 @@ title: Overview
 sidebar_label: Overview
 ---
 
-![Atlas Platform Header](/img/headers/05.jpg)
-<p align="left" style={{ fontSize: '0.85rem'}}>
-  *Atlas Platform Header*
-</p>
+# Platform Overview
 
-This documentation is for the [**Atlas Platform**](https://frontend.beta.atlas.design/editor) — an advanced AI-powered tool designed to help **game developers**, **technical artists**, and **3D hobbyists** generate high-quality 3D assets with ease.
+The **Atlas Platform** is a collaborative environment for designing and deploying **AI-driven workflows** that generate and transform creative content — from images and textures to fully textured 3D assets.
 
-Atlas Platform streamlines the asset creation process by offering a **smooth end-to-end workflow** that transforms **2D image inputs into fully textured 3D models**. Whether you're rapidly prototyping ideas or building production-ready content, Atlas enhances your creative workflow with the power of AI.
-
-### 🔑 Key Features
-
-- **AI-Powered 3D Asset Generation**  
-  Create detailed 3D assets from 2D prompts using cutting-edge artificial intelligence.
-
-- **High-Resolution Texturing**  
-  Supports textures up to **8K**, delivering professional-quality materials and surfaces.
-
-- **Seamless Workflow**  
-  From concept art to game-ready models — reduce manual steps and speed up development.
-
-- **For Professionals and Hobbyists**  
-  Designed to be accessible to both industry professionals and passionate creators without requiring deep 3D modeling expertise.
+At its core, Atlas brings together **visual workflow design**, **AI model orchestration**, and **API-based integration** into a single, streamlined system built for both artists and developers.
 
 ---
 
-This documentation provides a **complete guide to using Atlas Platform**, covering everything from prompt writing and UI navigation to exporting assets for Blender and Unreal Engine.
+## 🧠 What Atlas Does
 
-> ℹ️ **Note:** This is an **alpha release**. Some features are experimental or in development. We welcome feedback to help shape the future of Atlas.
+Atlas allows users to:
+- **Design workflows visually** using a node-based graph editor.
+- **Combine open-source AI models** into structured pipelines for image, mesh, and multimodal generation.
+- **Experiment and iterate** interactively within a unified studio interface.
+- **Export complete workflows as APIs**, enabling automation or integration into DCC tools such as Unreal Engine or Houdini.
+
+This visual-first approach bridges the gap between creative experimentation and technical implementation — turning AI generation into a repeatable, versioned, and shareable process.
+
+---
+
+## 🧩 How It Works — The Core Idea
+
+Every workflow in Atlas is composed of **nodes**, each representing a specific operation such as “Image to 3D,” “Text to Image,” or “Depth Refinement.”
+Nodes can be connected to form a data flow, where each step transforms or enhances the output of the previous one.
+
+Each node contains:
+- A configurable **backend selector** — choose which model or engine to use.
+- Adjustable **parameters** — fine-tune generation behavior.
+- Versioned **settings** — ensuring deterministic and reproducible results.
+
+When a workflow is ready, it can be **exported as an API** with a unique identifier and example payloads for immediate use in production.
+
+---
+
+## ⚙️ What Makes Atlas Different
+
+- **Visual-first creation**
+  Build complex AI pipelines without code. The graph interface makes experimentation intuitive and fast.
+
+- **Model-agnostic design**
+  Each node can use different AI backends — from diffusion models to mesh reconstruction networks — depending on its purpose.
+
+- **Deterministic, reproducible output**
+  Every backend and parameter set is versioned, allowing consistent results across sessions or collaborators.
+
+- **Seamless integration**
+  Export workflows as APIs that can be executed from Unreal Engine, command-line tools, or other applications.
+
+- **Unified workspace**
+  All projects, assets, and workflows live in one environment, supporting both experimentation and production deployment.
+
+---
+
+## 🚀 Typical Use Cases
+
+- **Artists and Technical Artists**
+  Rapidly prototype and iterate on procedural or AI-assisted assets without touching code.
+
+- **Developers and Integrators**
+  Turn visual workflows into callable APIs for automation, pipelines, or tool integration.
+
+- **Studios and Teams**
+  Standardize creative processes, ensuring deterministic output and version-tracked workflows across departments.
+
+---
+
+## 🔗 Next Steps
+
+To understand how Atlas is structured and how to begin creating your first workflow, continue with:
+➡️ [Projects Overview](./projects_overview.md)
