@@ -276,6 +276,7 @@ module.exports = {
         { type: 'doc', id: 'workflows/2d_to_3d', label: '2D → 3D', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/api_workflows', label: 'API Workflows', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/architecture', label: 'Architecture & Design', className: 'sidebar-title' },
+        { type: 'doc', id: 'workflows/sketch-to-asset', label: 'Sketch to Asset', className: 'sidebar-title' },
       ],
     },
 
