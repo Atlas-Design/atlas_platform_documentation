@@ -3,3 +3,78 @@ id: sketch-to-asset
 title: Sketch to Asset
 sidebar_label: Sketch to Asset
 ---
+# Sketch-to-Asset Workflow
+
+This workflow transforms a hand-drawn sketch into a fully usable 3D asset.
+Starting from an imported sketch image, the pipeline generates concept renders and then 3D geometry that can be downloaded and used inside Blender or any other DCC tool.
+
+---
+
+## 1. Import Sketch
+
+//![step-image]
+
+Begin by importing a photo of your sketch.
+This can be a quick phone picture or a refined illustration.
+Optionally, you may add additional attributes such as:
+
+- Color preferences  
+- Material hints  
+- Style notes (e.g., metallic, organic, wooden, mechanical)
+
+> These optional text inputs help the AI produce more accurate concept variations.
+
+---
+
+## 2. Generate Concept Renders (Multimodal Node)
+
+//![step-image]
+The Multimodal node analyzes both the sketch image and the optional text hints.
+It generates realistic concept renderings of your sketch.
+
+- 4 different backends run in parallel  
+- You receive 4 unique visual interpretations  
+- Choose the one that best matches the target style or functionality
+
+> This step helps refine the design direction before moving to full 3D generation.
+
+---
+
+## 3. Convert Concept to 3D
+
+//![step-image]
+
+After selecting your favorite concept render, feed it into the Image-to-3D node.
+
+- 5 different backends create 5 versioned 3D models  
+- Each backend provides a different modeling approach (stylized, realistic, lightweight, detailed, etc.)  
+- Choose and download the 3D model you prefer  
+
+All exported files are in `.glb` format, compatible with common 3D tools.
+
+---
+
+## 4. Import the Asset into Blender
+
+//![step-image]
+
+With your `.glb` ready, simply import it into Blender or your preferred software.
+
+This allows you to:
+
+- Edit geometry  
+- Add materials and textures  
+- Place it directly inside your scene or kitbash library  
+
+> The final result becomes a fully reusable asset derived from your original sketch.
+
+---
+
+## Summary
+
+| Stage | Output |
+|-------|--------|
+| Import Sketch | Raw image |
+| Multimodal Render | 4 concept variations |
+| Image-to-3D | 5 downloadable `.glb` models |
+| Blender Import | Editable 3D asset ready for scene integration |
