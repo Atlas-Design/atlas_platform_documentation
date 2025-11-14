@@ -277,6 +277,8 @@ module.exports = {
         { type: 'doc', id: 'workflows/api_workflows', label: 'API Workflows', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/architecture', label: 'Architecture & Design', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/sketch-to-asset', label: 'Sketch to Asset', className: 'sidebar-title' },
+        { type: 'doc', id: 'workflows/image-to-spline', label: 'Image to Spline', className: 'sidebar-title' },
+        { type: 'doc', id: 'workflows/2d-variants', label: '2D Variants', className: 'sidebar-title' },
       ],
     },
 

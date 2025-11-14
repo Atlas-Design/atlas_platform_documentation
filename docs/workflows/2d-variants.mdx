@@ -1,0 +1,98 @@
+---
+id: 2d-variants
+title: 2D Variants
+sidebar_label: 2D Variants
+---
+
+# 2D Variants Workflow
+
+This workflow creates **2D variations** of an input asset image by transforming it across different environments, styles, forms, or time periods.  
+The system analyzes the original object, interprets your desired variation type, and produces multiple transformed outputs reflecting alternative scenarios.
+
+---
+
+## 1. Input Asset & Define Variation Type
+
+![step-image](/img/asset_workflow/2d-variants/input.png)
+![step-image](/img/asset_workflow/2d-variants/text_input.png)
+
+Begin by uploading an **image of the asset** you want to modify.  
+Then specify the **variation type**, such as:
+
+- Environment  
+- Style  
+- Form  
+- Time period  
+- Condition (weather, damage, decay, futuristic upgrade)
+
+In the example shown, we requested an **environmental variation** of the input asset.
+
+---
+
+## 2. Image Description (Image-to-Text Node)
+
+![step-image](/img/asset_workflow/2d-variants/image_to_text.png)
+
+The **Image-to-Text** node analyzes the input asset and generates a **clear description** of its form, materials, and functional features.
+
+This description is used as an objective baseline for creating consistent variant prompts.
+
+---
+
+## 3. Generate Transformation Prompts (Simple LLM Call)
+
+A **Simple LLM Call** node takes:
+
+- The image description (from Image-to-Text)  
+- The variation type you specify (e.g., “environment”)  
+
+It then generates **four transformation prompts**, each exploring a different environmental adaptation.
+
+Example outputs for an “environment” variation:
+
+1. Desert adaptation  
+2. Tropical rainforest adaptation  
+3. Arctic tundra adaptation  
+4. Urban night-operation adaptation  
+
+Each prompt may involve:
+
+- Adjusting form  
+- Adding contextual elements  
+- Modifying materials to fit the new environment  
+- Reinterpreting design language  
+
+These prompts define how the asset should change in each scenario.
+
+---
+
+## 4. Generate Visual Variants (Multimodal Node)
+
+![step-image](/img/asset_workflow/2d-variants/multimodal_variants.jpg)
+
+Each transformation prompt is passed to a **Multimodal node**, which produces the final **2D image variants**.
+
+The outputs may reflect:
+
+- Environmental adaptation  
+- Style transformation  
+- New functionality  
+- Material and color shifts  
+- Added props or contextual features  
+
+The result is a **set of variant images**, each representing a different reinterpretation of the original asset.
+
+---
+
+## Summary
+
+| Stage | Description | Output |
+|-------|-------------|---------|
+| Input Image + Variation Type | User-provided image and variation category | Asset + variation goal |
+| Image-to-Text | Describes the object’s appearance | Baseline description |
+| Simple LLM Call | Creates transformation prompts | 4 variation prompts |
+| Multimodal | Generates variations | 4 variant images |
+
+---
+
+This workflow is ideal for concept art, iterative design exploration, and testing how an object behaves across different worlds, styles, or narrative contexts.

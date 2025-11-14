@@ -1,0 +1,145 @@
+---
+id: image-to-spline
+title: Image to Spline
+sidebar_label: Image to Spline
+---
+# Image-to-Spline Workflow
+
+This workflow converts an input (image or text description) into a clean spline curve usable in Blender or other 3D tools.  
+There are three alternative methods:  
+
+1) Image → Binary Mask → Spline  
+2) Text → Image → Binary Mask → Spline (LLM-assisted)  
+3) Text → Direct Binary Mask → Spline  
+
+---
+
+## Method 1 — Image to Binary Mask to Spline
+
+### 1. Provide the Input Image
+
+![step-image](/img/asset_workflow/image-to-spline/Italy-Political-Map.jpg)
+
+Start by uploading an image whose outline you want to convert into a spline.  
+Example: A map of Italy.
+
+The Multimodal node is used to convert this image into a **binary mask** (black background, white foreground).  
+It is essential that the **area you want to extract as a spline is white**.
+
+---
+
+### 2. Generate Binary Mask (Multimodal)
+
+![step-image](/img/asset_workflow/image-to-spline/output_image.png)
+
+The Multimodal node interprets the visual content and outputs a simplified mask:
+
+- White = region to extract  
+- Black = background  
+- No textures, no colors, no gradients  
+
+> The spline node works only if the white region corresponds to the target shape.
+
+---
+
+### 3. Convert Mask to Spline
+
+![step-image](/img/asset_workflow/image-to-spline/pasted-1762860806641-0.png)
+![step-image](/img/asset_workflow/image-to-spline/pasted-1762861391104-0.png)
+
+Feed the binary mask into the **Image-to-Spline** node.
+
+- It detects the **largest connected white region**  
+- Converts the contour into a clean spline curve  
+- Produces a downloadable spline file  
+
+Import the resulting file into Blender to obtain the exact outline of the input map.
+
+---
+
+## Method 2 — Text to Image to Binary Mask (with LLM Assistance)
+
+### 1. Describe the Shape You Want
+
+![step-image](/img/asset_workflow/image-to-spline/image to spline.png)
+
+You can generate a spline starting from a text prompt.  
+Describe the object you want the spline for, such as:
+
+> "Winding river that branches and creates islands."
+
+A high-quality text-to-image node produces **4 variations**, each from a different backend.
+
+Choose your favorite image to proceed.
+
+---
+
+### 2. LLM-Assisted Mask Composition
+
+![step-image](/img/asset_workflow/image-to-spline/image to spline4.png)
+
+Use a **Simple LLM Call** node to analyze your description.  
+Its job is to extract the **main object** and produce an additional instruction:
+
+Example extraction from the river prompt:
+
+        "Main object: river network.
+        Fill all visible river channels and branches (main stem and distributaries) with white; land areas and islands black."
+
+This ensures the Multimodal node understands exactly **which regions should be white**.
+
+---
+
+### 3. Generate Binary Mask (Multimodal)
+
+![step-image](/img/asset_workflow/image-to-spline/image to spline3.png)
+
+Feed both the selected image and the LLM-generated mask instruction text into the Multimodal node.  
+It outputs a binary mask that follows the intended foreground/background logic.
+
+---
+
+### 4. Convert to Spline
+
+![step-image](/img/asset_workflow/image-to-spline/pasted-1762863069650-0.png)
+
+Input the binary mask into the Image-to-Spline node.  
+The node extracts the full river network as a white-connected region and returns a clean spline.
+
+---
+
+## Method 3 — Direct Binary Mask from Text
+
+### 1. Describe the Target Shape
+
+![step-image](/img/asset_workflow/image-to-spline/image to spline2.png)
+
+In this method, the Multimodal node directly generates a **binary silhouette** from your text description.  
+No intermediate photorealistic images are needed.
+
+Example prompt:
+
+> "Winding river with branching geometry and small islands."
+
+---
+
+### 2. Convert Binary Mask to Spline
+
+![step-image](/img/asset_workflow/image-to-spline/pasted-1762862255995-0.png)
+
+Select the best mask and feed it into the Image-to-Spline node.  
+The node outputs the spline representation of the described shape.
+
+---
+
+## Summary of Methods
+
+| Method | Input | Output Stages | Use Case |
+|--------|--------|----------------|----------|
+| 1 | Image | Image → Binary Mask → Spline | When you already have a shape (map, silhouette, drawing) |
+| 2 | Text | Text → Image → Mask (LLM-guided) → Spline | When you want creative variation with accurate foreground extraction |
+| 3 | Text | Text → Direct Mask → Spline | Fastest method; good for abstract or simple shapes |
+
+---
+
+With these three options, you can extract spline contours from maps, objects, rivers, terrain shapes, or any described geometry—ready to import into Blender for further modeling.
