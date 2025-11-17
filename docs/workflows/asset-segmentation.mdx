@@ -1,0 +1,130 @@
+---
+id: asset-segmentation
+title: Asset Segmentation
+sidebar_label: Asset Segmentation
+---
+# Asset Segmentation Workflow
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'95%'}}>
+    ![](/img/asset_workflow/asset-segmentation/asset-segment-workflow.png)
+  </div>
+</div>
+
+
+This workflow extracts reusable assets from a complex scene by isolating each individual object with high fidelity.  
+It prevents detail loss that typically happens when generating a full multi-object asset in one shot.
+
+---
+
+## 1. Input a Complex Asset Image
+
+Upload an image containing many objects—for example, a table filled with items.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/asset_workflow/asset-segmentation/input.jpg)
+  </div>
+</div>
+
+
+
+---
+
+## 2. Inventory & Cutouts (Multimodal)
+
+The Multimodal node:
+
+- Analyzes the entire image  
+- Identifies **every unique object**  
+- Produces a **set of clean cutouts**, one per object  
+- Outputs all cutouts on a transparent background in a single composite image  
+
+Different backends provide different segmentation qualities;  
+choose the version with the cleanest, most complete isolations.
+
+<div style={{display:'flex', gap:'12px', marginBottom:'20px'}}>
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/segmented1.png)
+  </div>
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/segmented2.png)
+  </div>
+</div>
+
+---
+
+## 3. Add Color-Coded Bounding Boxes
+
+A second Multimodal node overlays **thin, non-overlapping bounding boxes**,  
+each with a **unique color** (red, green, blue, yellow, etc.).  
+These colors function as **object indices** so each item can be isolated individually.
+
+Pick the backend that generates:
+
+- accurate, tight boxes  
+- correct color order  
+- no overlaps or misplaced boxes.
+
+<div style={{display:'flex', gap:'12px', marginBottom:'20px'}}>
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/boxes1.png)
+  </div>
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/boxes2.png)
+  </div>
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/boxes3.png)
+  </div>
+</div>
+
+---
+
+## 4. Per-Object Isolation (Multiple Multimodal Nodes)
+
+For each colored box:
+
+- The Multimodal node extracts **only that object**  
+- Removes the box  
+- Outputs the object on a **clean white background**  
+- Preserves original proportions, materials, and details  
+
+Each output becomes a **stand-alone asset**, ready for 3D generation.
+
+<div style={{display:'flex', gap:'12px', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/outputnodes.png)
+  </div>
+
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/asset-segmentation/outputs.jpg)
+  </div>
+
+</div>
+
+
+---
+
+## Why Asset Segmentation Is Necessary
+
+Generating a complex asset (like a filled table) in a single AI pass often fails:
+
+- small items lose detail  
+- shapes become simplified  
+- subtle features disappear  
+- geometry becomes inconsistent  
+
+Segmentation solves this by handling each object **individually**,  
+ensuring **maximum visual detail** and high-quality inputs for 3D workflows.
+
+---
+
+## Summary
+
+| Stage | Description | Output |
+|-------|-------------|---------|
+| Inventory & Cutouts | Identify all unique objects | Transparent cutout sheet |
+| Bounding Boxes | Color-coded indexing | Boxed composite |
+| Per-Object Isolation | Extract objects one by one | White-background assets |
+| Final Result | High-detail components | Ready for 3D generation |

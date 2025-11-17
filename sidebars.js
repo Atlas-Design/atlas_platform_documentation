@@ -279,6 +279,7 @@ module.exports = {
         { type: 'doc', id: 'workflows/sketch-to-asset', label: 'Sketch to Asset', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/image-to-spline', label: 'Image to Spline', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/2d-variants', label: '2D Variants', className: 'sidebar-title' },
+        { type: 'doc', id: 'workflows/asset-segmentation', label: 'Asset Segmentation', className: 'sidebar-title' },
       ],
     },
 
