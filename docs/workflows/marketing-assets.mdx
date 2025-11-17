@@ -1,0 +1,182 @@
+---
+id: marketing-assets
+title: Marketing Assets
+sidebar_label: Marketing Assets
+---
+
+# Marketing Assets Workflow
+
+This workflow transforms an early, primitive 3D blockout into high-quality cinematic renders and short marketing videos.  
+It is ideal when you have only a basic model but need polished visuals for presentations, pitches, or customer-facing materials.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'95%'}}>
+    ![](/img/asset_workflow/marketing-assets/workflow-marketing.png)
+  </div>
+</div>
+
+---
+
+## 1. Input Your Scene Screenshot
+
+Begin by providing a screenshot of your early 3D blockout or greyboxed environment.  
+The workflow supports any rough model — simple shapes, low-detail masses, or prototype layouts.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/marketing-assets/input-marketing.jpeg)
+  </div>
+</div>
+
+---
+
+## 2. Flow A — Direct Cinematic Generation (Multimodal Only)
+
+The first branch generates cinematic renders directly from the input screenshot.
+
+### Steps:
+1. Feed the scene screenshot into a **Multimodal node**.
+2. Request a *high-quality, cinematic render* of the same scene.
+3. The node outputs **four different interpretations** (one per backend).
+
+This flow is ideal when:
+- You want immediate results  
+- You want to preserve the exact layout and mood of the screenshot  
+- You need multiple quick options for marketing visuals
+
+
+---
+
+## 3. Flow B — Description-Based Cinematic Generation (Image-to-Text → LLM → Multimodal)
+
+The second branch enhances the generation by first understanding the scene conceptually.
+
+### 3.1 Describe the Scene (Image-to-Text)
+The Image-to-Text node analyzes the screenshot and:
+- Describes visible elements
+- Interprets composition and structure
+- **Infers what final environment the blockout could represent**
+
+---
+
+### 3.2 Create a Marketing Render Prompt (Simple LLM Call)
+
+A Simple LLM Call converts the description into a **high-fidelity marketing render specification**, ensuring:
+
+- The final render preserves the original composition  
+- Visual language is upgraded to production quality  
+- Lighting, atmosphere, and style feel polished and intentional  
+- The scene becomes *sellable* for marketing presentations  
+
+---
+
+### 3.3 Generate Cinematic Renders (Multimodal)
+
+The enhanced prompt is then combined with the original screenshot inside a Multimodal node.  
+It outputs four marketing-grade cinematic frames, each with a different artistic interpretation.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/marketing-assets/nodeoutput-marketing.png)
+  </div>
+</div>
+
+---
+
+## 4. Choose Your Best Marketing Frame
+
+Review all cinematic outputs from both Flow A and Flow B.  
+Select the frame that best communicates:
+
+- Intended atmosphere  
+- Visual quality  
+- Narrative tone  
+- Marketable presentation  
+
+This chosen frame becomes the input for video generation.
+
+<div style={{display:'flex', gap:'12px', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/marketing-assets/output_image-marketing.png)
+  </div>
+
+  <div style={{flex:'1'}}>
+    ![](/img/asset_workflow/marketing-assets/output_image-2marketing.png)
+  </div>
+
+</div>
+
+---
+
+## 5. Generate a Short Marketing Video (Image-to-Video + LLM Prompting)
+
+### 5.1 Create a Video Concept (Image-to-Text → LLM)
+
+- Input the chosen cinematic frame into an Image-to-Text node.
+- Ask for a detailed description of the scene.
+- A Simple LLM Call expands this into a **short marketing video prompt**, capturing:
+  - Camera motion style  
+  - Lighting changes  
+  - Environmental tone  
+  - Mood and pacing  
+
+---
+
+### 5.2 Produce the Video (Image-to-Video)
+
+Feed the following into an Image-to-Video node:
+
+- The selected cinematic frame  
+- The LLM-generated marketing video prompt  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/marketing-assets/nodeoutput2-marketing.png)
+  </div>
+</div>
+
+The node outputs a polished short cinematic suitable for:
+
+- Portfolio presentations  
+- Customer previews  
+- Marketing decks  
+- Social media announcements  
+
+<div style={{display:'flex', gap:'20px', marginTop:'20px'}}>
+
+  <div style={{flex:'1'}}>
+    <video controls style={{width: "100%", borderRadius: "8px"}}>
+      <source src="/img/asset_workflow/marketing-assets/outputvideo1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div style={{flex:'1'}}>
+    <video controls style={{width: "100%", borderRadius: "8px"}}>
+      <source src="/img/asset_workflow/marketing-assets/outputvideo2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
+
+
+
+---
+
+## Summary of Steps
+
+| Step | Description |
+|------|-------------|
+| 1 | Upload a screenshot of your early 3D blockout |
+| 2 | **Flow A:** Direct Multimodal → Cinematic render |
+| 3 | **Flow B:** Image-to-Text → LLM → Multimodal (enhanced cinematic) |
+| 4 | Select your best marketing frame |
+| 5 | Create a scene description + LLM video prompt |
+| 6 | Generate a short cinematic video with Image-to-Video |
+
+---
+
+With this workflow, even a rough prototype model can be transformed into high-quality marketing material — both still images and cinematic shots — ready for client presentations and project showcases.
+

@@ -1,0 +1,135 @@
+---
+id: moodboard-to-assetkit
+title: Moodboard to Assetkit
+sidebar_label: Moodboard to Assetkit
+---
+
+# Moodboard-to-AssetKit Workflow
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/moodboard/workflow-assetkit.png)
+  </div>
+</div>
+
+This workflow converts a moodboard into a coherent modular asset kit—a set of objects, props, architectural parts, and stylistic elements ready for 3D scene building.
+
+It extracts both visible elements and inferred assets implied by the moodboard’s design language, generates consistent concept renders, and transforms them into 3D models.
+
+---
+
+## 1. Provide the Moodboard Image
+
+Start by uploading a moodboard image containing references for style, materiality, atmosphere, and worldbuilding.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/moodboard/input-moodboard.jpg)
+  </div>
+</div>
+
+---
+
+## 2. Extract Asset Inventory (Image-to-Text)
+
+The Image-to-Text node analyzes the entire moodboard and produces a structured, numbered list of modular game-ready assets by:
+
+- Identifying visible objects and motifs  
+- Extracting architectural elements and props  
+- Inferring new items that match the same style  
+- Describing the materials, shapes, and colors  
+
+This list can include items not explicitly shown but consistent with the moodboard’s worldbuilding.
+
+---
+
+## 3. Create Render-Ready Asset Briefs (Simple LLM Call)
+
+For each list item, a Simple LLM Call expands the description into a detailed, consistent, render-ready concept brief.
+
+This refinement clarifies:
+
+- Overall form and silhouette  
+- Material definition  
+- Color palette  
+- Lighting behavior  
+- Stylistic relevance  
+- Presentation setup  
+- Realistic depth and perspective  
+
+The result is a precise specification for generating a clean single-object concept render.
+
+---
+
+## 4. Generate Concept Renders (Text-to-Image)
+
+Each enhanced description is passed through a high-quality Text-to-Image node.
+
+For each asset, the workflow generates multiple concept images—one per backend—with:
+
+- Neutral studio background  
+- Consistent lighting  
+- Centered composition  
+- Accurate materials  
+- Clear detail visibility  
+
+These renders are now ready for 3D reconstruction.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'90%'}}>
+    ![](/img/asset_workflow/moodboard/output-2d-moodboard.jpg)
+  </div>
+</div>
+
+---
+
+## 5. Convert Concept Art to 3D Models (Image-to-3D)
+
+The selected 2D concept render for each asset is processed through the Image-to-3D node.  
+Each backend produces a different interpretation, providing **four variants per asset**.
+
+You can keep the version that best matches the moodboard’s visual language.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'90%'}}>
+    ![](/img/asset_workflow/moodboard/nodeoutput.png)
+  </div>
+</div>
+
+---
+
+## 6. Improve Geometry Consistency (Auto Mesh Transform)
+
+After generating the 3D assets, the Auto Mesh Transform node can:
+
+- Normalize scale  
+- Adjust dimensions  
+- Re-center the origin/pivot  
+- Clean the bounding box  
+- Make all assets consistent for engine use  
+
+This ensures your AssetKit is ready for Blender, Unreal, Unity, or ATLAS.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'90%'}}>
+    ![](/img/asset_workflow/moodboard/output-models-moodboard.jpg)
+  </div>
+</div>
+
+---
+
+## Summary of Steps
+
+| Step | Description |
+|------|-------------|
+| 1 | Upload moodboard image |
+| 2 | Extract structured asset list with Image-to-Text |
+| 3 | Expand each asset into a render-ready brief |
+| 4 | Generate clean concept renders via Text-to-Image |
+| 5 | Create 3D models using Image-to-3D |
+| 6 | Normalize models with Auto Mesh Transform |
+| 7 | Export your fully consistent AssetKit |
+
+---
+
+With this workflow, a single moodboard becomes a complete, modular AssetKit—perfect for worldbuilding, environment design, and procedural generation.

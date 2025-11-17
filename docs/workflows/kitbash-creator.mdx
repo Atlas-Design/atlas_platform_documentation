@@ -1,0 +1,206 @@
+---
+id: kitbash-creator
+title: Kitbash Creator
+sidebar_label: Kitbash Creator
+---
+
+# Kitbash Creator Workflow
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'95%'}}>
+    ![](/img/asset_workflow/kitbash/workflownodes.png)
+  </div>
+
+</div>
+
+Transform a complex scene into a full kitbash library of modular 3D assets.
+
+This workflow extracts **every isolatable object** from a single image, generates **clean modular variants**, and reconstructs them as **individual GLB files** ready for 3D assembly.
+
+---
+
+## 1. Input a Scene Image
+
+Provide a detailed image containing as many objects, structures, and elements as possible.  
+The richer the scene, the stronger the resulting kitbash set.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/kitbash/input.png)
+  </div>
+
+</div>
+
+---
+
+## 2. Image-to-Text — Extract a Kitbash Inventory
+
+The Image-to-Text node generates a **numbered list** of every distinct visual element that could be turned into a reusable 3D module.
+
+The system prompt instructs the node to:
+
+- Identify **all modular components** (large + small)
+- Avoid grouping elements together
+- Focus on **shape** and **function**
+- Ensure each item can be modeled as a **standalone asset**
+- Output a clean, numbered list
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/kitbash/imagetotext.png)
+  </div>
+
+</div>
+
+### Example Output
+
+```
+1. Steeply pitched timber-framed roof module with dormer windows.
+2. Decorative wooden window frame with flower box.
+3. Stone chimney with brick detailing.
+4. Ornate hanging shop sign bracket.
+5. Wooden door with iron hinges and handle.
+6. Cobblestone street section with curved edge.
+7. Stone foundation wall segment.
+8. Wooden support beam with diagonal bracing.
+9. Lantern-style street lamp on metal post.
+10. Small wooden bench with slatted seat.
+11. Triangular roof gable with exposed beams.
+12. Multi-pane glass window with wooden mullions.
+13. Brick wall section with arched window opening.
+14. Flower pot with blooming plants.
+15. Wooden barrel with metal bands.
+16. Stone step module for building entrances.
+17. Decorative roof finial or spire.
+18. Hanging fabric banner with rope attachments.
+19. Wooden signboard with painted lettering.
+20. Iron wall-mounted lantern.
+21. Small wooden crate.
+22. Gutter and downspout assembly.
+23. Stone archway for alley entrance.
+24. Roof ridge tile segment.
+25. Wooden balcony with railing.
+```
+
+---
+
+## 3. Per-Item Isolation Prompts (Simple LLM Call)
+
+For each numbered module (1 → 25), a Simple LLM Call converts the list entry into a **precise isolation prompt**.
+
+The prompt tells the multimodal node to:
+
+- Extract **only the specified module**
+- Remove all surrounding context
+- Place it on a **neutral background**
+- Preserve correct proportions, silhouette, and materials
+- Make it ready for 3D reconstruction
+
+Each item becomes its own **extraction instruction**.
+
+---
+
+## 4. Multimodal Isolation — One Object at a Time
+
+Each isolation prompt + original scene image goes into the Multimodal node.
+
+Every backend produces **4 variant cutouts**, giving you:
+
+- Slight stylistic differences  
+- Different interpretations of occluded areas  
+- Options for the cleanest geometry  
+
+### Example Layout  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/kitbash/2doutputs.jpg)
+  </div>
+
+</div>
+
+Repeat this for every item (1 → 25).
+
+At the end, you have a full sheet of modular 2D extractions.
+
+---
+
+## 5. Select the Best Variant for Each Object
+
+From the 4 variants, pick the most structurally accurate version for each object.  
+These will be used for 3D reconstruction.
+
+---
+
+## 6. Image-to-3D — Generate the Modular Models
+
+Feed each chosen 2D isolation into the Image-to-3D node.
+
+The node generates **one GLB per module**, producing a full modular kitbash set:
+
+- Roof modules  
+- Wall sections  
+- Beams  
+- Doors  
+- Lamps  
+- Windows  
+- Chimneys  
+- Decorative trims  
+- Steps, crates, signage, props, etc.
+
+You end up with 25+ uniquely modeled GLBs.
+
+---
+
+## 7. Auto Mesh Transform — Final Cleanup
+
+Send each GLB through the **Auto Mesh Transform node** to:
+
+- Normalize scale  
+- Re-center origin points  
+- Ensure consistent orientation  
+- Make all assets “kitbash-ready”  
+
+This step makes assembling scenes in Blender/Unreal much easier.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/kitbash/outputs-node.png)
+  </div>
+
+</div>
+---
+
+## 8. Final Kitbash Library
+
+You now have a **complete modular asset library** extracted from a single reference image.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+
+  <div style={{width:'85%'}}>
+    ![](/img/asset_workflow/kitbash/3doutput.png)
+  </div>
+
+</div>
+
+
+---
+
+# Summary
+
+| Stage | Description |
+|-------|-------------|
+| **1** | Input a detailed scene image |
+| **2** | Image-to-Text identifies all modular components |
+| **3** | LLM converts each item into an isolation prompt |
+| **4** | Multimodal extracts each object individually |
+| **5** | Choose best visual variant |
+| **6** | Image-to-3D generates GLBs for each module |
+| **7** | Auto Mesh Transform normalizes models |
+| **8** | Full kitbash set ready for Blender/Unreal |
+
