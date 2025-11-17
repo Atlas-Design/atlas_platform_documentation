@@ -1,0 +1,77 @@
+---
+id: conceptart-to-assetkit
+title: Concept Art to Assetkit
+sidebar_label: Concept Art to Assetkit
+---
+
+# Concept Art → AssetKit
+
+This workflow converts a single concept art image into a complete modular asset kit ready for 3D generation.
+
+![](/img/asset_workflow/conceptart-assetkit/workflow-conceptart.png)
+
+---
+
+## 1. Input Concept Art
+
+Upload any concept art containing multiple objects, props, or structures.
+
+![](/img/asset_workflow/conceptart-assetkit/input-conceptart.png)
+
+---
+
+## 2. Extract 10 Assets (Multimodal)
+
+The first Multimodal node isolates **10 distinct objects** from the concept art on a clean neutral background.  
+Different backends generate different isolation layouts — choose the most accurate version.
+
+![](/img/asset_workflow/conceptart-assetkit/iso-output_image.png)
+
+---
+
+## 3. Add Bounding Boxes (Multimodal)
+
+The second Multimodal node adds **colored bounding boxes** to the selected isolation layout.  
+Each of the 10 objects receives a unique color.  
+This prepares the image for per-object extraction.
+
+![](/img/asset_workflow/conceptart-assetkit/box-output_image.png)
+
+---
+
+## 4. Extract Individual Assets (10× Multimodal)
+
+Create 10 Multimodal nodes — one for each bounding box color.  
+Each node extracts **only the object inside its assigned box**, removes the box itself, and outputs the object on a clean background suitable for 3D modeling.
+
+### Example object outputs
+
+![](/img/asset_workflow/conceptart-assetkit/2doutput-conceptart.jpg)
+
+---
+
+## 5. Convert to 3D (Image → 3D)
+
+Each isolated asset is passed to the Image-to-3D node.  
+Every backend generates a different 3D interpretation.  
+Pick the version that best matches the original object.
+
+---
+
+## 6. Auto Mesh Transform (Optional)
+
+Use Auto Mesh Transform to standardize:
+- scale  
+- orientation  
+- origin points  
+- mesh cleanliness  
+
+This prepares the final GLBs for Blender, Unreal, or Unity.
+
+![](/img/asset_workflow/conceptart-assetkit/3doutput-conceptart.jpg)
+
+---
+
+## Result
+
+You now have a **10-piece AssetKit** extracted directly from concept art, complete with isolated 2D references, multiple 3D variants, and import-ready GLB files.

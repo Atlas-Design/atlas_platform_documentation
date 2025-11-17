@@ -283,6 +283,7 @@ module.exports = {
         { type: 'doc', id: 'workflows/kitbash-creator', label: 'Kitbash Creator', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/moodboard-to-assetkit', label: 'Moodboard to Assetkit', className: 'sidebar-title' },
         { type: 'doc', id: 'workflows/marketing-assets', label: 'Marketing Assets', className: 'sidebar-title' },
+        { type: 'doc', id: 'workflows/conceptart-to-assetkit', label: 'Concept Art to Assetkit', className: 'sidebar-title' },
       ],
     },
 
