@@ -1,0 +1,117 @@
+---
+id: conceptart-generator
+title: Concept Art Generator
+sidebar_label: Concept Art Generator
+---
+
+# Concept Art Generator
+
+The **Concept Art Generator** workflow converts a full **Game Design Document (GDD)** into high-quality visual concept art.  
+It reads the document, extracts its meaning, gathers reference images, and produces multiple concept-art variations ready for use in game development, worldbuilding, and mood-setting.
+
+---
+
+## 1. Input: Game Design Document (PDF)
+
+Upload your complete GDD as a **PDF file**.
+
+The workflow automatically extracts:
+
+- **Text content** (lore, worldbuilding notes, mechanics, tone, etc.)  
+- **Embedded images** (characters, props, environments, mood references)
+
+Both channels are processed separately to maximize visual fidelity.
+
+---
+
+## 2. Phase 1 — Extract Text & Images
+
+### Text Extraction
+The **Text Extraction** node pulls all written content from the PDF.
+
+This output becomes the foundation for generating a visual scene.
+
+### Image Extraction
+The **Image Extraction** node collects every embedded illustration, sketch, screenshot, or reference image.
+
+These images will later guide the multimodal model toward the correct style, characters, and mood.
+
+---
+
+## 3. Phase 2 — Convert GDD Text Into a Concept Description
+
+The extracted text is fed to a **Simple LLM Call**, which produces a refined, artist-ready description.
+
+### Summary of the instruction:
+- Read the GDD carefully  
+- Convert the entire document into **one coherent concept-art scene**  
+- Describe composition, atmosphere, lighting, palette, setting, characters, and style  
+- Stay faithful to the GDD’s world logic  
+- Output **one rich paragraph** suitable for text-to-image models  
+
+This becomes the **master prompt** for generating the artwork.
+
+---
+
+## 4. Phase 3 — Retrieve Additional Visual Inspiration
+
+The extracted images from the PDF are passed into a **Retrieve Images** node.
+
+### Summary of the instruction:
+- Return images useful for **game world concept art**  
+- Prefer visual cues for characters, architecture, landscapes, and cinematic lighting  
+
+This curated reference batch enhances the final concept art.
+
+---
+
+## 5. Phase 4 — Multimodal Concept Art Generation
+
+Two parallel flows now generate artwork:
+
+### **Flow A — Multimodal with References**
+Inputs:
+- Retrieved reference images  
+- The master concept prompt  
+
+The **Multimodal node** produces **four variations per backend**, each influenced by the GDD’s extracted images.
+
+This flow captures:
+- Correct character designs  
+- Architecture consistent with the document  
+- Proper mood, lighting, and color  
+
+---
+
+### **Flow B — Quality Text-to-Image (No References Needed)**
+
+If the GDD has **few or no images**, the master concept prompt is also passed directly to the **Quality Text-to-Image** node.
+
+It produces **five high-quality frames per backend** with a more imaginative interpretation.
+
+This ensures the workflow still works even if the PDF lacks visual material.
+
+---
+
+## 6. Phase 5 — Choose Your Final Concept Art
+
+Both multimodal and quality text-to-image paths produce a gallery of concept art options.
+
+You select:
+- The most accurate  
+- The most compelling  
+- The version that best represents your game’s world and tone  
+
+This becomes the official concept-art deliverable.
+
+---
+
+## Output
+The workflow delivers finalized concept-art frames suitable for:
+
+- Pre-production moodboards  
+- Pitch decks  
+- Game world direction  
+- Character, environment, and architecture pipelines  
+
+This ensures the entire worldbuilding foundation of your game is visually grounded from the first iteration.

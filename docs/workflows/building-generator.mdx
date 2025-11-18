@@ -1,0 +1,202 @@
+---
+id: building-generator
+title: Building Generator
+sidebar_label: Building Generator
+---
+# Building Generator
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/workflow-building.png)
+  </div>
+</div>
+
+This workflow transforms a single building image into a **procedural asset kit**, including segmentation maps, module composition JSON, isolated components, and 3D-ready modules.
+
+---
+
+## 1. Input Building Image
+
+Upload the building render or concept image you want to convert into modular components.
+
+<div style={{
+  display:'flex',
+  justifyContent:'center',
+  margin:'20px 0'
+}}>
+  <div style={{
+    maxWidth:'600px',
+    width:'100%'
+  }}>
+    ![](/img/asset_workflow/building-generator/input.jpg)
+  </div>
+</div>
+
+
+---
+
+## 2. Segmentation Map (Multimodal)
+
+The first Multimodal node generates a **clean, color-coded segmentation map** that separates the building into functional parts such as base, walls, windows, doors, roof, and ornaments.
+
+A predefined color legend is supplied (base → brown, walls → gold, windows → sky blue, etc.).  
+Each backend generates a different segmentation layout — choose the most accurate one.
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/segmentationnode.png)
+  </div>
+</div>
+
+---
+
+## 3. Module Composition Analysis (LLM)
+
+The chosen segmentation map and the original render are analyzed together to generate:
+
+- A **summary of modular composition**  
+- How walls, windows, roof parts, and ornaments repeat  
+- How modules connect structurally  
+- A **machine-readable JSON** defining all modules
+
+The JSON describes:
+- module names  
+- categories (base, wall, window, etc.)  
+- mapped hex colors  
+- placement rules  
+- anchors and hierarchy  
+- repetition patterns  
+- dimension hints  
+
+This JSON can be consumed directly in procedural modeling systems.
+
+<div style={{
+  display:'flex',
+  justifyContent:'center',
+  margin:'20px 0'
+}}>
+  <div style={{
+    maxWidth:'500px',
+    width:'100%'
+  }}>
+    ![](/img/asset_workflow/building-generator/module_json.png)
+  </div>
+</div>
+
+---
+
+## 4. Isolate Base Structure (Multimodal → Image-to-3D)
+
+A Multimodal node isolates the **building’s core shell** (the full base volume without windows, doors, or roof attachments).  
+This output is then sent to Image-to-3D to generate the main building mass as a standalone module.
+
+---
+
+## 5. Identify Module Components (Image-to-Text)
+
+The next step identifies **all reusable building parts**, such as:
+
+- wall segments  
+- window units  
+- doors  
+- balconies  
+- roof sections  
+- trim pieces  
+- ornaments or decorative modules  
+
+Only the names are listed (no descriptions).  
+This list represents all component types that should be turned into modular assets.
+
+<div style={{
+  display:'flex',
+  justifyContent:'center',
+  margin:'20px 0'
+}}>
+  <div style={{
+    maxWidth:'550px',
+    width:'100%'
+  }}>
+    ![](/img/asset_workflow/building-generator/imagetext-building.png)
+  </div>
+</div>
+
+---
+
+## 6. Extract Each Component (Multimodal)
+
+Each item from the module list is processed individually.
+
+A separate Multimodal node extracts **one clean object per run**:
+
+- isolated from the original building  
+- centered  
+- neutral background  
+- correct proportions  
+- no surrounding elements  
+
+This prepares each module for 3D reconstruction.
+
+### Example extracted components
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'1000px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/2d-building.jpg)
+  </div>
+</div>
+
+---
+
+## 7. Convert Components to 3D (Image-to-3D)
+
+Each isolated component is passed to the Image-to-3D node.
+
+- Every backend produces four variants  
+- Choose the most accurate geometry  
+- These models form the kitbash library for the building generator
+
+### Example 3D outputs
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'1000px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/3dmodels-building.jpg)
+  </div>
+</div>
+
+---
+
+## 8. Auto Mesh Transform (Optional)
+
+Use Auto Mesh Transform to prepare each model for use:
+
+- normalize scale  
+- adjust orientation  
+- set proper origin points  
+- clean geometry  
+
+This step ensures that all components assemble properly in Blender or other 3D tools.
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'800px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/nodes-model-building.png)
+  </div>
+</div>
+
+---
+
+## Result
+
+You now have a complete **Building Generator AssetKit**, including:
+
+- segmentation maps  
+- module composition JSON  
+- isolated 2D components  
+- 3D-generated modules  
+- scale-corrected GLB files  
+
+These assets can be used for **procedural building assembly**, **kitbash workflows**, or **manual 3D scene construction**.
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'800px', width:'100%'}}>
+    ![](/img/asset_workflow/building-generator/outputrow.jpg)
+  </div>
+</div>
