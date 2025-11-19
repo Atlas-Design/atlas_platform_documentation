@@ -5,6 +5,12 @@ sidebar_label: Sketch to Asset
 ---
 # Sketch-to-Asset Workflow
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/sketch-asset/workflow-sketch.png)
+  </div>
+</div>
+
 This workflow transforms a hand-drawn sketch into a fully usable 3D asset.
 Starting from an imported sketch image, the pipeline generates concept renders and then 3D geometry that can be downloaded and used inside Blender or any other DCC tool.
 
@@ -12,7 +18,11 @@ Starting from an imported sketch image, the pipeline generates concept renders a
 
 ## 1. Import Sketch
 
-//![step-image]
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/sketch-asset/input-sketch.png)
+  </div>
+</div>
 
 Begin by importing a photo of your sketch.
 This can be a quick phone picture or a refined illustration.
@@ -28,7 +38,6 @@ Optionally, you may add additional attributes such as:
 
 ## 2. Generate Concept Renders (Multimodal Node)
 
-//![step-image]
 The Multimodal node analyzes both the sketch image and the optional text hints.
 It generates realistic concept renderings of your sketch.
 
@@ -38,25 +47,39 @@ It generates realistic concept renderings of your sketch.
 
 > This step helps refine the design direction before moving to full 3D generation.
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/sketch-asset/2d-sketch.jpg)
+  </div>
+</div>
+
 ---
 
 ## 3. Convert Concept to 3D
 
-//![step-image]
-
 After selecting your favorite concept render, feed it into the Image-to-3D node.
 
-- 5 different backends create 5 versioned 3D models  
+- Multiple different backends create multiple versioned 3D models  
 - Each backend provides a different modeling approach (stylized, realistic, lightweight, detailed, etc.)  
 - Choose and download the 3D model you prefer  
 
 All exported files are in `.glb` format, compatible with common 3D tools.
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/sketch-asset/outputnodes-sketch.png)
+  </div>
+</div>
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/sketch-asset/3d-sketch.jpg)
+  </div>
+</div>
+
 ---
 
 ## 4. Import the Asset into Blender
-
-//![step-image]
 
 With your `.glb` ready, simply import it into Blender or your preferred software.
 

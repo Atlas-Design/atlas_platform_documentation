@@ -6,6 +6,12 @@ sidebar_label: Concept Art Generator
 
 # Concept Art Generator
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/conceptart-generator/workflow-conceptart-gen.png)
+  </div>
+</div>
+
 The **Concept Art Generator** workflow converts a full **Game Design Document (GDD)** into high-quality visual concept art.  
 It reads the document, extracts its meaning, gathers reference images, and produces multiple concept-art variations ready for use in game development, worldbuilding, and mood-setting.
 
@@ -36,6 +42,12 @@ The **Image Extraction** node collects every embedded illustration, sketch, scre
 
 These images will later guide the multimodal model toward the correct style, characters, and mood.
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/conceptart-generator/extract-conceptart.png)
+  </div>
+</div>
+
 ---
 
 ## 3. Phase 2 — Convert GDD Text Into a Concept Description
@@ -50,6 +62,12 @@ The extracted text is fed to a **Simple LLM Call**, which produces a refined, ar
 - Output **one rich paragraph** suitable for text-to-image models  
 
 This becomes the **master prompt** for generating the artwork.
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/conceptart-generator/textextract-conceptart.png)
+  </div>
+</div>
 
 ---
 
@@ -104,6 +122,12 @@ You select:
 
 This becomes the official concept-art deliverable.
 
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/conceptart-generator/outputnodes-conceptart.png)
+  </div>
+</div>
+
 ---
 
 ## Output
@@ -115,3 +139,9 @@ The workflow delivers finalized concept-art frames suitable for:
 - Character, environment, and architecture pipelines  
 
 This ensures the entire worldbuilding foundation of your game is visually grounded from the first iteration.
+
+<div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+  <div style={{maxWidth:'900px', width:'100%'}}>
+    ![](/img/asset_workflow/conceptart-generator/outputs-conceptart.jpg)
+  </div>
+</div>
