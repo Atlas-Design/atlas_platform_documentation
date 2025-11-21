@@ -4,5 +4,211 @@ title: Multimodal
 sidebar_label: Multimodal
 ---
 
+# Multimodal Node
 
-Temporary stub. Replace with real content.
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/multimodal.png)
+  </div>
+</div>
+
+
+The **Multimodal Node** is Atlas’ core image-conditioning generator.  
+It **always requires both text and at least one image** as input.  
+You may also provide **multiple images** simultaneously for richer conditioning.
+
+The node combines all provided images + the text instruction and generates a new output image using the selected backend model and seed.
+
+---
+
+## 1. Overview
+
+The Multimodal Node performs image-guided generation, where:
+
+- **Images define**: structure, layout, objects, style cues, or references  
+- **Text defines**: what transformation, modification, or extraction should occur  
+
+The output is an AI-generated image that respects both the visual references and the instruction.
+
+---
+
+## 2. Inputs
+
+### Required:
+- **Text prompt**  
+- **At least one image**  
+
+### Optional:
+- **Multiple images** (e.g., replaceable objects, reference styles, guides)
+
+The node merges all image inputs before applying the instruction.
+
+---
+
+## 3. Backends
+
+You may choose from multiple backend models.  
+Each backend produces:
+
+- different fidelity  
+- different artistic interpretation  
+- different structural preservation  
+- different detail behavior  
+
+Switching backend = switching to a different AI model.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/backends-multimodal.png)
+  </div>
+</div>
+
+
+---
+
+## 4. Seed Control
+
+Changing the **seed** produces new variations from the same prompt and images.  
+Keeping the seed constant yields reproducible results.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/seed-multimodal.png)
+  </div>
+</div>
+
+---
+
+## 5. Example Use Cases
+
+### A. Style Transformation of a Scene
+
+**Input images:** bookshelf  
+**Instruction:** turn it into a *fantasy world bookshelf*  
+
+Each backend produces a different enchanted interpretation while preserving the structure of the input image.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/fantasy-multimodal.png)
+  </div>
+</div>
+
+
+---
+
+### B. Variation via Seed Change
+
+Using the same backend and same prompt, but changing the **seed**, produces alternative versions of the fantasy bookshelf.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/fantasy2-multimodals.png)
+  </div>
+</div>
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/fantasy3-multimodal.png)
+  </div>
+</div>
+
+---
+
+### C. Restyling While Preserving Layout
+
+**Instruction:** make the bookshelf *old and broken*.  
+The node modifies textures, details, and condition but keeps the original arrangement.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/old-multimodal.png)
+  </div>
+</div>
+
+---
+
+### D. Object Isolation from a Scene
+
+**Instruction:** isolate the vase on the right-middle shelf with a **neutral background**.  
+
+Neutral backgrounds are important for Image-to-3D because they prevent unwanted geometry artifacts.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/isolate-multimodal.png)
+  </div>
+</div>
+
+---
+
+### E. Multi-Image Conditioning for Object Replacement
+
+You can input:
+
+- the main scene image  
+- object image 1  
+- object image 2  
+- object image 3  
+
+**Instruction:** replace three items on the shelf with the provided images.
+
+The node uses the additional images as direct visual references for replacement, enabling precise object substitution.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/replace-multimodal.png)
+  </div>
+</div>
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/output-multimodal.png)
+  </div>
+</div>
+
+---
+
+## 6. Capabilities Summary
+
+The Multimodal Node supports:
+
+### **Image-Guided Generation**
+- interpret and transform scenes
+- restyle environments
+- change themes (fantasy, futuristic, damaged, aged)
+
+### **Object-Level Editing**
+- add new objects (from reference images)
+- replace selected objects
+- remove objects while preserving layout
+- isolate individual items cleanly
+
+### **Asset Preparation**
+- produce isolated items on neutral backgrounds
+- prepare clean references for Image-to-3D workflows
+
+### **Multiple Input Conditioning**
+- use several images at once  
+- combine scene + object references  
+- merge style and structural hints from multiple sources  
+
+### **Controlled Variation**
+- backend selection for model diversity  
+- seed control for multiple variations  
+
+---
+
+## 7. Node Summary
+
+The **Multimodal Node** is Atlas’ flexible, image-conditioned generation engine.  
+It:
+
+- **requires text + image(s)**  
+- supports multiple reference images  
+- generates structured scene edits  
+- isolates objects for asset pipelines  
+- transforms renders while keeping layout stable  
+- provides high variation through backends and seeds  
+
+It is the foundation for workflows involving **editing, restyling, isolating, transforming, or augmenting images** across Atlas.
+
+
