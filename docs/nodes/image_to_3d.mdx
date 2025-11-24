@@ -5,4 +5,129 @@ sidebar_label: Image To 3D
 ---
 
 
-Temporary stub. Replace with real content.
+# Image to 3D Node
+
+The **Image to 3D** node family converts a single image into a fully generated **3D mesh**.  
+This node is most effective when the input image is clean, isolated, and visually informative.
+
+---
+
+## 1. Preparing the Input Image
+
+For the best 3D results, the source image should:
+
+- show **only the desired object**  
+- have a **neutral background** (white, gray, or solid color)  
+- include **depth cues** such as shadows and occlusion  
+- preferably use a **perspective camera angle**  
+- avoid clutter, overlapping objects, or busy patterns  
+
+To achieve this, you can first process the original scene using:
+
+- **Multimodal Node** → isolate the object with neutral background  
+- **Precise Text Edit Node** → remove all other elements cleanly  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d1.png)
+  </div>
+</div>
+
+These steps help the 3D model generator correctly infer:
+
+- thickness  
+- volume  
+- proportions  
+- silhouette  
+- material hints  
+
+---
+
+## 2. Backends & Output Variation
+
+The Image to 3D node includes **multiple backend models**, each producing different types of meshes:
+
+### Backend Differences
+- **High-detail models** → strong surface accuracy  
+- **Low-detail models** → simplified forms for fast iteration  
+- **Low-poly models** → game-ready stylized assets  
+- **Quad-based meshes** → ideal for sculpting or retopology  
+- **Triangle-based meshes** → standard for real-time engines  
+- **PBR-enabled meshes** → includes color + material maps  
+- **Mesh-only output** → no textures, only geometry  
+
+You can toggle:
+
+- **Disable PBR** → geometry only  
+- **Disable Texture** → unlit mesh output  
+
+This helps adapt the output to different pipelines (Blender, Unreal, Unity, CAD, etc.).
+
+---
+
+## 3. Generating the Model
+
+Once the image and settings are ready:
+
+1. Connect your isolated image to the **Image Input** of the Image to 3D node  
+2. Add a short text label if needed (optional)  
+3. Select backend model  
+4. Click **Run**
+
+The node returns:
+
+- a **3D preview**
+- a downloadable **.glb** model
+
+You can download it directly or refine it using the next stage of mesh nodes.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d2.png)
+  </div>
+</div>
+
+---
+
+## 4. After Generation: Next Steps
+
+After generating the mesh, you can optionally pass it through:
+
+### **Auto Mesh Transform**
+- fix origin point  
+- normalize scale  
+- reorient axes  
+- center the model  
+- prepare it for procedural assembly  
+
+### **Texture Mesh**
+- add or enhance textures  
+- refine materials  
+
+### **Blender / Unreal / Unity**
+- import for scene assembly  
+- integrate into procedural systems  
+- convert to kits or asset libraries  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/output3D.jpg)
+  </div>
+</div>
+
+---
+
+## Summary
+
+| Feature | Benefit |
+|--------|---------|
+| Pre-isolated image | Most accurate geometry |
+| Neutral background | Reduces artifacts |
+| Depth / shadows | Helps model infer volume |
+| Perspective view | Better reconstruction |
+| Multiple backends | Low-poly, high-detail, quad/tri options |
+| PBR toggle | Mesh-only or full texture output |
+
+The **Image to 3D Nodes** turn your isolated 2D images into ready-to-use mesh assets that can immediately enter production workflows across Blender, Unity, Unreal, and procedural pipelines.
+
+

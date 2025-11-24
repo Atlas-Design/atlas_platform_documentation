@@ -4,5 +4,229 @@ title: Mesh Nodes
 sidebar_label: Mesh Nodes
 ---
 
+# Mesh Nodes
 
-Temporary stub. Replace with real content.
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/mesh_nodes/mesh-nodes.png)
+  </div>
+</div>
+
+Mesh Nodes operate on 3D geometry created within the Atlas workflows.  
+They handle **mesh generation**, **transformation**, **cleanup**, **optimization**, and **scene assembly**, ensuring that assets become production-ready and correctly scaled.
+
+---
+
+## Image-to-3D
+
+The **Image-to-3D** node converts a single reference image into a **3D mesh**.
+
+- Takes an **image input** and reconstructs a 3D model.
+- Multiple **backends** are available (low-poly, high-detail, quad-based, triangle-based, stylized, realistic).
+- Output quality varies based on backend and **seed**.
+- Use this node whenever you want to turn a concept art, render, or isolated product image into a mesh.
+
+More details are provided in the **Image-to-3D** sub-section.
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d2.png)
+  </div>
+</div>
+
+---
+
+## Texture Mesh
+
+The **Texture Mesh** node regenerates or restyles the texture of an existing mesh.
+
+- Input:
+  - A **reference style image**  
+  - An **existing mesh**
+- The resulting mesh receives a texture that matches the reference image.
+- Ideal for creating **style variations** or re-texturing an asset.
+
+Example: Change the style of the asset by using a new 2D concept as the texture reference.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d7.png)
+  </div>
+</div>
+---
+
+## Auto Mesh Transform
+
+The **Auto Mesh Transform** node is one of the most essential post-processing tools.
+
+It automatically:
+- Applies **semantic world-scale correction**
+- Adjusts **dimensions** based on object type
+- Repositions and cleans the **origin**
+- Prepares the asset for proper placement in a game engine, CAD tool, or Atlas pipeline
+
+Use this node immediately after generating a model.
+
+---
+
+## Reduce Polycount
+
+Reduces the polygon count of a mesh.
+
+- Input: desired polycount value
+- Re-bakes textures automatically
+- Useful for optimizing **AI-generated high-density meshes**
+
+This is essential for performance-friendly assets.
+
+---
+
+## Remesh Model
+
+Rebuilds a model’s topology.
+
+- Topology options:
+  - **Triangle**
+  - **Quad**
+- Input: target polygon count
+- Ideal for simplifying messy or overly dense AI-generated geometry.
+
+Use this node after Reduce Polycount if you need cleaner topology.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d8.png)
+  </div>
+</div>
+
+---
+
+## Mesh BBox Fit
+
+Scales a mesh **non-uniformly** so that its **world-space bounding box** exactly matches specified X, Y, Z dimensions.
+
+- Input: target width, height, depth  
+- Output: scaled mesh with exact real-world bounding box
+
+Useful for making an asset match required dimensions precisely.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d3.png)
+  </div>
+</div>
+
+---
+
+## Mesh Origin Set
+
+Sets the mesh origin based on bounding-box parameters.
+
+- Input: desired origin position (e.g., bottom center, bbox center, custom coordinates)
+- Output: repositioned mesh origin used for clean pivoting and placement
+
+This is important for alignment, snapping, and scene assembly.
+
+---
+
+## Text-to-Origin
+
+Uses a **text instruction** to modify a mesh's origin.
+
+Examples:
+- “Set origin to bottom center”
+- “Move pivot to the front face”
+- “Place origin at the geometric center”
+
+Helpful when precise manual origin adjustments are needed.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d6.png)
+  </div>
+</div>
+
+---
+
+## Mesh Rotate Towards Axis
+
+Rotates the mesh around **(0, 0, 0)** so that it faces a selected axis.
+
+- Supports presets such as:
+  - Face −Y  
+  - Face +Y  
+  - Face −X / +X  
+  - Face −Z / +Z
+- Assumes the input mesh initially faces **−Y**.
+
+Ensures consistent orientation across generated assets.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d11.png)
+  </div>
+</div>
+
+---
+
+## Make Simple 3D Scene
+
+Takes your generated meshes and arranges them into a **simple 3D scene** based on a text prompt.
+
+- Input meshes + prompt
+- Output: arranged layout with placement, rotation, spacing
+- Useful for quick scene design or previews
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d9.png)
+  </div>
+</div>
+
+---
+
+## Mask-to-Spline
+
+Converts a **binary mask** into a spline.
+
+- Requires input mask where your desired object is **white**.
+- Outputs a spline based on the **largest connected white region**.
+- Mask must be prepared via **Multimodal nodes** beforehand.
+
+Used for shape extraction, outline-based modeling, or path generation.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d4.png)
+  </div>
+</div>
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d5.png)
+  </div>
+</div>
+
+---
+
+## Omnipart
+
+Segments an image and generates **separate mesh parts**.
+
+- Outputs:
+  - Segmentation map
+  - Individual GLBs for each part
+  - Optional merged mesh
+- Ideal for breaking an asset into modules or components.
+
+Perfect for kitbashing, modular asset workflows, or creating parametric components from a single image.
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'75%'}}>
+    ![](/img/node_introduction/mesh_nodes/imgto3d10.png)
+  </div>
+</div>
+
+---
