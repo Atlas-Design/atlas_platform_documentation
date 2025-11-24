@@ -5,4 +5,101 @@ sidebar_label: Image Nodes
 ---
 
 
-Temporary stub. Replace with real content.
+# Image Nodes
+
+Atlas provides several nodes for generating or interpreting images.  
+This section introduces the core nodes used for **text-to-image** generation and **image-to-text** extraction.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'70%'}}>
+    ![](/img/node_introduction/image-nodes/nodes.png)
+  </div>
+</div>
+
+---
+
+# Fast Text-to-Image
+
+The **Fast Text-to-Image** node generates images quickly based on a text prompt.  
+It uses a lightweight backend optimized for **speed** rather than fidelity.
+
+This node is ideal when you need:
+
+- rapid ideation  
+- quick thumbnails  
+- early explorations of a concept  
+- instant variations for iteration  
+
+The output is less detailed and less accurate compared to the Quality Text-to-Image node, but significantly faster.
+
+---
+
+# Quality Text-to-Image
+
+The **Quality Text-to-Image** node produces **high-fidelity, detailed images**.  
+It uses **five different backends**, allowing you to choose different rendering styles and strengths.
+
+### Key Features
+- best visual quality among text-only generation nodes  
+- multiple backends → diverse interpretations  
+- good for environments, props, characters, concept art  
+- consistent structure and lighting compared to faster models  
+
+### Example: Quality vs Fast
+Both nodes receive the same prompt.  
+The Fast node generates a quick idea; the Quality node generates a polished version suitable for downstream workflows such as:
+
+- Image-to-3D  
+- Precise Text Edit  
+- Marketing assets  
+- Concept pipelines  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'70%'}}>
+    ![](/img/node_introduction/image-nodes/texttoimg-image.png)
+  </div>
+</div>
+
+
+---
+
+# Image-to-Text {#image-to-text}
+
+The **Image-to-Text** node converts images into structured or descriptive text.  
+The system prompt controls what type of information is extracted.
+
+### You can request:
+- scene description  
+- object list  
+- spatial layout  
+- material analysis  
+- asset identification  
+- style breakdown  
+- inferred function or purpose  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'70%'}}>
+    ![](/img/node_introduction/image-nodes/imgtotext-image.png)
+  </div>
+</div>
+
+
+### Example Use Cases
+- Describe the objects in a rendered scene  
+- Extract the composition of a top-down plan  
+- Identify modular parts of a building  
+- Produce a clean text prompt for concept art  
+- Provide metadata for Make3D or Auto Mesh Transform  
+
+---
+
+# Summary
+
+| Node | Purpose | Input | Output |
+|------|---------|--------|---------|
+| **Fast Text-to-Image** | Quick idea generation | Text | Fast low-fidelity image |
+| **Quality Text-to-Image** | High-quality renders | Text | Polished image (5 backends) |
+| **Image-to-Text** | Scene, object, or layout analysis | Image | Descriptive or structured text |
+
+These nodes form the **foundation** of Atlas' imaging pipeline—providing fast ideation, high-fidelity rendering, and precise scene understanding for all downstream workflows.
+

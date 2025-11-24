@@ -4,58 +4,75 @@ title: Multimodal
 sidebar_label: Multimodal
 ---
 
-# Multimodal Node
+# Multimodal & Precise Text Edit Nodes
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
-    ![](/img/node_introduction/multimodal/multimodal.png)
+    ![](/img/node_introduction/multimodal/nodeintro-multimodal.png)
   </div>
 </div>
 
+Atlas provides two powerful image-editing nodes that **both require text + at least one image input**:
 
-The **Multimodal Node** is Atlas’ core image-conditioning generator.  
-It **always requires both text and at least one image** as input.  
-You may also provide **multiple images** simultaneously for richer conditioning.
+- **Multimodal Node**
+- **Precise Text Edit Node**
 
-The node combines all provided images + the text instruction and generates a new output image using the selected backend model and seed.
+They share the same core idea:  
+You provide an image (or multiple images) and a text instruction, and the node generates a modified image using the chosen backend.
 
----
-
-## 1. Overview
-
-The Multimodal Node performs image-guided generation, where:
-
-- **Images define**: structure, layout, objects, style cues, or references  
-- **Text defines**: what transformation, modification, or extraction should occur  
-
-The output is an AI-generated image that respects both the visual references and the instruction.
+They differ in how much freedom the model has.  
+Multimodal allows **fully generative edits**, while Precise Text Edit keeps the **original image untouched except for the specified modification**.
 
 ---
 
-## 2. Inputs
+# 1. Overview
+
+## Multimodal Node
+A flexible, image-conditioned generation engine.
+
+- Requires text + image(s)
+- Merges all input images with the instruction
+- Allows scene transformations, object replacement, isolation
+- Produces new images guided by the provided visuals
+- Different backends = different image generation models
+
+## Precise Text Edit Node
+A constrained version that **preserves the original image**.
+
+- Requires text + one image
+- Performs **targeted edits only**
+- Maintains composition, style, perspective, lighting
+- Perfect for additive changes (e.g., “add vines”, “add lanterns”, “make it snowy”)
+- Can change aspect ratio to expand the scene
+
+---
+
+# 2. Inputs
+
+Both nodes share the same input structure:
 
 ### Required:
-- **Text prompt**  
-- **At least one image**  
+- **Text prompt**
+- **At least one image**
 
 ### Optional:
-- **Multiple images** (e.g., replaceable objects, reference styles, guides)
+- **Multiple images** (Multimodal only)
 
-The node merges all image inputs before applying the instruction.
+The nodes combine the visual input(s) with your instruction to generate the new output.
 
 ---
 
-## 3. Backends
+# 3. Backends
 
-You may choose from multiple backend models.  
-Each backend produces:
+You may choose from multiple backend generative models.  
+Each backend interprets images differently:
 
-- different fidelity  
-- different artistic interpretation  
-- different structural preservation  
-- different detail behavior  
+- Some are more realistic  
+- Some preserve structure better  
+- Some are more stylized  
+- Some follow prompts more aggressively  
 
-Switching backend = switching to a different AI model.
+Switching backend changes the artistic and structural behavior.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
@@ -63,61 +80,51 @@ Switching backend = switching to a different AI model.
   </div>
 </div>
 
+---
+
+# 4. Seed Control
+
+Changing the seed gives new variations while keeping:
+
+- the same structure  
+- the same instruction  
+- the same conditioning images  
+
+Keeping the seed = reproducible outputs.
 
 ---
 
-## 4. Seed Control
+# 5. Example Use Cases — Multimodal Node
 
-Changing the **seed** produces new variations from the same prompt and images.  
-Keeping the seed constant yields reproducible results.
+## A. Style Transformation of a Scene
+Turn a normal bookshelf into a **fantasy enchanted bookshelf**.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
-    ![](/img/node_introduction/multimodal/seed-multimodal.png)
+    ![](/img/node_introduction/multimodal/seed1-multimodal.png)
   </div>
 </div>
 
 ---
 
-## 5. Example Use Cases
-
-### A. Style Transformation of a Scene
-
-**Input images:** bookshelf  
-**Instruction:** turn it into a *fantasy world bookshelf*  
-
-Each backend produces a different enchanted interpretation while preserving the structure of the input image.
+## B. Variation with Seed Change
+Same prompt + same image → different seeds → different variations.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
-    ![](/img/node_introduction/multimodal/fantasy-multimodal.png)
-  </div>
-</div>
-
-
----
-
-### B. Variation via Seed Change
-
-Using the same backend and same prompt, but changing the **seed**, produces alternative versions of the fantasy bookshelf.
-
-<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'80%'}}>
-    ![](/img/node_introduction/multimodal/fantasy2-multimodals.png)
+    ![](/img/node_introduction/multimodal/seed3-multimodal.png)
   </div>
 </div>
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
-    ![](/img/node_introduction/multimodal/fantasy3-multimodal.png)
+    ![](/img/node_introduction/multimodal/seed2-multimodals.png)
   </div>
 </div>
 
 ---
 
-### C. Restyling While Preserving Layout
-
-**Instruction:** make the bookshelf *old and broken*.  
-The node modifies textures, details, and condition but keeps the original arrangement.
+## C. Restyling While Preserving Layout
+Transform the bookshelf into an **old, damaged one** while keeping the structure.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
@@ -127,11 +134,8 @@ The node modifies textures, details, and condition but keeps the original arrang
 
 ---
 
-### D. Object Isolation from a Scene
-
-**Instruction:** isolate the vase on the right-middle shelf with a **neutral background**.  
-
-Neutral backgrounds are important for Image-to-3D because they prevent unwanted geometry artifacts.
+## D. Isolate an Object with Neutral Background
+Perfect for Image-to-3D workflows.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
@@ -141,24 +145,15 @@ Neutral backgrounds are important for Image-to-3D because they prevent unwanted 
 
 ---
 
-### E. Multi-Image Conditioning for Object Replacement
-
-You can input:
-
-- the main scene image  
-- object image 1  
-- object image 2  
-- object image 3  
-
-**Instruction:** replace three items on the shelf with the provided images.
-
-The node uses the additional images as direct visual references for replacement, enabling precise object substitution.
+## E. Multi-Image Conditioning for Object Replacement
+Replace specific items on a shelf using three reference object images.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
     ![](/img/node_introduction/multimodal/replace-multimodal.png)
   </div>
 </div>
+
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'80%'}}>
     ![](/img/node_introduction/multimodal/output-multimodal.png)
@@ -167,48 +162,98 @@ The node uses the additional images as direct visual references for replacement,
 
 ---
 
-## 6. Capabilities Summary
+# 6. Example Use Cases — Precise Text Edit Node
 
-The Multimodal Node supports:
-
-### **Image-Guided Generation**
-- interpret and transform scenes
-- restyle environments
-- change themes (fantasy, futuristic, damaged, aged)
-
-### **Object-Level Editing**
-- add new objects (from reference images)
-- replace selected objects
-- remove objects while preserving layout
-- isolate individual items cleanly
-
-### **Asset Preparation**
-- produce isolated items on neutral backgrounds
-- prepare clean references for Image-to-3D workflows
-
-### **Multiple Input Conditioning**
-- use several images at once  
-- combine scene + object references  
-- merge style and structural hints from multiple sources  
-
-### **Controlled Variation**
-- backend selection for model diversity  
-- seed control for multiple variations  
+The **Precise Text Edit Node** keeps the original image intact, modifying only what you request.
 
 ---
 
-## 7. Node Summary
+### A. Adding Details to a Generated Asset  
+Example: adding decorative elements or small props without changing the underlying concept.
 
-The **Multimodal Node** is Atlas’ flexible, image-conditioned generation engine.  
-It:
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext1-multimodal.png)
+  </div>
+</div>
 
-- **requires text + image(s)**  
-- supports multiple reference images  
-- generates structured scene edits  
-- isolates objects for asset pipelines  
-- transforms renders while keeping layout stable  
-- provides high variation through backends and seeds  
+---
+### B. Removing Objects  
 
-It is the foundation for workflows involving **editing, restyling, isolating, transforming, or augmenting images** across Atlas.
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext3-multimodal.png)
+  </div>
+</div>
+
+---
+
+### C. Changing the Design Style
+You can restyle the asset into a new design language (e.g., Scandinavian / futuristic / gothic) while keeping the **same layout and camera**.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext2-multimodal.png)
+  </div>
+</div>
+
+Changing the **seed** gives controlled alternatives of the *same style*.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext2seed2-multimodal.png)
+  </div>
+</div>
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext2seed1-multimodal.png)
+  </div>
+</div>
+
+---
+
+### D. Changing Image Aspect Ratio  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'80%'}}>
+    ![](/img/node_introduction/multimodal/precisetext-aspectratio-multimodal.png)
+  </div>
+</div>
+
+---
+
+# 7. Capabilities Summary
+
+### Multimodal Node
+- generative transformations  
+- style changes  
+- scene edits  
+- object replacement  
+- object isolation  
+- image mixing  
+- multi-image conditioning  
+- supports many backends  
+- seed-based variation  
+
+### Precise Text Edit Node
+- preserves the original image  
+- applies minimal, targeted changes  
+- ideal for controlled additions  
+- supports aspect-ratio changes  
+- keeps lighting/composition intact  
+
+---
+
+# 8. Node Summary
+
+Both nodes require **text + image input** and work with backend models, but their behavior differs:
+
+### **Multimodal Node**
+- Broad, creative, generative  
+- Perfect for image transformation, restyling, object edits, isolation  
+
+### **Precise Text Edit Node**
+- Controlled, minimal, additive  
+- Perfect for polishing assets, expanding images, subtle modifications  
 
 
