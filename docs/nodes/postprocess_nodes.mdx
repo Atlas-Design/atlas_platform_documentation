@@ -4,5 +4,80 @@ title: postprocess_nodes
 sidebar_label: postprocess_nodes
 ---
 
+# Post Process Nodes
 
-Temporary stub. Replace with real content.
+Post Process Nodes are used to refine, enhance, or extend generated images after the primary rendering step.  
+These tools help achieve better framing, higher resolution, clean cutouts, and extended compositions.
+
+---
+
+## Camera Control
+
+The **Camera Control** node allows you to adjust the camera angle and framing of a generated image **without re-prompting**.
+
+Use it when:
+- The main object is not centered correctly  
+- The character is facing the wrong direction  
+- The camera angle needs correction  
+- You want multiple angle variations via seed changes  
+
+### Adjustable Parameters
+- **Rotate Left/Right:** `(-360 to 360)`  
+- **Move Forward:** `(0 to 10)`  
+- **Vertical Angle:** `(-1 to 1)`  
+- **Wide Angle Lens:** enable or disable  
+- **Seed:** generate different angle variations  
+
+This node is ideal for fine-tuning poses, correcting perspective, and improving shot composition.
+
+---
+
+## Image Outpainting
+
+The **Image Outpainting** node expands an image beyond its original boundaries.
+
+- Input your image  
+- Provide a **prompt** describing how the new extended areas should look  
+- The model naturally blends extensions into the existing scene  
+
+Use this to:
+- Widen the environment  
+- Add missing context  
+- Create cinematic aspect ratios  
+- Extend canvases for layout or UI needs  
+
+---
+
+## Remove Background
+
+Removes the background from an existing image and outputs two formats:
+
+- **Binary PNG** (black/white mask)  
+- **Transparent PNG** (clean cutout)
+
+Different **backends** produce different separation styles, so results may vary.  
+Useful for:
+- Isolating assets  
+- Preparing images for compositing  
+- Making stickers or UI icons  
+- Feeding a clean silhouette into other Atlas nodes (e.g., Mask-to-Spline)
+
+---
+
+## Upscale Image
+
+The **Upscale Image** node enhances resolution and detail.
+
+- Input an image  
+- Set the **upscale factor**  
+- Choose from multiple backends for varying sharpness and texture behavior  
+
+Use this whenever you need:
+- Higher fidelity output  
+- Cleaner textures  
+- Enhanced details for close-ups  
+- Large format renders or presentation images
+
+---
+
+

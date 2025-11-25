@@ -4,5 +4,136 @@ title: api_nodes
 sidebar_label: api_nodes
 ---
 
+# API Nodes
 
-Temporary stub. Replace with real content.
+API Nodes allow you to turn any custom Atlas workflow into a **callable API endpoint**.  
+They define how data enters and leaves a graph when exporting an API via the **API From Graph** feature.
+
+Use these nodes whenever you want to:
+- Deploy a workflow as a REST API  
+- Trigger Atlas processes programmatically  
+- Integrate Atlas with external tools (Unity, Blender, n8n, Flask, Unreal Engine, etc.)
+
+---
+
+## Overview
+
+There are two categories of API Nodes:
+
+1. **API Input Nodes** — define what data your external request can send into the workflow.  
+2. **API Output Nodes** — define what the workflow returns after execution.
+
+Once these nodes are placed, the workflow can be exported as an API directly from the toolbar.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/api_nodes/api1.png)
+  </div>
+</div>
+
+---
+
+## API Input Nodes
+
+API Input Nodes replace native inputs so that external applications can provide data through the API.
+
+### Available Input Types
+- **Text Input API** – accepts string data  
+- **Number Input API** – accepts numeric values  
+- **Boolean Input API** – accepts true/false flags  
+- **Image Input API** – accepts image file uploads  
+- **Mesh Input API** – accepts mesh files (GLB, OBJ)  
+
+Use these nodes when preparing your graph for external execution.  
+
+---
+
+## API Output Nodes
+
+API Output Nodes define what the API returns when the workflow completes.
+
+### Available Output Types
+- **Text Output API** – returns text strings  
+- **Number Output API** – returns numeric values  
+- **Boolean Output API** – returns true/false results  
+- **Image Output API** – returns generated images  
+- **Mesh Output API** – returns mesh files  
+- **SVG Output API** – returns vector graphics  
+
+Replace the final node’s output with the corresponding API Output Node to expose your result.
+
+---
+
+## Exporting Your Custom Workflow as an API
+
+After setting the inputs and outputs with API Nodes, you can export your workflow as an API:
+
+### Steps
+1. Build your workflow as usual.  
+2. Replace **all required inputs** with the appropriate **API Input Nodes**. 
+3. Replace **the final output** with an **API Output Node**.  
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/api_nodes/api2.png)
+  </div>
+</div> 
+
+
+4. Click the **Export API** icon in the toolbar.  
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/api_nodes/api3.png)
+  </div>
+</div> 
+
+5. Enter a name for your API.  
+6. Click **Create**.
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/api_nodes/api4.png)
+  </div>
+</div> 
+
+
+The platform then generates:
+- **Bash example**
+- **Python example**
+- **Full API JSON specification**
+- **Your API ID**
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/api_nodes/api5.png)
+  </div>
+</div> 
+
+
+These can be used immediately to call your workflow programmatically.
+
+---
+
+## Using the Generated API
+
+Once created, the API can be called from any environment:
+
+- Python scripts  
+- Bash / curl  
+- Web backends  
+- Unity or Unreal Engine tools  
+- n8n or automation pipelines  
+- Blender scripts  
+- Custom UIs  
+
+Your API ID ensures that the workflow is executed with the exact graph and nodes you configured.
+
+---
+
+
+
