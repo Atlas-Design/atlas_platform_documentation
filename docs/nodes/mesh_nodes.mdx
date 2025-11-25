@@ -84,15 +84,17 @@ This is essential for performance-friendly assets.
 
 ## Remesh Model
 
-Rebuilds a model’s topology.
+Reconstructs the mesh topology and produces a cleaner, more manageable geometry structure.  
+Note that **existing textures are not retained** during this process, so a manual rebake will be required afterward.
 
+-Reduces or increases polygon count while maintaining the model’s overall shape.
 - Topology options:
-  - **Triangle**
-  - **Quad**
+  - **Triangle**for most general uses.
+  - **Quad** for modeling workflows.
 - Input: target polygon count
-- Ideal for simplifying messy or overly dense AI-generated geometry.
+- Supported target polygon count range: **10k – 300k**.
 
-Use this node after Reduce Polycount if you need cleaner topology.
+This node is ideal for preparing AI-generated meshes that come in overly dense or irregular form.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'75%'}}>

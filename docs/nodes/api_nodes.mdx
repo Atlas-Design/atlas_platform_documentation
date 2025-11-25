@@ -70,19 +70,16 @@ After setting the inputs and outputs with API Nodes, you can export your workflo
 
 ### Steps
 1. Build your workflow as usual.  
-2. Replace **all required inputs** with the appropriate **API Input Nodes**. 
-3. Replace **the final output** with an **API Output Node**.  
-
+2. Replace **all required inputs** in your workflow with the corresponding **API Input Nodes**.  
+3. **Add** an API Output Node and connect it to your final output node to expose the result through the API.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'100%'}}>
-    ![](/img/node_introduction/api_nodes/api2.png)
+    ![](/img/node_introduction/api_nodes/api6.png)
   </div>
 </div> 
 
-
 4. Click the **Export API** icon in the toolbar.  
-
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'100%'}}>
@@ -93,13 +90,11 @@ After setting the inputs and outputs with API Nodes, you can export your workflo
 5. Enter a name for your API.  
 6. Click **Create**.
 
-
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'100%'}}>
     ![](/img/node_introduction/api_nodes/api4.png)
   </div>
 </div> 
-
 
 The platform then generates:
 - **Bash example**
@@ -107,13 +102,11 @@ The platform then generates:
 - **Full API JSON specification**
 - **Your API ID**
 
-
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
   <div style={{width:'100%'}}>
     ![](/img/node_introduction/api_nodes/api5.png)
   </div>
 </div> 
-
 
 These can be used immediately to call your workflow programmatically.
 

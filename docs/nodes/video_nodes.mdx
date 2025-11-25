@@ -1,0 +1,67 @@
+---
+id: video_nodes
+title: Video Nodes
+sidebar_label: Video Nodes
+---
+
+# Video Nodes
+
+Video Nodes generate short animated clips directly from text prompts and optional reference images.  
+They are ideal for creating **cinematic previews**, **marketing videos**, **quick scene animations**, or **visual storytelling elements** within Atlas workflows.
+
+Two nodes are available: a full-featured version and a simplified fast-generation version.
+
+---
+
+## Text + Image to Video
+
+Generates a video from a **text prompt**, an optional **continuation prompt**, and up to **three reference images**.
+
+### Inputs
+- **Prompt** — main instruction for video content  
+- **Continuation Prompt** (optional) — describes how the animation should evolve  
+- **Reference Images** — up to **3** images to control style, subject, or composition  
+
+### Video Settings
+- **Duration:** 4, 6, 8, 16, 24, 32, or 40 seconds  
+- **Resolution:** 720p or 1080p  
+- **Aspect Ratio:** Landscape or Portrait  
+
+### Output
+- A rendered video clip in the chosen format
+
+This node is suited for more controlled, style-specific video generation, especially when reference images are important.
+
+---
+
+## Text + Image to Video (Simple)
+
+A streamlined version optimized for **fast, lightweight video generation**.
+
+### Inputs
+- **Prompt** — primary description  
+- **Input Image** (optional) — style or subject reference  
+
+### Video Settings
+- **Duration:** 5, 10, or 12 seconds  
+- **Resolution:** 420p, 720p, or 1080p  
+- **Aspect Ratio:** Landscape, Portrait, Standard, or Square  
+- **Fixed Camera Position:** enable or disable  
+- **Seed:** control variation (`-1` = random)  
+
+### Output
+- A quick-rendered video clip
+
+This version is ideal for rapid prototyping or generating simple animated assets for marketing or social media.
+
+---
+
+## Use Cases
+
+- Marketing videos from a single concept image  
+- Animated moodboards  
+- Scene previews for game or environment design  
+- Quick animations for pitch decks or client presentations  
+- Stylized loops for social media  
+
+Video Nodes provide a fast way to bring static concepts to life using text prompts and reference imagery.

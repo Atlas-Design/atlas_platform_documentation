@@ -4,5 +4,111 @@ title: utility_nodes
 sidebar_label: utility_nodes
 ---
 
+# Utility Nodes
 
-Temporary stub. Replace with real content.
+Utility Nodes provide general-purpose functions that support all Atlas workflows.  
+They are not tied to image or mesh generation; instead, they handle documents, text processing, arrays, and lightweight LLM operations.
+
+Utility Nodes are essential for orchestrating complex workflows, preparing inputs, and structuring data for generation nodes.
+
+---
+
+## Document Nodes
+
+### Extract Document Images
+
+This node processes an uploaded **PDF document** and extracts all images embedded within it.
+
+- Input: **PDF file** (e.g., a Game Design Document)  
+- Output: **Image Array**  
+- Each extracted image is returned as an element in the array.  
+
+You can use the resulting array with:
+- **Retrieve Image** node to pull specific images  
+- **Image Generation nodes** that accept image arrays  
+- **Break Images Array** to isolate specific images
+
+---
+
+### Extract Document Text
+
+Extracts text content from a **PDF file** and separates it into three categories:
+
+- **Visual Descriptions** — descriptions of scenes, objects, characters  
+- **Relevant Other Text** — supporting information that may assist generation  
+- **Filtered / Irrelevant Text** — removed noise, metadata, or non-useful content  
+
+This separation is useful when you want to feed only contextually relevant text into your generation nodes or LLM prompts.
+
+---
+
+## Text & LLM Nodes
+
+### Text Concatenate
+
+Merges multiple text inputs into one unified string.
+
+- Helps combine text blocks before sending them into generation nodes  
+- Useful when you want to enforce a **fixed prefix or order**  
+  (e.g., system constraints + extracted text → final generation prompt)
+
+Typical use case:
+- Merge a “generation instruction” with extracted document text  
+- Feed the combined result into an image or 3D generation node
+
+---
+
+### Simple LLM Call
+
+A lightweight LLM tool for controlled text generation.
+
+- Inputs:
+  - **System Prompt** — defines the agent’s role and behavior  
+  - **Text Input** — any context or content to transform  
+- Output: **Single text result**  
+
+Example use case:  
+Ask the node to act as a *game asset creator* and generate a list of asset prompts based on scene descriptions extracted from a document.
+
+This node is ideal for preprocessing or structuring text before sending it to downstream nodes.
+
+---
+
+## Array Management Nodes
+
+### Break Images Array
+
+Takes an **image array** and outputs up to **four images separately**.
+
+- Change **Start Index** to control which images are extracted  
+- Useful when only specific images from a PDF or batch are needed  
+- Ideal for directing selected images to multimodal or generation nodes
+
+---
+
+### Create Images Array
+
+Collects up to **7 individual images** and groups them into a **single array output**.
+
+Use this when:
+- Preparing multi-image inputs for generation nodes  
+- Organizing design references into one structured output  
+- Combining image sets extracted from different parts of the workflow
+
+---
+
+### Concatenate Images Array
+
+Combines up to **4 image arrays** into one unified array.
+
+- Ensures multiple sources of images appear in a single list  
+- Useful when merging:
+  - Extracted document images  
+  - Curated references  
+  - Intermediate results  
+- Output is a single array containing all items in order
+
+---
+
+Utility Nodes greatly enhance workflow flexibility by handling text, documents, and arrays—allowing you to build more advanced, modular, and context-aware pipelines across the Atlas platform.
+

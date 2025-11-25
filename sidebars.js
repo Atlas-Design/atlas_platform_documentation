@@ -314,6 +314,14 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'Video Nodes',
+          collapsed: true,
+          className: 'sidebar-title',
+          link: { type: 'doc', id: 'nodes/video_nodes' },
+          items: [],
+        },
+        {
+          type: 'category',
           label: 'Mesh Nodes',
           collapsed: true,
           className: 'sidebar-title',
