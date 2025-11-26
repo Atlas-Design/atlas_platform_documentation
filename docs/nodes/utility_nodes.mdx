@@ -40,37 +40,32 @@ Extracts text content from a **PDF file** and separates it into three categories
 
 This separation is useful when you want to feed only contextually relevant text into your generation nodes or LLM prompts.
 
----
-
-## Text & LLM Nodes
-
-### Text Concatenate
-
-Merges multiple text inputs into one unified string.
-
-- Helps combine text blocks before sending them into generation nodes  
-- Useful when you want to enforce a **fixed prefix or order**  
-  (e.g., system constraints + extracted text → final generation prompt)
-
-Typical use case:
-- Merge a “generation instruction” with extracted document text  
-- Feed the combined result into an image or 3D generation node
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility5.png)
+  </div>
+</div>
 
 ---
 
-### Simple LLM Call
+## Retrieve Images Node
 
-A lightweight LLM tool for controlled text generation.
+The **Retrieve Images** node allows you to query an image array using a text prompt and return only the images that match your description. This is especially useful when working with large sets of extracted images, such as those obtained from the **Extract Document Images** node.
 
-- Inputs:
-  - **System Prompt** — defines the agent’s role and behavior  
-  - **Text Input** — any context or content to transform  
-- Output: **Single text result**  
+You can specify the number of images you want to retrieve and choose the retrieval mode:
 
-Example use case:  
-Ask the node to act as a *game asset creator* and generate a list of asset prompts based on scene descriptions extracted from a document.
+- **At Most N Retrieved** — returns up to the requested number of relevant images  
+- **Exactly N Retrieved** — forces the output to contain the exact number specified  
 
-This node is ideal for preprocessing or structuring text before sending it to downstream nodes.
+This node is ideal when you need to filter a broad image collection for workflow-specific tasks.  
+For example, you can provide an entire set of document images as input and use a prompt such as “images showing architectural elements” to retrieve only the relevant subset. The node then outputs the desired number of images that best match the prompt, allowing you to use them directly in multimodal nodes, reference-based generation, or any downstream image-processing steps within your workflow.
+
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility6.png)
+  </div>
+</div>
 
 ---
 
@@ -95,6 +90,12 @@ Use this when:
 - Organizing design references into one structured output  
 - Combining image sets extracted from different parts of the workflow
 
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility7.png)
+  </div>
+</div>
+
 ---
 
 ### Concatenate Images Array
@@ -108,7 +109,72 @@ Combines up to **4 image arrays** into one unified array.
   - Intermediate results  
 - Output is a single array containing all items in order
 
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility8.png)
+  </div>
+</div>
+
 ---
 
-Utility Nodes greatly enhance workflow flexibility by handling text, documents, and arrays—allowing you to build more advanced, modular, and context-aware pipelines across the Atlas platform.
+## Text & LLM Nodes
+
+### Text Concatenate
+
+Merges multiple text inputs into one unified string.
+
+- Helps combine text blocks before sending them into generation nodes  
+- Useful when you want to enforce a **fixed prefix or order**  
+  (e.g., system constraints + extracted text → final generation prompt)
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility2.png)
+  </div>
+</div>
+
+Typical use case:
+- Merge a “generation instruction” with extracted document text  
+- Feed the combined result into an image or 3D generation node
+
+---
+
+### Simple LLM Call
+
+A lightweight LLM tool for controlled text generation.
+
+- Inputs:
+  - **System Prompt** — defines the agent’s role and behavior  
+  - **Text Input** — any context or content to transform  
+- Output: **Single text result**  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility1.jpg)
+  </div>
+</div>
+
+Example use case:  
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility3.png)
+  </div>
+</div>
+
+You can input a concept art image and use **Image to Text** to extract the existing character list. A **Simple LLM Call** can then be instructed to return only the first character from that list. You may add an additional text input that defines how the multimodal node should isolate the selected character for 3D modeling. Using **Text Concatenate**, you merge the LLM-generated character description with your isolation instruction and feed the combined text directly into the multimodal node. This creates a controlled, image-conditioned prompt for generating a clean extraction of a single character ready for modeling.
+
+<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/utility_nodes/utility4.png)
+  </div>
+</div>
+
+Another example is providing an image of a full scene and using **Image to Text** to obtain a structured description of its spatial layout. You can then instruct the **Simple LLM Call** to act as a spatial-logic prompt generator that transforms these descriptions into a precise prompt for generating a 2D top-down plan of the same scene. By passing this prompt into a multimodal node, you obtain a clean plan abstraction. With this method, any input image produces a custom, image-specific plan prompt through the combined use of Image to Text, LLM processing, and Text Concatenate.
+
+Utility Nodes allow these types of modular logic chains—extracting structured information, refining or transforming it, and recombining it—to produce workflows that adapt automatically to the input image while remaining deterministic and reusable across the Atlas platform.
+
+
+
+
 

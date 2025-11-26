@@ -309,7 +309,7 @@ module.exports = {
           items: [
             { type: 'link', label: 'Input Image', href: '/docs/nodes/image-nodes#input-image', className: 'sidebar-title' },
             { type: 'doc', id: 'nodes/multimodal', label: 'Multimodal', className: 'sidebar-title' }, // complex node → own page
-            { type: 'link', label: 'Image to Text', href: '/docs/nodes/image-nodes#image-to-text', className: 'sidebar-title' },
+            { type: 'link', label: 'Image to Text', href: '/docs/nodes/image_nodes#image-to-text', className: 'sidebar-title' },
           ],
         },
         {

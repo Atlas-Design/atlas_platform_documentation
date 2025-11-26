@@ -18,7 +18,24 @@ This section introduces the core nodes used for **text-to-image** generation and
 
 ---
 
-# Fast Text-to-Image
+## Input Image Node
+
+The **Input Image** node is used to upload images from your device into the Atlas workflow.  
+Click the **upload icon** inside the node to select an image from your computer.  
+Once uploaded, the image becomes an available input that you can connect to any node requiring image data.
+
+Use this node whenever a workflow needs:
+- a reference image  
+- a concept art input  
+- a render or screenshot  
+- an asset to isolate or edit  
+- an image required by Multimodal, Precise Text Edit, Camera Control, Remove Background, Image-to-Text, etc.
+
+After uploading, simply drag a connector from the Output of the Input Image node to the Image Input port of the next node in your workflow.
+
+---
+
+## Fast Text-to-Image
 
 The **Fast Text-to-Image** node generates images quickly based on a text prompt.  
 It uses a lightweight backend optimized for **speed** rather than fidelity.
@@ -34,7 +51,7 @@ The output is less detailed and less accurate compared to the Quality Text-to-Im
 
 ---
 
-# Quality Text-to-Image
+## Quality Text-to-Image
 
 The **Quality Text-to-Image** node produces **high-fidelity, detailed images**.  
 It uses **five different backends**, allowing you to choose different rendering styles and strengths.
@@ -63,7 +80,7 @@ The Fast node generates a quick idea; the Quality node generates a polished vers
 
 ---
 
-# Image-to-Text {#image-to-text}
+## Image-to-Text {#image-to-text}
 
 The **Image-to-Text** node converts images into structured or descriptive text.  
 The system prompt controls what type of information is extracted.
