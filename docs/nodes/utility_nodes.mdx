@@ -83,7 +83,7 @@ Takes an **image array** and outputs up to **four images separately**.
 
 ### Create Images Array
 
-Collects up to **7 individual images** and groups them into a **single array output**.
+Collects up to **8 individual images** and groups them into a **single array output**.
 
 Use this when:
 - Preparing multi-image inputs for generation nodes  
@@ -102,11 +102,7 @@ Use this when:
 
 Combines up to **4 image arrays** into one unified array.
 
-- Ensures multiple sources of images appear in a single list  
-- Useful when merging:
-  - Extracted document images  
-  - Curated references  
-  - Intermediate results  
+- Ensures multiple sources of images appear in a single list   
 - Output is a single array containing all items in order
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
@@ -141,7 +137,7 @@ Typical use case:
 
 ### Simple LLM Call
 
-A lightweight LLM tool for controlled text generation.
+A LLM tool for controlled text generation.
 
 - Inputs:
   - **System Prompt** — defines the agent’s role and behavior  
@@ -172,7 +168,7 @@ You can input a concept art image and use **Image to Text** to extract the exist
 
 Another example is providing an image of a full scene and using **Image to Text** to obtain a structured description of its spatial layout. You can then instruct the **Simple LLM Call** to act as a spatial-logic prompt generator that transforms these descriptions into a precise prompt for generating a 2D top-down plan of the same scene. By passing this prompt into a multimodal node, you obtain a clean plan abstraction. With this method, any input image produces a custom, image-specific plan prompt through the combined use of Image to Text, LLM processing, and Text Concatenate.
 
-Utility Nodes allow these types of modular logic chains—extracting structured information, refining or transforming it, and recombining it—to produce workflows that adapt automatically to the input image while remaining deterministic and reusable across the Atlas platform.
+Utility Nodes allow these types of modular logic chains ; extracting structured information, refining or transforming it, and recombining it to produce workflows that adapt automatically to the input image while remaining deterministic and reusable across the Atlas platform.
 
 
 

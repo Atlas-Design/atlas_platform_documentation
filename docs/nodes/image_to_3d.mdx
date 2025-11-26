@@ -7,7 +7,7 @@ sidebar_label: Image To 3D
 
 # Image to 3D Node
 
-The **Image to 3D** node family converts a single image into a fully generated **3D mesh**.  
+The **Image to 3D** node converts a single image into a fully generated **3D mesh**.  
 This node is most effective when the input image is clean, isolated, and visually informative.
 
 ---
@@ -18,7 +18,7 @@ For the best 3D results, the source image should:
 
 - show **only the desired object**  
 - have a **neutral background** (white, gray, or solid color)  
-- include **depth cues** such as shadows and occlusion  
+- include **depth cues** such as shadows 
 - preferably use a **perspective camera angle**  
 - avoid clutter, overlapping objects, or busy patterns  
 
@@ -58,8 +58,9 @@ The Image to 3D node includes **multiple backend models**, each producing differ
 
 You can toggle:
 
-- **Disable PBR** → geometry only  
-- **Disable Texture** → unlit mesh output  
+- **Disable PBR** 
+- **Disable Texture** 
+for geometry only output. 
 
 This helps adapt the output to different pipelines (Blender, Unreal, Unity, CAD, etc.).
 
@@ -70,19 +71,19 @@ This helps adapt the output to different pipelines (Blender, Unreal, Unity, CAD,
 Once the image and settings are ready:
 
 1. Connect your isolated image to the **Image Input** of the Image to 3D node  
-2. Add a short text label if needed (optional)  
-3. Select backend model  
-4. Click **Run**
+2. Select backend model  
+3. Click **Run**
 
 The node returns:
 
 - a **3D preview**
+- a wireframe preview
 - a downloadable **.glb** model
 
 You can download it directly or refine it using the next stage of mesh nodes.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d2.png)
   </div>
 </div>
@@ -110,24 +111,10 @@ After generating the mesh, you can optionally pass it through:
 - convert to kits or asset libraries  
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/output3D.jpg)
   </div>
 </div>
 
 ---
-
-## Summary
-
-| Feature | Benefit |
-|--------|---------|
-| Pre-isolated image | Most accurate geometry |
-| Neutral background | Reduces artifacts |
-| Depth / shadows | Helps model infer volume |
-| Perspective view | Better reconstruction |
-| Multiple backends | Low-poly, high-detail, quad/tri options |
-| PBR toggle | Mesh-only or full texture output |
-
-The **Image to 3D Nodes** turn your isolated 2D images into ready-to-use mesh assets that can immediately enter production workflows across Blender, Unity, Unreal, and procedural pipelines.
-
 

@@ -23,14 +23,14 @@ The **Image-to-3D** node converts a single reference image into a **3D mesh**.
 
 - Takes an **image input** and reconstructs a 3D model.
 - Multiple **backends** are available (low-poly, high-detail, quad-based, triangle-based, stylized, realistic).
-- Output quality varies based on backend and **seed**.
+- Output quality varies based on backend.
 - Use this node whenever you want to turn a concept art, render, or isolated product image into a mesh.
 
 More details are provided in the **Image-to-3D** sub-section.
 
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d2.png)
   </div>
 </div>
@@ -63,7 +63,7 @@ The **Auto Mesh Transform** node is one of the most essential post-processing to
 It automatically:
 - Applies **semantic world-scale correction**
 - Adjusts **dimensions** based on object type
-- Repositions and cleans the **origin**
+- Repositions the **origin**
 - Prepares the asset for proper placement in a game engine, CAD tool, or Atlas pipeline
 
 Use this node immediately after generating a model.
@@ -89,7 +89,7 @@ Note that **existing textures are not retained** during this process, so a manua
 
 -Reduces or increases polygon count while maintaining the model’s overall shape.
 - Topology options:
-  - **Triangle**for most general uses.
+  - **Triangle** for most general uses.
   - **Quad** for modeling workflows.
 - Input: target polygon count
 - Supported target polygon count range: **10k – 300k**.
@@ -114,7 +114,7 @@ Scales a mesh **non-uniformly** so that its **world-space bounding box** exactly
 Useful for making an asset match required dimensions precisely.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d3.png)
   </div>
 </div>
@@ -125,7 +125,7 @@ Useful for making an asset match required dimensions precisely.
 
 Sets the mesh origin based on bounding-box parameters.
 
-- Input: desired origin position (e.g., bottom center, bbox center, custom coordinates)
+- Input: desired origin position (e.g., upper bound, bbox center)
 - Output: repositioned mesh origin used for clean pivoting and placement
 
 This is important for alignment, snapping, and scene assembly.
@@ -144,7 +144,7 @@ Examples:
 Helpful when precise manual origin adjustments are needed.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d6.png)
   </div>
 </div>
@@ -165,7 +165,7 @@ Rotates the mesh around **(0, 0, 0)** so that it faces a selected axis.
 Ensures consistent orientation across generated assets.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d11.png)
   </div>
 </div>
@@ -182,7 +182,7 @@ Takes your generated meshes and arranges them into a **simple 3D scene** based o
 
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/mesh_nodes/imgto3d9.png)
   </div>
 </div>
@@ -193,20 +193,22 @@ Takes your generated meshes and arranges them into a **simple 3D scene** based o
 
 Converts a **binary mask** into a spline.
 
-- Requires input mask where your desired object is **white**.
+- Requires input binary mask where your desired object is **white**.
 - Outputs a spline based on the **largest connected white region**.
-- Mask must be prepared via **Multimodal nodes** beforehand.
+- Mask can be prepared via **Multimodal nodes** beforehand.
 
 Used for shape extraction, outline-based modeling, or path generation.
 
-<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
-    ![](/img/node_introduction/mesh_nodes/imgto3d4.png)
+<div style={{display:'flex', justifyContent:'center', gap:'20px', marginBottom:'20px'}}>
+  <div style={{width:'70%'}}>
+    
+  ![](/img/node_introduction/mesh_nodes/imgto3d4.png)
+  
   </div>
-</div>
-<div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'75%'}}>
-    ![](/img/node_introduction/mesh_nodes/imgto3d5.png)
+  <div style={{width:'40%'}}>
+  
+  ![](/img/node_introduction/mesh_nodes/imgto3d5.png)
+  
   </div>
 </div>
 

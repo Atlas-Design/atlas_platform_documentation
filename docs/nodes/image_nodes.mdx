@@ -11,7 +11,7 @@ Atlas provides several nodes for generating or interpreting images.
 This section introduces the core nodes used for **text-to-image** generation and **image-to-text** extraction.
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'70%'}}>
+  <div style={{width:'100%'}}>
     ![](/img/node_introduction/image-nodes/nodes.png)
   </div>
 </div>
@@ -23,14 +23,6 @@ This section introduces the core nodes used for **text-to-image** generation and
 The **Input Image** node is used to upload images from your device into the Atlas workflow.  
 Click the **upload icon** inside the node to select an image from your computer.  
 Once uploaded, the image becomes an available input that you can connect to any node requiring image data.
-
-Use this node whenever a workflow needs:
-- a reference image  
-- a concept art input  
-- a render or screenshot  
-- an asset to isolate or edit  
-- an image required by Multimodal, Precise Text Edit, Camera Control, Remove Background, Image-to-Text, etc.
-
 After uploading, simply drag a connector from the Output of the Input Image node to the Image Input port of the next node in your workflow.
 
 ---
@@ -95,8 +87,8 @@ The system prompt controls what type of information is extracted.
 - inferred function or purpose  
 
 <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
-  <div style={{width:'70%'}}>
-    ![](/img/node_introduction/image-nodes/imgtotext-image.png)
+  <div style={{width:'100%'}}>
+    ![](/img/node_introduction/image-nodes/image1.png)
   </div>
 </div>
 
@@ -110,6 +102,17 @@ The system prompt controls what type of information is extracted.
 
 ---
 
+## Image to SVG {#image-to-svg}
+
+The **Image to SVG** node converts a raster image into a **vector-based SVG** output.
+
+- Input: single image (e.g., logo, icon, black-and-white mask, simple graphic)  
+- Output: SVG file that can be scaled, edited, and reused in 2D or 3D workflows  
+
+For best results, start from images with **clear edges** and **high contrast** (e.g., black shapes on white background or simple flat-color drawings). The resulting SVG can then be refined in external vector tools or used directly in pipelines that expect curve or path-based input.
+
+---
+
 # Summary
 
 | Node | Purpose | Input | Output |
@@ -117,6 +120,7 @@ The system prompt controls what type of information is extracted.
 | **Fast Text-to-Image** | Quick idea generation | Text | Fast low-fidelity image |
 | **Quality Text-to-Image** | High-quality renders | Text | Polished image (5 backends) |
 | **Image-to-Text** | Scene, object, or layout analysis | Image | Descriptive or structured text |
+| **Image-to-SVG** | Convert raster to vector for scalable outlines, curves, or icons | Image | SVG vector graphic |
 
 These nodes form the **foundation** of Atlas' imaging pipeline—providing fast ideation, high-fidelity rendering, and precise scene understanding for all downstream workflows.
 
