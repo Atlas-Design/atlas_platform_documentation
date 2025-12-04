@@ -392,21 +392,6 @@ module.exports = {
 //      ],
 //    },
 
-    {
-      type: 'category',
-      label: 'Core Concepts',
-      collapsed: true,
-      collapsible: true,
-      link: null,
-      items: [
-        { type: 'doc', id: 'concepts/workflows_graphs', label: 'Workflows & Graphs' },
-        { type: 'doc', id: 'concepts/nodes_connections', label: 'Nodes & Connections' },
-        { type: 'doc', id: 'concepts/backends_models', label: 'Backends & Models' },
-        { type: 'doc', id: 'concepts/multimodal', label: 'Multimodal Processing' },
-        { type: 'doc', id: 'concepts/versioning', label: 'Versioning & Determinism' },
-      ],
-    },
-
   ],
 };
 
